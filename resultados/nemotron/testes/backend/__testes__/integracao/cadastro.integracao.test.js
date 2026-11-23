@@ -1,0 +1,252 @@
+// Testes de integração — serviço de cadastro (RF02, RF03, RF04, RN01–RN09)
+// Atributos: Adequação funcional, Segurança, Confiabilidade, Usabilidade
+const { abrirBanco, limparBanco } = require('../../src/db/connection');
+const semear = require('../../src/db/seed').semear;
+const clock = require('../../src/utils/clock');
+const { criarServicos } = require('../../src/services');
+
+const AGORA = new Date('2026-10-19T08:00:00');
+
+let db, servicos;
+
+beforeEach(() => {
+  clock.definirAgora(AGORA);
+  db = abrirBanco(':memory:');
+  semear(db);
+  servicos = criarServicos(db);
+});
+
+afterEach(() => {
+  limparBanco(db);
+  db.close();
+  clock.definirAgora(null);
+});
+
+describe('cadastroService.registrarPaciente (RF02)', () => {
+  test('cadastra paciente adulto com sucesso', () => {
+    const p = servicos.cadastroService.registrarPaciente({
+      nome: 'Maria Silva',
+      email: 'maria@email.com',
+      senha: 'Senha123',
+      cpf: '733.769.628-50',
+      dataNascimento: '1985-03-10',
+      telefone: '(11) 99999-0000',
+    });
+    expect(p.nome).toBe('Maria Silva');
+    expect(p.cpf).toBe('73376962850');
+    expect(p.responsavelNome).toBeNull();
+  });
+
+  test('cadastra paciente menor com responsável (RN06)', () => {
+    const p = servicos.cadastroService.registrarPaciente({
+      nome: 'Lucas Oliveira',
+      email: 'lucas2@email.com',
+      senha: 'Senha123',
+      cpf: '123.456.789-09',
+      dataNascimento: '2010-01-01',
+      responsavelNome: 'Marta Oliveira',
+    });
+    expect(p.responsavelNome).toBe('Marta Oliveira');
+  });
+
+  test('rejeita menor sem responsável', () => {
+    expect(() =>
+      servicos.cadastroService.registrarPaciente({
+        nome: 'Menor',
+        email: 'menor@email.com',
+        senha: 'Senha123',
+        cpf: '987.654.321-00',
+        dataNascimento: '2015-01-01',
+      })
+    ).toThrow(/responsável/);
+  });
+
+  test('rejeita e-mail duplicado (RN01)', () => {
+    expect(() =>
+      servicos.cadastroService.registrarPaciente({
+        nome: 'Dup',
+        email: 'ana@email.com',
+        senha: 'Senha123',
+        cpf: '111.222.333-44',
+        dataNascimento: '1990-01-01',
+      })
+    ).toThrow(/E-mail já cadastrado/);
+  });
+
+  test('rejeita CPF duplicado (RN03)', () => {
+    expect(() =>
+      servicos.cadastroService.registrarPaciente({
+        nome: 'Dup',
+        email: 'dup@email.com',
+        senha: 'Senha123',
+        cpf: '529.982.247-25', // CPF da Ana
+        dataNascimento: '1990-01-01',
+      })
+    ).toThrow(/CPF já cadastrado/);
+  });
+
+  test('rejeita senha fraca (RN02)', () => {
+    expect(() =>
+      servicos.cadastroService.registrarPaciente({
+        nome: 'X',
+        email: 'x@email.com',
+        senha: '123',
+        cpf: '111.222.333-44',
+        dataNascimento: '1990-01-01',
+      })
+    ).toThrow(/Senha/);
+  });
+
+  test('rejeita CPF inválido (RN03)', () => {
+    expect(() =>
+      servicos.cadastroService.registrarPaciente({
+        nome: 'X',
+        email: 'x@email.com',
+        senha: 'Senha123',
+        cpf: '111.111.111-11',
+        dataNascimento: '1990-01-01',
+      })
+    ).toThrow(/CPF inválido/);
+  });
+
+  test('rejeita data de nascimento futura (RN05)', () => {
+    expect(() =>
+      servicos.cadastroService.registrarPaciente({
+        nome: 'X',
+        email: 'x@email.com',
+        senha: 'Senha123',
+        cpf: '111.222.333-44',
+        dataNascimento: '2030-01-01',
+      })
+    ).toThrow(/futura/);
+  });
+
+  test('normaliza CPF gravando só dígitos (RN03)', () => {
+    const p = servicos.cadastroService.registrarPaciente({
+      nome: 'Y',
+      email: 'y@email.com',
+      senha: 'Senha123',
+      cpf: '733.769.628-50',
+      dataNascimento: '1990-01-01',
+    });
+    expect(p.cpf).toBe('73376962850');
+  });
+});
+
+describe('cadastroService.criarMedico (RF04, RN07, RN08)', () => {
+  const especialidadeId = 1; // Clínica Geral
+
+  test('cadastra médico com CRM válido', () => {
+    const m = servicos.cadastroService.criarMedico({
+      nome: 'Dr. Novo',
+      email: 'novo@clinica.com',
+      senha: 'Senha123',
+      crm: '54321/SP',
+      especialidadeId,
+      duracaoConsultaMin: 30,
+    });
+    expect(m.crm).toBe('54321/SP');
+    expect(m.duracaoConsultaMin).toBe(30);
+  });
+
+  test('usa duração padrão 30 quando não informada (RN08)', () => {
+    const m = servicos.cadastroService.criarMedico({
+      nome: 'Dr. Novo',
+      email: 'novo2@clinica.com',
+      senha: 'Senha123',
+      crm: '54322/SP',
+      especialidadeId,
+    });
+    expect(m.duracaoConsultaMin).toBe(30);
+  });
+
+  test('rejeita CRM duplicado (RN07)', () => {
+    expect(() =>
+      servicos.cadastroService.criarMedico({
+        nome: 'X',
+        email: 'x@clinica.com',
+        senha: 'Senha123',
+        crm: '123456/SP', // CRM do Carlos
+        especialidadeId,
+      })
+    ).toThrow(/CRM já cadastrado/);
+  });
+
+  test('rejeita CRM inválido (RN07)', () => {
+    expect(() =>
+      servicos.cadastroService.criarMedico({
+        nome: 'X',
+        email: 'x@clinica.com',
+        senha: 'Senha123',
+        crm: '123/SP',
+        especialidadeId,
+      })
+    ).toThrow(/CRM inválido/);
+  });
+
+  test('rejeita duração inválida (RN08)', () => {
+    expect(() =>
+      servicos.cadastroService.criarMedico({
+        nome: 'X',
+        email: 'x@clinica.com',
+        senha: 'Senha123',
+        crm: '54323/SP',
+        especialidadeId,
+        duracaoConsultaMin: 20,
+      })
+    ).toThrow(/Duração/);
+  });
+
+  test('rejeita especialidade inexistente', () => {
+    expect(() =>
+      servicos.cadastroService.criarMedico({
+        nome: 'X',
+        email: 'x@clinica.com',
+        senha: 'Senha123',
+        crm: '54323/SP',
+        especialidadeId: 999,
+      })
+    ).toThrow(/Especialidade inexistente/);
+  });
+});
+
+describe('cadastroService.criarEspecialidade (RF03, RN09)', () => {
+  test('cadastra especialidade com preço > 0', () => {
+    const e = servicos.cadastroService.criarEspecialidade({ nome: 'Ortopedia', precoCentavos: 20000 });
+    expect(e.nome).toBe('Ortopedia');
+    expect(e.precoCentavos).toBe(20000);
+  });
+
+  test('rejeita nome duplicado (RN09)', () => {
+    expect(() =>
+      servicos.cadastroService.criarEspecialidade({ nome: 'Clínica Geral', precoCentavos: 100 })
+    ).toThrow(/já cadastrada/);
+  });
+
+  test('rejeita preço menor ou igual a zero (RN09)', () => {
+    expect(() =>
+      servicos.cadastroService.criarEspecialidade({ nome: 'X', precoCentavos: 0 })
+    ).toThrow(/maior que zero/);
+    expect(() =>
+      servicos.cadastroService.criarEspecialidade({ nome: 'Y', precoCentavos: -50 })
+    ).toThrow(/maior que zero/);
+  });
+});
+
+describe('cadastroService.definirUsuarioAtivo (RF02.2, RN21)', () => {
+  test('ativa e inativa usuário', () => {
+    const usuario = servicos.usuarios.buscarPorEmail('ana@email.com');
+    let r = servicos.cadastroService.definirUsuarioAtivo(usuario.id, false);
+    expect(r.ativo).toBe(false);
+    r = servicos.cadastroService.definirUsuarioAtivo(usuario.id, true);
+    expect(r.ativo).toBe(true);
+  });
+
+  test('rejeita ativo não booleano', () => {
+    expect(() => servicos.cadastroService.definirUsuarioAtivo(1, 'sim')).toThrow(/true ou false/);
+  });
+
+  test('rejeita usuário inexistente', () => {
+    expect(() => servicos.cadastroService.definirUsuarioAtivo(999, true)).toThrow(/não encontrado/);
+  });
+});

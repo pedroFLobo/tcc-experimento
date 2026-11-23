@@ -1,0 +1,12 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+gemini-0068;8;10;6;8;8;8.0;"Cadastro completo (RF02.1, RF02.3, RN03) verificando CPF gravado só com dígitos e perfil PACIENTE; o @resultadoEsperado promete senha em hash, mas isso não é verificado, e id usa apenas toBeDefined."
+gemini-0069;8;8;6;8;8;7.6;"Cobre unicidade de e-mail (RN01), mas só verifica a mensagem por regex, sem checar o codigo CONFLITO prometido no @resultadoEsperado; subatributo pertinencia é discutível."
+gemini-0070;8;8;6;8;8;7.6;"Cobre unicidade de CPF (RN03) com o mesmo CPF formatado; asserção apenas sobre o texto da mensagem, sem o codigo CONFLITO."
+gemini-0071;8;8;8;8;10;8.4;"Testa RN06 nos dois sentidos (rejeição sem responsável e sucesso com responsável), com relógio fixo; falta verificar o codigo VALIDACAO e a mensagem é suposta pelo teste."
+gemini-0072;8;10;8;8;6;8.0;"Cadastro de especialidade (RF03.1) com nome e preço exatos; caminho feliz simples, sem verificar a persistência no banco nem a regra de RN09 citada."
+gemini-0073;8;8;6;6;8;7.2;"Cobre os dois ramos de RN09 (preço zero e nome duplicado), porém junta dois cenários num só teste e verifica apenas mensagens por regex, sem codigo de erro."
+gemini-0074;8;10;6;8;6;7.6;"Cadastro de médico (RF04.1, RN08) verificando CRM, duração e especialidade; não confirma o perfil MEDICO prometido no @resultadoEsperado e é caminho feliz."
+gemini-0075;6;8;6;6;8;6.8;"Valida CRM duplicado (RN07) e especialidade inexistente, mas classificar validação de cadastro como tolerancia-a-falhas é discutível; dois cenários num teste e só mensagens por regex."
+gemini-0076;6;4;6;8;6;6.0;"Falhou por erro do teste: espera ativo como 0/1, mas o repositório devolve booleano; além disso só alterna a flag, sem exercitar o efeito de RN21 no agendamento."
+gemini-0077;8;10;8;8;8;8.4;"Verifica que entrada com aspas e payload de injeção é persistida e relida literalmente (RNF03); cobertura de injeção limitada a um campo, mas com oráculo de valor exato."
+gemini-0078;4;4;4;2;6;4.0;"Falhou por erro do teste (espera undefined e o repositório retorna null); usa try/catch vazios, variável não usada e comentários contraditórios, e não prova rollback; RNF04 não trata de transação."

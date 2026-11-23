@@ -1,0 +1,10 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+gemini-0005;8;10;6;10;8;8.4;"Login válido conforme RF01.1 com status, e-mail, perfil e pacienteId; só checa a existência do token, sem validar o JWT nem a expiração de 8h (RNF02) ou a ausência da senha."
+gemini-0006;10;10;8;10;8;9.2;"Senha incorreta retorna 401 NAO_AUTENTICADO, conforme RF01.1 e seção 5; a mensagem só é verificada como definida."
+gemini-0007;10;8;6;8;10;8.4;"Cobre o bloqueio da RN04 com 423 CONTA_BLOQUEADA, mas supõe que a própria 5ª falha já retorne 423 (interpretação discutível), não verifica as 4 primeiras respostas nem que a senha correta é recusada durante o bloqueio; laço sem asserções."
+gemini-0008;8;10;8;8;6;8.0;"Corpo vazio retorna 400 VALIDACAO (RNF04); o título fala em e-mail ou senha, mas o teste só envia corpo vazio, sem testar a ausência de cada campo; risco menor."
+gemini-0009;8;2;8;8;8;6.8;"A falha (400 em vez de 201) é erro do teste: o CPF 730.825.290-77 é inválido (dígitos verificadores corretos seriam 62), violando a RN03; as asserções de nome e CPF normalizado seriam boas."
+gemini-0010;6;8;8;8;8;7.6;"Duplicidade de e-mail retorna 409 CONFLITO (RN01), mas o atributo confiabilidade/tolerância a falhas é discutível para uma regra de negócio, e o CPF usado é inválido, o que poderia mascarar o resultado conforme a ordem das validações."
+gemini-0011;8;10;8;10;6;8.4;"GET /api/auth/me retorna e-mail, perfil MEDICO e medicoId (RF01.3); não verifica a ausência da senha e é mais funcional que de autenticidade; caminho feliz."
+gemini-0012;10;10;10;10;8;9.6;"Sem token, /api/auth/me responde 401 NAO_AUTENTICADO, como exigem RF01.2 e RNF02; caso direto, com status e código verificados."
+gemini-0013;10;10;8;10;8;9.2;"JSON malformado retorna 400 VALIDACAO sem stack (RNF04); a verificação de stack só olha res.body.stack, não erro.stack nem a mensagem."

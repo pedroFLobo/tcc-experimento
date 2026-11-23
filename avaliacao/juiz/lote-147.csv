@@ -1,0 +1,7 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+mimo-0412;10;10;8;8;8;8.8;"Agenda 20/10 14:00 e confirma dentro da janela de 48h (RN25, relógio em 19/10 08:00), verificando toast e status CONFIRMADA; não confere a persistência por outra via e o caso cria o estado de que os seguintes dependem."
+mimo-0413;10;10;8;6;8;8.4;"Remarca com o mesmo médico mais de 24h antes do início e verifica nova data e retorno a AGENDADA (RN27); não verifica que a linha antiga sumiu nem o valor recalculado, e depende da consulta criada no caso anterior."
+mimo-0414;8;8;8;8;8;8.0;"Boa verificação de proteção contra erro: o diálogo #cancelar-confirmar fecha e a consulta continua AGENDADA (RN26); RNF06 citado não é exercitado e o id #cancelar-voltar é suposição não descrita na spec."
+mimo-0415;10;10;8;8;8;8.8;"Cancelamento pelo paciente com mais de 24h de antecedência (RN26) verificado pelo toast e pelo status CANCELADA; não confirma o estado no backend e depende dos casos anteriores."
+mimo-0416;6;8;8;6;4;6.4;"Verifica texto exato do contador, mas RF10.1 trata de o paciente ver só as próprias consultas, o que não é exercitado; o valor depende de estado invisível criado pelos casos anteriores e o risco coberto é menor."
+mimo-0417;8;8;6;6;6;6.8;"Confere R$ 150,00 (RN22, Clínica Geral sem desconto para Ana) como contrato centavos→moeda; usa a primeira linha sem identificar a consulta, não verifica o valor gravado pela API e depende do estado dos casos anteriores."

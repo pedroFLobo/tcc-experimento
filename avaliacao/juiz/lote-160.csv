@@ -1,0 +1,7 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+mimo-0477;4;6;8;8;4;6.0;"Declara manutenibilidade/modularidade e RNF07, mas RNF07 trata de regras puras no domain; não renderizar o modal fechado não tem relação com modularidade. Asserção exata (innerHTML vazio), mas o comportamento não está na base de teste e o risco é pequeno."
+mimo-0478;6;8;8;8;6;7.2;"Verifica role dialog, aria-modal='true', nome acessível e descrição, um bom oráculo de acessibilidade. Porém RNF06 trata de mensagens em português, então o vínculo com o requisito é parcial."
+mimo-0479;6;6;8;8;4;6.4;"Verifica com precisão o foco no primeiro campo ao abrir. Associar isso a RNF06 (mensagens em português) é discutível, o foco automático é uma suposição que a base de teste não sustenta e o risco coberto é menor."
+mimo-0480;6;6;8;8;6;6.8;"Pressionar Escape chama onFechar exatamente uma vez, o que cobre a navegação por teclado com uma asserção precisa. A base de teste não exige esse comportamento e o vínculo com RNF06 é parcial."
+mimo-0481;6;6;8;6;4;6.0;"Asserção precisa (onFechar chamado uma vez), mas o teste depende da classe CSS '.modal-fundo', que é detalhe de implementação, sem rótulo acessível. Fechar ao clicar fora não está na especificação e o vínculo com RNF06 é fraco."
+mimo-0482;6;6;6;8;6;6.4;"Complementa o caso do fundo e evita fechar o diálogo por engano. Só verifica que onFechar não foi chamado, sem conferir que o diálogo continua visível, e o comportamento não está previsto em RNF06."

@@ -1,0 +1,8 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+glm-0192;10;10;10;8;8;9.2;"Verifica a geração em passos de 30 min no bloco 08:00-12:00 (RN14) com a lista exata; asserções de tamanho e posições são redundantes com o toEqual e cobre o caminho feliz."
+glm-0193;10;10;10;10;10;10.0;"Testa o valor-limite de RN14 (slots que cabem inteiros): bloco de 2h com 45 min gera só 08:00 e 08:45, com lista exata e dados claros."
+glm-0194;10;10;10;10;8;9.6;"Cobre o caso-limite de RN14 em que a duração não cabe no bloco, esperando lista vazia; risco próximo ao do caso anterior de slots inteiros."
+glm-0195;8;8;10;8;8;8.4;"Verifica blocos fora de ordem e ausência de slots no intervalo; a ordenação cronológica não está explícita em RN14 e o subatributo 'pertinencia' é discutível, mas a asserção da lista exata é forte."
+glm-0196;10;10;10;10;10;10.0;"Testa as bordas inclusivas do período de bloqueio (RN15) e um dia interno com valores booleanos exatos; dados com significado (férias)."
+glm-0197;10;10;10;10;8;9.6;"Verifica os dias imediatamente antes e depois do bloqueio (RN15), complementando o caso de bordas com valores-limite exatos."
+glm-0198;10;10;10;8;8;9.2;"Confirma que dataEmBloqueio considera todos os bloqueios da lista (RN15) e inclui um caso negativo; o negativo não está no @resultadoEsperado e o risco é menor."

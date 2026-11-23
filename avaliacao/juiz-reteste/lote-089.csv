@@ -1,0 +1,4 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+gemini-0186;6;8;8;8;6;7.2;"Verifica rótulos em português e data-status de AGENDADA e CONFIRMADA (RNF06, reconhecibilidade), mas os rótulos exatos não estão na base de teste e o componente isolado se aproxima mais de unitário que de integração."
+gemini-0187;6;8;8;8;4;6.8;"Cobre os status finais da máquina de estados (RF09) com texto e classe, mas repete o padrão do caso anterior e verifica só classe CSS, risco baixo e nível 'integracao' discutível."
+gemini-0188;6;6;6;8;6;6.4;"Testa tolerância a status desconhecido, mas cita RNF06 em vez de RNF04 e o comportamento 'exibe o próprio valor' não está na especificação; oráculo só verifica presença do texto."

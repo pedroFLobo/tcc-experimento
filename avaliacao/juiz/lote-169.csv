@@ -1,0 +1,6 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+mimo-0547;4;8;8;8;6;6.8;"Verifica a transição de carregando true para false e uma única chamada, mas um hook de interface não tem relação direta com RNF07 (regras puras em src/domain e relógio injetável)."
+mimo-0548;4;8;8;8;6;6.8;"Confere dados, carregando e erro após a resolução, mas o hook genérico não exercita RF10.3 (listagem da recepção com filtros); caminho feliz de infraestrutura de interface."
+mimo-0549;6;8;8;8;6;7.2;"Verifica que a falha vira mensagem de erro com dados nulos e carregando false; tolerância a falhas é plausível, mas RNF04 trata do formato de erro da API, não do hook."
+mimo-0550;4;8;8;8;6;6.8;"Asserções boas sobre duas chamadas, dados novos e erro limpo após recarregar, porém a ligação com RNF07 é forçada e o risco coberto é de infraestrutura de interface."
+mimo-0551;4;4;6;6;6;5.2;"Falhou porque supõe que o hook passa as dependências como argumento da função, o que nem a especificação nem o hook sustentam (erro do teste); RF10.3 também não se relaciona com o hook."

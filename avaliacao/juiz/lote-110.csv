@@ -1,0 +1,12 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+glm-0280;10;10;8;10;6;8.8;"Exercita diretamente o formato válido de e-mail (RN01) em nível unitário com asserção booleana exata; caminho feliz simples de risco menor."
+glm-0281;10;10;8;10;4;8.4;"Aceitação de e-mail com subdomínios conforme RN01, asserção exata; praticamente repete o caminho feliz do caso glm-0280."
+glm-0282;10;10;10;10;8;9.6;"Rejeição de e-mail sem @ (RN01) com toBe(false) exato; metadados coerentes e dado com significado."
+glm-0283;10;8;10;10;8;9.2;"Rejeita e-mail sem ponto no domínio (RN01); a exigência de ponto no domínio é suposição razoável, mas não explícita na especificação."
+glm-0284;10;10;10;10;8;9.6;"Rejeição de e-mail com espaço interno (RN01), asserção exata e cenário de entrada inválida plausível."
+glm-0285;8;10;8;8;8;8.4;"Robustez de emailValido para vazio, null, undefined e número; citar RNF04 (erros JSON da API) é forçado para um teste unitário de função pura."
+glm-0286;10;10;8;10;10;9.6;"Valor-limite exato de 8 caracteres com letra e número (RN02), asserção toBe(true) e dado claro."
+glm-0287;10;10;10;6;10;9.2;"Valor-limite inferior de 7 caracteres (RN02) com asserção exata; o @resultadoEsperado tem redação confusa ('Senha1' + um caractere a menos)."
+glm-0288;10;10;10;10;8;9.6;"Rejeita senha sem número (RN02), isolando bem a regra com senha longa; asserção exata."
+glm-0289;10;10;10;10;8;9.6;"Rejeita senha sem letra (RN02) com senha de 9 dígitos, isolando a regra; asserção exata."
+glm-0290;8;10;8;8;6;8.0;"Robustez de senhaValida para null, vazio e número (RN02); útil, mas segue o mesmo padrão do caso glm-0285 e agrupa várias asserções."

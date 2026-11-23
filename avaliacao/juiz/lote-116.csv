@@ -1,0 +1,5 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+glm-0325;10;8;10;10;8;9.2;"Exercita o login pelo formulário (RF01.1) e verifica navegação para a área do paciente, toast de sucesso e token gravado no localStorage; o texto 'Login realizado' é suposição não sustentada pela base de teste."
+glm-0326;8;8;8;10;8;8.4;"Verifica erro de credenciais inline com role='alert' e preservação do e-mail digitado (RF01.1, RNF06); a mensagem vem do mock, então o oráculo testa repasse e não o texto real, e não confirma explicitamente que a página não navegou."
+glm-0327;6;10;8;8;6;7.6;"Confere rótulos associados e tipos email/password dos campos; o vínculo com RNF06 (mensagens em português) é indireto e o subatributo acessibilidade seria mais adequado que operabilidade; risco menor."
+glm-0328;8;8;8;8;6;7.6;"Com sessão restaurada via me(), /login redireciona para 'Início do paciente' sem exibir o formulário; comportamento não descrito em RF01.1 (relaciona-se mais a RF01.3) e de risco moderado."

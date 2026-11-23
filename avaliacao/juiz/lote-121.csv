@@ -1,0 +1,13 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+glm-0351;6;8;8;8;6;7.2;"Testa a persistência do token no localStorage, detalhe de implementação apenas indiretamente ligado a RF01.2; a chave 'clinica.token' não consta na base de teste. Asserções exatas sobre salvar, obter e remover."
+glm-0352;8;10;8;10;8;8.8;"Verifica que o cliente envia 'Authorization: Bearer <token>' conforme RF01.2; oráculo exato no cabeçalho, mas a URL é checada só com toContain."
+glm-0353;6;8;8;8;6;7.2;"Verifica a ausência de Authorization sem token; relação com autenticidade (RF01.2) é fraca no lado cliente e o risco coberto é menor, complementar ao caso anterior."
+glm-0354;6;8;10;8;6;7.6;"Serialização JSON com método e Content-Type bem verificados; o requisito citado RNF08 trata de compatibilidade com navegadores, não de formato do corpo."
+glm-0355;6;8;8;4;6;6.4;"Query string de filtros (RF10.3) com asserções exatas, mas o @resultadoEsperado diz que a URL recebe dataFim enquanto o código espera dataFim nulo; medicoId undefined não é verificado."
+glm-0356;6;8;8;8;6;7.2;"Resposta 204 tratada como null, com asserção exata; RNF08 não corresponde ao que é testado e a ligação com RF06.2 é apenas o endpoint usado."
+glm-0357;6;10;10;8;4;7.6;"Confere a URL base padrão http://localhost:3000/api, coerente com a SPEC; é praticamente a verificação de uma configuração constante e RNF08 não se aplica."
+glm-0358;8;10;10;10;8;9.2;"Mapeia o erro JSON {erro:{codigo,mensagem}} de RNF04 em ApiError, verificando status 422, codigo REGRA_NEGOCIO e mensagem; oráculo completo e claro."
+glm-0359;8;6;8;8;6;7.2;"Tolerância a corpo de erro ilegível é pertinente a RNF04, mas o codigo 'DESCONHECIDO' e a mensagem 'Erro inesperado.' não constam na base de teste; status 500 não é verificado."
+glm-0360;8;6;10;8;8;8.0;"Falha de rede tratada sem derrubar o cliente, com status 0, codigo e mensagem exatos; o codigo 'REDE' e a mensagem são suposições não sustentadas pela especificação."
+glm-0361;8;8;8;8;8;8.0;"401 com token aciona o callback de expiração exatamente uma vez (RNF02); não verifica se o token foi removido nem o erro propagado."
+glm-0362;6;8;6;8;6;6.8;"Caso negativo complementar ao anterior; atributo confiabilidade/tolerância a falhas é discutível para RNF02 e o oráculo é apenas a não chamada do callback."

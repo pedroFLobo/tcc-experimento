@@ -1,0 +1,13 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+deepseek-0216;10;10;8;8;10;9.2;"Valor-limite de RN04 (4 falhas sem bloqueio) com status 401, contador 4 e bloqueadoAte nulo; falta conferir o codigo NAO_AUTENTICADO e a senha errada fica escondida no helper."
+deepseek-0217;10;10;8;8;10;9.2;"Verifica 423 CONTA_BLOQUEADA na quinta falha seguida, conforme RN04 e seção 5; não confere o estado gravado (bloqueadoAte/contador)."
+deepseek-0218;10;8;10;8;8;8.8;"Confere bloqueadoAte exato em 08:15 (15 minutos de RN04); a exigência de a mensagem citar o horário é suposição não sustentada pela especificação."
+deepseek-0219;10;10;8;8;10;9.2;"Cobre o ponto crítico de RN04: senha correta recusada durante o bloqueio com 423 CONTA_BLOQUEADA; oráculo bom, sem checar estado final."
+deepseek-0220;10;10;6;8;8;8.4;"Testa o bloqueio ainda ativo aos 14 minutos (RN04), mas só verifica o status 423, sem o codigo CONTA_BLOQUEADA."
+deepseek-0221;10;8;8;8;10;8.8;"Valor-limite do fim do bloqueio de 15 minutos (RN04); assume liberação inclusiva em 08:15, interpretação razoável mas não explícita, e só confere que há token."
+deepseek-0222;8;8;6;6;6;6.8;"Uma única senha errada após o bloqueio retornar 401 não prova que o contador recomeçou (RN04); título e objetivo prometem mais do que a asserção verifica."
+deepseek-0223;10;10;10;8;8;9.2;"Verifica no estado gravado que login correto zera tentativasFalhas e mantém bloqueadoAte nulo, exatamente como RN04."
+deepseek-0224;10;10;8;8;8;8.8;"Comprova pelo comportamento que falhas só contam se seguidas (RN04): 3 falhas, acerto e 4 falhas mantêm 401; complementa de perto o caso anterior."
+deepseek-0225;6;10;8;8;8;8.0;"Isolamento do bloqueio por conta (RN04) é útil, mas o subatributo responsabilizacao e a citação de RN30 não conferem com o que é testado; não confirma que Ana segue bloqueada."
+deepseek-0226;8;6;8;8;6;7.2;"Mensagem em português (RNF06) é relevante, mas o texto exato exigido pela regex é inventado, já que a especificação não define a mensagem."
+deepseek-0227;6;10;8;6;6;7.2;"Hash inalterado após falhas é verificado com bcrypt, mas a relação com RNF01 é fraca e o objetivo (não gravar a senha errada em texto) não é o que a asserção verifica."

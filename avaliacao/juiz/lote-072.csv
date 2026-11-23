@@ -1,0 +1,6 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+gemini-0026;8;10;6;8;6;7.6;"Exercita RF03.2 via HTTP com paciente autenticado; oráculo fraco (só tamanho >= 4 e presença de precoCentavos, sem conferir nomes ou preços do seed) e cobre risco menor."
+gemini-0027;8;10;8;8;8;8.4;"Cria especialidade pela recepção (RF03.1) e confere status 201, nome e preço; não verifica persistência (ex.: listagem posterior) e RN09 citado só no caminho feliz."
+gemini-0028;8;10;8;8;10;8.8;"Verifica 403 e SEM_PERMISSAO para paciente criando especialidade (RF03.1, RN30), risco de autorização relevante; subatributo confidencialidade discutível, objetivo cita médico mas só testa paciente e não confere que nada foi gravado."
+gemini-0029;6;10;8;8;8;8.0;"Testa unicidade do nome (RN09) com 409 e CONFLITO corretos; atributo confiabilidade/tolerância a falhas é discutível para uma regra de negócio e não confere que a especialidade não foi duplicada."
+gemini-0030;6;10;8;8;8;8.0;"Preço negativo gera 400 VALIDACAO, coerente com RN09 (preço > 0); atributo confiabilidade discutível e falta o valor-limite zero, mais revelador para a regra."

@@ -1,0 +1,12 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+deepseek-0390;10;4;8;8;10;8.0;"Exercita diretamente a suspensão por 3 faltas (RN20) com status 422 e codigo REGRA_NEGOCIO, mas falhou por defeito do teste: o helper agenda Carlos às 13:00, fora da grade dele (08-12 e 14-18)."
+deepseek-0391;10;4;6;8;8;7.2;"Valor-limite de duas faltas (RN20) bem escolhido, mas falhou por erro do próprio teste (agendamento às 13:00 fora da grade do Dr. Carlos); só verifica o status AGENDADA."
+deepseek-0392;10;2;6;8;8;6.8;"Verifica a data final da suspensão (30 dias após a última falta, RN20), porém a asserção depende de mensagem inventada que a especificação não define, sem status/codigo, e o teste falhou por agendar às 13:00 fora da grade."
+deepseek-0393;10;2;8;8;8;7.2;"Cobre a suspensão valendo para outro médico/especialidade (RN20) com status 422, mas também exige mensagem inventada e falhou por erro do helper (13:00 fora da grade do Dr. Carlos)."
+deepseek-0394;10;10;6;8;8;8.4;"Faltas de junho ficam fora da janela de 90 dias (RN20) e o agendamento é aceito, conforme a regra; oráculo só confere o status, e a data escolhida está longe do limite de 90 dias."
+deepseek-0395;10;10;6;8;8;8.4;"Combina duas faltas recentes e uma fora da janela de 90 dias (RN20), cenário relevante e correto; verifica apenas o status AGENDADA."
+deepseek-0396;10;8;6;6;6;7.2;"Interpretação plausível de 'últimos 90 dias' (RN20), mas a especificação não trata falta futura e o cenário inserido via SQL é um estado inconsistente; oráculo só sobre o status."
+deepseek-0397;10;10;6;6;10;8.4;"Testa a expiração da suspensão 30 dias após a última falta (RN20) com faltas dentro dos 90 dias, cobrindo um risco importante; @resultadoEsperado cita 2026-09-10 enquanto os dados vão de 09-09 a 09-11."
+deepseek-0398;6;8;4;8;4;6.0;"Com apenas um cancelamento e uma realização o total nunca atingiria 3, então o teste não detectaria um sistema que contasse esses status como falta (RN20); oráculo fraco."
+deepseek-0399;6;4;6;8;4;5.6;"Atributo confiabilidade/tolerância a falhas é discutível e RNF04 não é verificado; repete o cenário de CT-INT-178 só com status 422 e falhou por erro do helper (13:00 fora da grade)."
+deepseek-0400;10;4;6;8;8;7.2;"Verifica que a suspensão é individual (RN20), risco útil, mas falhou por erro do próprio teste ao montar as faltas (13:00 fora da grade do Dr. Carlos); só confere o status."

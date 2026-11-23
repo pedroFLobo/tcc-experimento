@@ -1,0 +1,5 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+gemini-0172;6;8;4;6;4;5.6;"Cobre parcialmente RF10.3: só checa a visibilidade de três filtros (sem o de paciente) e não verifica a tabela citada no @resultadoEsperado nem o efeito de algum filtro, então o oráculo é fraco."
+gemini-0173;8;4;8;8;6;6.8;"Exercita RF03.1 verificando a mensagem e a tabela, mas a falha vem do texto 'Pneumologia disponível', que o teste inventou e a especificação não define; RN09 (nome único, preço > 0) não é testado nos limites."
+gemini-0174;6;2;8;8;6;6.0;"Pretende cobrir RF04.1 com CRM válido (RN07), mas falha por erro do próprio teste: page.selectOption não aceita regex em label. A mensagem esperada também é inventada e a duração (RN08) nem é preenchida."
+gemini-0175;8;8;4;6;6;6.4;"Gera o relatório de RF11.1 para um período, mas só confere a visibilidade e o título 'Consultas por status'. Não verifica totais, taxa de faltas nem faturamento, apesar de o @resultadoEsperado prometer totais."

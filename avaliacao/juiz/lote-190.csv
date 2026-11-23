@@ -1,0 +1,4 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+nemotron-0269;4;2;6;4;4;4.0;"Verifica apenas a presença de campos rotulados do cadastro (RF02.3), associado a RNF06 só no título, sem metadados de atributo; erro de carga por require em módulo ESM e mock incompleto, falha do próprio teste."
+nemotron-0270;6;2;6;4;6;4.8;"Exercita o fluxo de auto-cadastro (RF02.1) e checa entrar com e-mail e senha, mas registrar só com toHaveBeenCalled sem argumentos; não roda por erro de carga do próprio teste (require em ESM) e não tem metadados."
+nemotron-0271;4;2;4;4;6;4.0;"Título promete exibir erro, mas só verifica a chamada de um useMensagem mockado, sem checar role='alert' nem código CONFLITO (RN01); dados mágicos (CPF inválido, nome 'X'), sem metadados e erro de carga do próprio teste."

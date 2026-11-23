@@ -1,0 +1,9 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+mimo-0487;8;8;8;8;6;7.6;"Verifica que sem médico e data não há chamada à API, aria-busy false e nenhum botão (RF07.1). O título fala em 'sem médico ou sem data', mas só testa os dois vazios ao mesmo tempo; risco menor."
+mimo-0488;6;8;8;8;8;7.6;"Confere os argumentos da chamada e os botões com data-inicio exato (RF07.1). RN14 é citada, mas a geração de horários está mockada e não é exercitada."
+mimo-0489;8;6;8;8;6;7.2;"Verifica o aviso em português para lista vazia (RNF06) com texto exato. A mensagem específica não está na base de teste, é suposição sobre a interface."
+mimo-0490;6;8;6;6;6;6.4;"RNF04 trata do formato JSON de erro da API, aqui só se mostra a mensagem no componente. Não verifica role='alert' previsto na spec nem que o formulário segue utilizável; a data 2026-13-40 é irrelevante com a API mockada."
+mimo-0491;6;8;8;8;6;7.2;"Verifica que o clique entrega o horário completo 'AAAA-MM-DD HH:mm' ao callback. RN17 é validação do servidor; a relação com o requisito citado é parcial."
+mimo-0492;6;8;10;8;6;7.6;"Asserções precisas de aria-pressed true/false e classe selecionado. RNF06 trata de mensagens em português, não de destaque visual, então o requisito citado não confere bem."
+mimo-0493;4;8;6;6;6;6.0;"RNF07 trata de regras puras no domain e relógio injetável, não de recarregar um componente. Só confere o número de chamadas, sem argumentos nem nova renderização, e repete o JSX em vez de usar montar()."
+mimo-0494;6;8;8;8;6;7.2;"Verifica aria-busy true durante a busca e false ao concluir, com promessa controlada. Acessibilidade é pertinente, mas RNF06 (mensagens em português) não é o requisito exercitado."

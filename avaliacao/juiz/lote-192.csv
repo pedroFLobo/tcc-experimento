@@ -1,0 +1,2 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+nemotron-0276;6;6;8;4;4;5.6;"Verifica rótulos em português dos status (RNF06), mas sem bloco de metadados (@nivel, @atributo, @requisito) e com componente isolado rotulado como integração; os textos e a classe status-X não constam da base de teste. Asserções exatas sobre texto, data-status e classe, porém com laço no teste e risco de usabilidade menor."

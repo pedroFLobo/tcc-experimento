@@ -1,0 +1,13 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+gemini-0014;10;10;8;8;8;8.8;"Caminho feliz de agendamento (RF08.1/RF08.2) com status 201, AGENDADA e valor de 15000 centavos conforme RN22; não verifica a persistência nem o horário gravado."
+gemini-0015;8;8;8;8;10;8.4;"Verifica 403 SEM_PERMISSAO quando paciente agenda para outro (RF08.1, RN30); a spec não define explicitamente 403 nesse caso e o subatributo responsabilizacao é discutível; não confere que nada foi gravado."
+gemini-0016;8;10;8;8;8;8.4;"Médico não pode agendar (RF08.1 só permite paciente e recepção), com status e código corretos; subatributo responsabilizacao é discutível e não confere ausência de gravação."
+gemini-0017;8;8;10;10;8;8.8;"Rejeita agendamento com 1h de antecedência (RN16) com 422 REGRA_NEGOCIO; a mensagem esperada não está na especificação, RNF04 é citado sem relação clara e não testa o limite exato de 2h."
+gemini-0018;8;8;4;8;8;7.2;"Cobre RF10.1, mas o oráculo usa every() sem verificar o tamanho da lista: uma lista vazia passaria; também não confirma que os agendamentos de preparação deram certo."
+gemini-0019;10;10;8;8;10;9.2;"Paciente acessando consulta de outro recebe 403 SEM_PERMISSAO (RN30), atributo confidencialidade adequado; não verifica que a consulta de João foi de fato criada."
+gemini-0020;10;10;8;8;8;8.8;"Confirmação dentro da janela de 48h (RN25) com status 200 e CONFIRMADA; caminho feliz sem verificar persistência nem o limite de 48h."
+gemini-0021;10;10;8;8;8;8.8;"Cancelamento pelo paciente com mais de 24h (RN26) sem motivo, conferindo CANCELADA e canceladoPor; caminho feliz, sem testar o limite de 24h nem a persistência."
+gemini-0022;10;8;6;8;10;8.4;"Exige motivo no cancelamento pela recepção (RN26) e confere o sucesso com motivo; não verifica erro.codigo REGRA_NEGOCIO e depende de mensagem não definida na spec; duas ações num mesmo teste."
+gemini-0023;10;10;8;8;8;8.8;"Remarcação válida (RN27) conferindo novo início e remarcacoes=1; não verifica a volta para AGENDADA nem o recálculo do valor exigidos por RN27."
+gemini-0024;10;10;8;8;10;9.2;"Médico dono registra atendimento exatamente no horário de início (limite de RN28) e confere status e observações; consulta inserida direto no repositório e sem checar persistência."
+gemini-0025;10;10;8;8;8;8.8;"Recepção registra falta 20 min após o início (RN29) com status FALTA; não testa o limite exato de 15 min nem o caso anterior a ele."

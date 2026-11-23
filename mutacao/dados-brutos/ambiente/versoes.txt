@@ -1,0 +1,16 @@
+v22.23.4
+10.1.1
+clinica-plus@1.0.0 {trabalho}/mut/base
++-- @stryker-mutator/core@10.1.1
++-- @stryker-mutator/jest-runner@10.1.1
+| `-- @stryker-mutator/core@10.1.1 deduped
++-- @stryker-mutator/vitest-runner@10.1.1
+| +-- @stryker-mutator/core@10.1.1 deduped
+| `-- vitest@5.0.5 deduped
++-- @testing-library/jest-dom@7.0.1
+| `-- vitest@5.0.5 deduped
++-- @vitest/coverage-v8@5.0.5
+| `-- vitest@5.0.5 deduped
++-- jest@30.5.2
+`-- vitest@5.0.5
+

@@ -1,0 +1,5 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+mimo-0404;8;4;8;8;8;7.2;"Exercita RF10.2/RN30 pela interface (médico vê só a própria agenda), mas falhou por erro do próprio teste: o preparo chama GET /api/medicos sem token, que exige autenticação (RF01.2), e ok() vem false."
+mimo-0405;4;4;6;8;4;5.2;"Cita RF10.3, que trata dos filtros da recepção, mas testa a agenda do médico; filtro sem nenhuma consulta cancelada é risco menor. Falhou no preparo comum (GET /api/medicos sem token, RF01.2), erro do teste."
+mimo-0406;6;4;8;8;8;6.8;"Cobre RN28 (atendimento antes do início) e verifica que o status fica AGENDADA, mas o atributo confiabilidade é discutível e a mensagem exata é suposta; falhou no preparo por GET /api/medicos sem token (RF01.2), erro do teste."
+mimo-0407;8;4;8;8;8;7.2;"Cancelamento pelo médico com motivo (RN26) com toast e status CANCELADA, sem checar o motivo gravado; falhou no preparo compartilhado (GET /api/medicos sem token, RF01.2), defeito do teste e não do sistema."

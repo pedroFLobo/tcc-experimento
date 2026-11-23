@@ -1,0 +1,5 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+nemotron-0272;4;2;6;4;4;4.0;"Verifica rótulos de e-mail/senha, botão e link de cadastro (RNF06 parcial), mas sem bloco de metadados; erro-de-carga causado pelo próprio teste (require em módulo ESM do vitest para obter o mock de AuthContext)."
+nemotron-0273;4;2;6;4;6;4.4;"Verifica que entrar recebe e-mail e senha (RF01.1) com argumentos exatos, mas não checa navegação nem estado; sem metadados e o arquivo não carrega por erro do teste (require em ESM)."
+nemotron-0274;4;2;6;4;6;4.4;"Cobre a falha de login exibindo erro, porém a mensagem 'E-mail ou senha inválidos.' é suposição não sustentada pelos requisitos e só verifica chamada a mock, não o role='alert' na tela; erro-de-carga do próprio teste."
+nemotron-0275;4;2;4;4;4;3.6;"Verifica redirecionamento de usuário logado via mock de Navigate, mas inclui asserção sem sentido (getByTestId('navigate-to') inexistente) e não confere o destino por perfil; sem metadados e com erro-de-carga do próprio teste."

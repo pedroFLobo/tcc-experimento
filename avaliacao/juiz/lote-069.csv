@@ -1,0 +1,5 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+gemini-0001;6;8;6;8;6;6.8;"Exercita o PATCH de ativação, mas não verifica o efeito de RN21 (inativo não agenda/recebe agendamentos) nem confirma que a flag foi persistida; usa id 2 fixo explicado só por comentário."
+gemini-0002;8;10;8;8;8;8.4;"Verifica 403 com codigo SEM_PERMISSAO para paciente em rota de recepção (RN30), conforme a seção 5; o subatributo confidencialidade é discutível e não confere que o usuário continuou ativo."
+gemini-0003;6;4;4;6;4;4.8;"Falhou por erro do teste: supõe nomes de campos ('totaisPorStatus', 'medicos') que RF11.1 não define; só checa presença de propriedades, com base sem consultas, sem validar totais, taxa de faltas ou faturamento."
+gemini-0004;8;8;6;8;6;7.2;"Espera 400 VALIDACAO para data malformada (RNF04, seção 5), mas omite dataFim, então não isola a causa da rejeição; não verifica ausência de stack trace."

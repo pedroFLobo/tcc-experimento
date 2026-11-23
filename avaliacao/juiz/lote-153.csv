@@ -1,0 +1,5 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+mimo-0444;8;8;8;10;6;8.0;"Verifica a associação rótulo-input via getByLabelText, ligada à usabilidade/acessibilidade (rótulos citados na SPEC 7.6), embora RNF06 trate de mensagens em português; asserções de id e type são específicas, mas o risco é menor."
+mimo-0445;8;8;10;10;6;8.4;"Confere os dois lados do vínculo aria-describedby (atributo no input e id do parágrafo de ajuda), oráculo preciso; vínculo com RNF06 é indireto e o risco coberto é de acessibilidade secundária."
+mimo-0446;6;8;6;8;4;6.4;"O asterisco oculto não é exigido pela base de teste (RNF06) e o regex /^Nome completo/ não comprova que o nome acessível exclui o asterisco, contrariando o próprio objetivo; detalhe de apresentação de baixo risco."
+mimo-0447;4;6;8;8;4;6.0;"RNF07 trata de regras puras no domain e relógio injetável, não de composição de componentes via children, então o atributo manutenibilidade/modularidade é forçado; asserções (tagName SELECT e ausência de input) são objetivas, mas o risco é baixo."

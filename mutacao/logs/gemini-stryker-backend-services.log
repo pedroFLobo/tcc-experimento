@@ -1,0 +1,34 @@
+01:09:47 (20633) INFO ProjectReader Found 6 of 104 file(s) to be mutated.
+01:09:47 (20633) INFO Instrumenter Instrumented 6 source file(s) with 489 mutant(s)
+01:09:47 (20633) INFO ConcurrencyTokenProvider Creating 4 test runner process(es).
+01:09:48 (20633) INFO DryRunExecutor Starting initial test run (jest test runner with "perTest" coverage analysis). This may take a while.
+01:09:52 (20633) INFO DryRunExecutor Initial test run succeeded. Ran 163 tests in 3 seconds (net 1790 ms, overhead 1515 ms).
+Mutation testing 7% (elapsed: <1m, remaining: ~2m) 67/489 tested (2 survived, 0 timed out)
+Mutation testing 12% (elapsed: <1m, remaining: ~2m) 99/489 tested (13 survived, 0 timed out)
+Mutation testing 15% (elapsed: <1m, remaining: ~2m) 130/489 tested (25 survived, 0 timed out)
+Mutation testing 18% (elapsed: <1m, remaining: ~2m) 155/489 tested (27 survived, 0 timed out)
+Mutation testing 24% (elapsed: <1m, remaining: ~2m) 169/489 tested (30 survived, 0 timed out)
+Mutation testing 29% (elapsed: ~1m, remaining: ~2m) 185/489 tested (35 survived, 0 timed out)
+Mutation testing 31% (elapsed: ~1m, remaining: ~2m) 205/489 tested (35 survived, 0 timed out)
+Mutation testing 37% (elapsed: ~1m, remaining: ~2m) 220/489 tested (38 survived, 0 timed out)
+Mutation testing 44% (elapsed: ~1m, remaining: ~1m) 233/489 tested (40 survived, 0 timed out)
+Mutation testing 50% (elapsed: ~1m, remaining: ~1m) 244/489 tested (43 survived, 0 timed out)
+Mutation testing 56% (elapsed: ~1m, remaining: ~1m) 256/489 tested (45 survived, 0 timed out)
+Mutation testing 62% (elapsed: ~2m, remaining: ~1m) 269/489 tested (46 survived, 0 timed out)
+Mutation testing 67% (elapsed: ~2m, remaining: ~1m) 281/489 tested (48 survived, 0 timed out)
+Mutation testing 73% (elapsed: ~2m, remaining: <1m) 292/489 tested (51 survived, 0 timed out)
+Mutation testing 78% (elapsed: ~2m, remaining: <1m) 306/489 tested (52 survived, 0 timed out)
+Mutation testing 80% (elapsed: ~2m, remaining: <1m) 325/489 tested (54 survived, 0 timed out)
+Mutation testing 82% (elapsed: ~2m, remaining: <1m) 346/489 tested (59 survived, 0 timed out)
+Mutation testing 84% (elapsed: ~3m, remaining: <1m) 362/489 tested (61 survived, 0 timed out)
+Mutation testing 86% (elapsed: ~3m, remaining: <1m) 378/489 tested (63 survived, 0 timed out)
+Mutation testing 88% (elapsed: ~3m, remaining: <1m) 396/489 tested (66 survived, 0 timed out)
+Mutation testing 90% (elapsed: ~3m, remaining: <1m) 412/489 tested (68 survived, 0 timed out)
+Mutation testing 91% (elapsed: ~3m, remaining: <1m) 432/489 tested (70 survived, 0 timed out)
+Mutation testing 91% (elapsed: ~3m, remaining: <1m) 450/489 tested (76 survived, 0 timed out)
+Mutation testing 91% (elapsed: ~4m, remaining: <1m) 468/489 tested (82 survived, 0 timed out)
+Mutation testing 94% (elapsed: ~4m, remaining: <1m) 475/489 tested (82 survived, 0 timed out)
+Mutation testing 96% (elapsed: ~4m, remaining: <1m) 483/489 tested (86 survived, 0 timed out)
+01:14:18 (20633) INFO JsonReporter Your report can be found at: file://{trabalho}/mut/gemini/reports/mutacao/backend-services.json
+01:14:18 (20633) INFO HtmlReporter Your report can be found at: file://{trabalho}/mut/gemini/reports/mutacao/backend-services.html
+01:14:18 (20633) INFO MutationTestExecutor Done in 4 minutes and 31 seconds.

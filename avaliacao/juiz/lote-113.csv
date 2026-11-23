@@ -1,0 +1,7 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+glm-0306;10;10;8;10;8;9.2;"Login E2E da paciente cobre RF01.1 e RF01.3 com URL, h1 e nome exatos; a verificação do token usa apenas toBeTruthy, sem checar sua validade."
+glm-0307;10;10;8;10;6;8.8;"Login do médico (RF01.1) com URL, h1 e nome exatos; repete o caminho feliz do caso anterior mudando só o perfil e não verifica o token."
+glm-0308;10;10;8;10;4;8.4;"Login da recepção (RF01.1) bem verificado por URL, h1 e nome, mas é o terceiro caminho feliz quase idêntico no lote e não verifica o token."
+glm-0309;8;8;10;10;8;8.8;"Senha errada mostra alerta, mantém /login e não grava token, cobrindo RF01.1/RNF06; o texto exato 'E-mail ou senha inválidos.' não está na especificação."
+glm-0310;6;8;8;10;6;7.6;"Logout verifica retorno a /login e remoção do token, mas não há requisito explícito de logout; RF01.1 cobre só o login, então a rastreabilidade é parcial."
+glm-0311;6;8;8;10;8;8.0;"Guarda de rota no frontend sem sessão redireciona ao login; RF01.2 trata de token na API e o atributo seria melhor seguranca/autenticidade."

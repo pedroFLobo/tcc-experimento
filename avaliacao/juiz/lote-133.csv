@@ -1,0 +1,13 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+mimo-0164;10;10;8;8;8;8.8;"Verifica a normalização do CPF para só dígitos no cadastro (RF02.1, RN03) com valores exatos; confere apenas o objeto retornado, não a linha gravada, e a constante CPF_ANA usada para 'Maria' confunde."
+mimo-0165;10;10;8;10;10;9.6;"Confere que a senha é gravada como hash bcrypt e não em claro (RNF01), lendo o usuário no repositório; não verifica que o retorno do serviço omite a senha."
+mimo-0166;8;6;10;8;8;8.0;"Testa a unicidade do e-mail (RN01) com 409 CONFLITO e a contagem de usuários; a insensibilidade à caixa e a mensagem exata 'E-mail já cadastrado.' não constam da especificação, e o subatributo pertinencia é discutível."
+mimo-0167;8;10;10;8;8;8.8;"Rejeita CPF duplicado mesmo com pontuação (RN03) e confere 409, CONFLITO e que só existe um paciente; oráculo completo, com um padrão try/catch um pouco verboso."
+mimo-0168;8;8;10;8;8;8.4;"Rejeita CPF com dígito verificador errado (RN03) e confere 400, VALIDACAO e que nada foi gravado; a mensagem exata 'CPF inválido.' é uma suposição que a especificação não traz."
+mimo-0169;8;8;8;6;10;8.0;"Cobre o limite de 7 caracteres e senhas sem número ou sem letra (RN02), com status 400 e contagem final; não confere o código VALIDACAO, usa mensagem inventada e agrupa vários cenários num laço."
+mimo-0170;8;8;6;8;6;7.2;"Rejeita e-mail sem arroba (RN01) com status 400 e mensagem; não confere o código VALIDACAO nem que nada foi gravado, e cobre só um formato inválido óbvio."
+mimo-0171;8;8;8;8;8;8.0;"Testa data de nascimento futura e idade acima de 130 anos (RN05) com 400 e a contagem final; mensagens exatas não estão na especificação e 1890 fica longe do limite de 130 anos."
+mimo-0172;8;8;8;6;10;8.0;"Exercita o limite de 18 anos de RN06 (nascido em 2008-10-19 faz 18 na data fixada) e exige o responsável do menor; o @objetivo fala de 17 anos, mas o menor do teste tem 14, e o código VALIDACAO não é verificado."
+mimo-0173;8;10;6;8;6;7.6;"Confere que o nome do responsável do menor é mantido (RN06), mas só no objeto retornado, sem ler o banco; o caminho feliz complementa o caso anterior, que já cobre RN06."
+mimo-0174;6;6;6;6;4;5.6;"Diz testar consistência após falha no meio do cadastro, mas a falha é a validação de RN06 antes de qualquer gravação, então não exercita recuperabilidade; cita RN03 e RNF04 sem relação, usa toThrow genérico, e as contagens repetem as de outros casos."
+mimo-0175;6;4;8;8;4;6.0;"Testa um nome com no mínimo 3 caracteres, regra que não está em RF02.3 nem em outro ponto dos requisitos; a mensagem também é inventada, embora as asserções de status e de contagem sejam específicas."

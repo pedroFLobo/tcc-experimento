@@ -1,0 +1,39 @@
+{
+  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "testRunner": "vitest",
+  "vitest": {
+    "configFile": "vitest.config.mjs",
+    "related": false
+  },
+  "mutate": [
+    "frontend/src/App.jsx",
+    "frontend/src/api/**/*.js",
+    "frontend/src/contexts/**/*.{js,jsx}",
+    "frontend/src/hooks/**/*.js",
+    "frontend/src/utils/**/*.js"
+  ],
+  "coverageAnalysis": "perTest",
+  "concurrency": 4,
+  "timeoutMS": 5000,
+  "reporters": [
+    "json",
+    "html",
+    "progress-append-only"
+  ],
+  "jsonReporter": {
+    "fileName": "reports/mutacao/frontend-outros.json"
+  },
+  "htmlReporter": {
+    "fileName": "reports/mutacao/frontend-outros.html"
+  },
+  "tempDirName": ".stryker-tmp-frontend-outros",
+  "ignorePatterns": [
+    "backend/__testes__",
+    "e2e",
+    ".jest.json",
+    ".vitest.json",
+    "reports"
+  ],
+  "cleanTempDir": true,
+  "disableBail": true
+}

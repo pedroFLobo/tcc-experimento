@@ -1,0 +1,542 @@
+{
+ "aprovacao": {
+  "global": {
+   "teste": "qui-quadrado 5x2",
+   "chi2": 282.93,
+   "gl": 4,
+   "p": 5.204601880025235e-60,
+   "V_de_Cramer": 0.327
+  },
+  "pares": [
+   {
+    "A": "deepseek",
+    "B": "mimo",
+    "taxaA": 94.38,
+    "taxaB": 96.22,
+    "p_fisher": 0.1035010838349947,
+    "p_holm": 0.1035010838349947,
+    "significativo_5%": 0.0
+   },
+   {
+    "A": "deepseek",
+    "B": "glm",
+    "taxaA": 94.38,
+    "taxaB": 81.33,
+    "p_fisher": 5.327824335069532e-13,
+    "p_holm": 3.729477034548672e-12,
+    "significativo_5%": 1.0
+   },
+   {
+    "A": "deepseek",
+    "B": "gemini",
+    "taxaA": 94.38,
+    "taxaB": 90.45,
+    "p_fisher": 0.03886040279861741,
+    "p_holm": 0.07772080559723482,
+    "significativo_5%": 0.0
+   },
+   {
+    "A": "deepseek",
+    "B": "nemotron",
+    "taxaA": 94.38,
+    "taxaB": 63.64,
+    "p_fisher": 1.2654602823037517e-38,
+    "p_holm": 1.2654602823037518e-37,
+    "significativo_5%": 1.0
+   },
+   {
+    "A": "mimo",
+    "B": "glm",
+    "taxaA": 96.22,
+    "taxaB": 81.33,
+    "p_fisher": 1.1296365968737286e-13,
+    "p_holm": 9.037092774989829e-13,
+    "significativo_5%": 1.0
+   },
+   {
+    "A": "mimo",
+    "B": "gemini",
+    "taxaA": 96.22,
+    "taxaB": 90.45,
+    "p_fisher": 0.0030301641602712066,
+    "p_holm": 0.012120656641084826,
+    "significativo_5%": 1.0
+   },
+   {
+    "A": "mimo",
+    "B": "nemotron",
+    "taxaA": 96.22,
+    "taxaB": 63.64,
+    "p_fisher": 6.069675337579359e-35,
+    "p_holm": 5.4627078038214235e-34,
+    "significativo_5%": 1.0
+   },
+   {
+    "A": "glm",
+    "B": "gemini",
+    "taxaA": 81.33,
+    "taxaB": 90.45,
+    "p_fisher": 0.003635626365717945,
+    "p_holm": 0.012120656641084826,
+    "significativo_5%": 1.0
+   },
+   {
+    "A": "glm",
+    "B": "nemotron",
+    "taxaA": 81.33,
+    "taxaB": 63.64,
+    "p_fisher": 4.993328401612748e-07,
+    "p_holm": 2.496664200806374e-06,
+    "significativo_5%": 1.0
+   },
+   {
+    "A": "gemini",
+    "B": "nemotron",
+    "taxaA": 90.45,
+    "taxaB": 63.64,
+    "p_fisher": 4.554928092387802e-12,
+    "p_holm": 2.7329568554326813e-11,
+    "significativo_5%": 1.0
+   }
+  ]
+ },
+ "notaJuiz": {
+  "global": {
+   "teste": "Kruskal-Wallis",
+   "H": 352.79,
+   "gl": 4,
+   "p": 4.3797666413429234e-75,
+   "epsilon2": 0.1336
+  },
+  "pares": [
+   {
+    "A": "deepseek",
+    "B": "mimo",
+    "mediaA": 7.53,
+    "mediaB": 8.131,
+    "p_mannwhitney": 1.2152112262428032e-20,
+    "p_holm": 7.291267357456819e-20,
+    "delta_de_Cliff": -0.274,
+    "significativo_5%": 1.0
+   },
+   {
+    "A": "deepseek",
+    "B": "glm",
+    "mediaA": 7.53,
+    "mediaB": 8.13,
+    "p_mannwhitney": 1.0019356951549095e-15,
+    "p_holm": 5.009678475774547e-15,
+    "delta_de_Cliff": -0.272,
+    "significativo_5%": 1.0
+   },
+   {
+    "A": "deepseek",
+    "B": "gemini",
+    "mediaA": 7.53,
+    "mediaB": 7.936,
+    "p_mannwhitney": 1.0374479684324052e-05,
+    "p_holm": 4.149791873729621e-05,
+    "delta_de_Cliff": -0.194,
+    "significativo_5%": 1.0
+   },
+   {
+    "A": "deepseek",
+    "B": "nemotron",
+    "mediaA": 7.53,
+    "mediaB": 6.308,
+    "p_mannwhitney": 1.382724028969183e-32,
+    "p_holm": 1.1061792231753463e-31,
+    "delta_de_Cliff": 0.449,
+    "significativo_5%": 1.0
+   },
+   {
+    "A": "mimo",
+    "B": "glm",
+    "mediaA": 8.131,
+    "mediaB": 8.13,
+    "p_mannwhitney": 0.8085108588008545,
+    "p_holm": 0.8085108588008545,
+    "delta_de_Cliff": 0.009,
+    "significativo_5%": 0.0
+   },
+   {
+    "A": "mimo",
+    "B": "gemini",
+    "mediaA": 8.131,
+    "mediaB": 7.936,
+    "p_mannwhitney": 0.09424184993372378,
+    "p_holm": 0.28272554980117137,
+    "delta_de_Cliff": 0.079,
+    "significativo_5%": 0.0
+   },
+   {
+    "A": "mimo",
+    "B": "nemotron",
+    "mediaA": 8.131,
+    "mediaB": 6.308,
+    "p_mannwhitney": 4.247124807744345e-58,
+    "p_holm": 4.247124807744345e-57,
+    "delta_de_Cliff": 0.673,
+    "significativo_5%": 1.0
+   },
+   {
+    "A": "glm",
+    "B": "gemini",
+    "mediaA": 8.13,
+    "mediaB": 7.936,
+    "p_mannwhitney": 0.1727051705431185,
+    "p_holm": 0.345410341086237,
+    "delta_de_Cliff": 0.069,
+    "significativo_5%": 0.0
+   },
+   {
+    "A": "glm",
+    "B": "nemotron",
+    "mediaA": 8.13,
+    "mediaB": 6.308,
+    "p_mannwhitney": 1.1705445673595738e-50,
+    "p_holm": 1.0534901106236165e-49,
+    "delta_de_Cliff": 0.677,
+    "significativo_5%": 1.0
+   },
+   {
+    "A": "gemini",
+    "B": "nemotron",
+    "mediaA": 7.936,
+    "mediaB": 6.308,
+    "p_mannwhitney": 9.572614345867377e-31,
+    "p_holm": 6.700830042107164e-30,
+    "delta_de_Cliff": 0.613,
+    "significativo_5%": 1.0
+   }
+  ]
+ },
+ "mutacao": {
+  "backend": {
+   "scores": [
+    {
+     "modelo": "deepseek",
+     "mutantes": 1597,
+     "detectados": 1453,
+     "score": 90.98,
+     "ic95_inf": 89.54,
+     "ic95_sup": 92.36
+    },
+    {
+     "modelo": "mimo",
+     "mutantes": 1597,
+     "detectados": 1454,
+     "score": 91.05,
+     "ic95_inf": 89.61,
+     "ic95_sup": 92.42
+    },
+    {
+     "modelo": "glm",
+     "mutantes": 1597,
+     "detectados": 1328,
+     "score": 83.16,
+     "ic95_inf": 81.28,
+     "ic95_sup": 84.91
+    },
+    {
+     "modelo": "gemini",
+     "mutantes": 1597,
+     "detectados": 1230,
+     "score": 77.02,
+     "ic95_inf": 74.89,
+     "ic95_sup": 79.09
+    },
+    {
+     "modelo": "nemotron",
+     "mutantes": 1597,
+     "detectados": 1135,
+     "score": 71.07,
+     "ic95_inf": 68.88,
+     "ic95_sup": 73.14
+    }
+   ],
+   "global": {
+    "teste": "Cochran Q (backend)",
+    "Q": 607.27,
+    "gl": 4,
+    "p": 4.140980899577423e-130,
+    "mutantes": 1597
+   },
+   "pares": [
+    {
+     "A": "deepseek",
+     "B": "mimo",
+     "scoreA": 90.98,
+     "scoreB": 91.05,
+     "so_A_detecta": 46,
+     "so_B_detecta": 47,
+     "p_mcnemar_exato": 1.0,
+     "p_holm": 1,
+     "significativo_5%": false
+    },
+    {
+     "A": "deepseek",
+     "B": "glm",
+     "scoreA": 90.98,
+     "scoreB": 83.16,
+     "so_A_detecta": 166,
+     "so_B_detecta": 41,
+     "p_mcnemar_exato": 4.944515169301755e-19,
+     "p_holm": 1.977806067720702e-18,
+     "significativo_5%": 1.0
+    },
+    {
+     "A": "deepseek",
+     "B": "gemini",
+     "scoreA": 90.98,
+     "scoreB": 77.02,
+     "so_A_detecta": 250,
+     "so_B_detecta": 27,
+     "p_mcnemar_exato": 2.0235224039858206e-46,
+     "p_holm": 1.4164656827900744e-45,
+     "significativo_5%": 1.0
+    },
+    {
+     "A": "deepseek",
+     "B": "nemotron",
+     "scoreA": 90.98,
+     "scoreB": 71.07,
+     "so_A_detecta": 346,
+     "so_B_detecta": 28,
+     "p_mcnemar_exato": 7.217309008754279e-71,
+     "p_holm": 6.495578107878851e-70,
+     "significativo_5%": 1.0
+    },
+    {
+     "A": "mimo",
+     "B": "glm",
+     "scoreA": 91.05,
+     "scoreB": 83.16,
+     "so_A_detecta": 154,
+     "so_B_detecta": 28,
+     "p_mcnemar_exato": 2.7918433104683485e-22,
+     "p_holm": 1.3959216552341742e-21,
+     "significativo_5%": 1.0
+    },
+    {
+     "A": "mimo",
+     "B": "gemini",
+     "scoreA": 91.05,
+     "scoreB": 77.02,
+     "so_A_detecta": 241,
+     "so_B_detecta": 17,
+     "p_mcnemar_exato": 7.57292755733076e-52,
+     "p_holm": 6.058342045864607e-51,
+     "significativo_5%": 1.0
+    },
+    {
+     "A": "mimo",
+     "B": "nemotron",
+     "scoreA": 91.05,
+     "scoreB": 71.07,
+     "so_A_detecta": 336,
+     "so_B_detecta": 17,
+     "p_mcnemar_exato": 4.476701089332877e-78,
+     "p_holm": 4.476701089332878e-77,
+     "significativo_5%": 1.0
+    },
+    {
+     "A": "glm",
+     "B": "gemini",
+     "scoreA": 83.16,
+     "scoreB": 77.02,
+     "so_A_detecta": 183,
+     "so_B_detecta": 85,
+     "p_mcnemar_exato": 2.0823773078423265e-09,
+     "p_holm": 4.164754615684653e-09,
+     "significativo_5%": 1.0
+    },
+    {
+     "A": "glm",
+     "B": "nemotron",
+     "scoreA": 83.16,
+     "scoreB": 71.07,
+     "so_A_detecta": 262,
+     "so_B_detecta": 69,
+     "p_mcnemar_exato": 1.289765332101471e-27,
+     "p_holm": 7.738591992608825e-27,
+     "significativo_5%": 1.0
+    },
+    {
+     "A": "gemini",
+     "B": "nemotron",
+     "scoreA": 77.02,
+     "scoreB": 71.07,
+     "so_A_detecta": 161,
+     "so_B_detecta": 66,
+     "p_mcnemar_exato": 2.423747716180637e-10,
+     "p_holm": 7.271243148541912e-10,
+     "significativo_5%": 1.0
+    }
+   ]
+  },
+  "frontend": {
+   "scores": [
+    {
+     "modelo": "deepseek",
+     "mutantes": 1483,
+     "detectados": 1072,
+     "score": 72.29,
+     "ic95_inf": 69.99,
+     "ic95_sup": 74.51
+    },
+    {
+     "modelo": "mimo",
+     "mutantes": 1483,
+     "detectados": 496,
+     "score": 33.45,
+     "ic95_inf": 31.15,
+     "ic95_sup": 35.94
+    },
+    {
+     "modelo": "glm",
+     "mutantes": 1483,
+     "detectados": 297,
+     "score": 20.03,
+     "ic95_inf": 18.07,
+     "ic95_sup": 21.98
+    },
+    {
+     "modelo": "gemini",
+     "mutantes": 1483,
+     "detectados": 119,
+     "score": 8.02,
+     "ic95_inf": 6.68,
+     "ic95_sup": 9.44
+    },
+    {
+     "modelo": "nemotron",
+     "mutantes": 1483,
+     "detectados": 9,
+     "score": 0.61,
+     "ic95_inf": 0.27,
+     "ic95_sup": 1.01
+    }
+   ],
+   "global": {
+    "teste": "Cochran Q (frontend)",
+    "Q": 2691.32,
+    "gl": 4,
+    "p": 0.0,
+    "mutantes": 1483
+   },
+   "pares": [
+    {
+     "A": "deepseek",
+     "B": "mimo",
+     "scoreA": 72.29,
+     "scoreB": 33.45,
+     "so_A_detecta": 599,
+     "so_B_detecta": 23,
+     "p_mcnemar_exato": 5.5358186018680525e-146,
+     "p_holm": 3.321491161120832e-145,
+     "significativo_5%": 1.0
+    },
+    {
+     "A": "deepseek",
+     "B": "glm",
+     "scoreA": 72.29,
+     "scoreB": 20.03,
+     "so_A_detecta": 782,
+     "so_B_detecta": 7,
+     "p_mcnemar_exato": 2.279165320094175e-221,
+     "p_holm": 1.82333225607534e-220,
+     "significativo_5%": 1.0
+    },
+    {
+     "A": "deepseek",
+     "B": "gemini",
+     "scoreA": 72.29,
+     "scoreB": 8.02,
+     "so_A_detecta": 958,
+     "so_B_detecta": 5,
+     "p_mcnemar_exato": 1.7613487435315708e-277,
+     "p_holm": 1.5852138691784137e-276,
+     "significativo_5%": 1.0
+    },
+    {
+     "A": "deepseek",
+     "B": "nemotron",
+     "scoreA": 72.29,
+     "scoreB": 0.61,
+     "so_A_detecta": 1063,
+     "so_B_detecta": 0,
+     "p_mcnemar_exato": 2.0237e-320,
+     "p_holm": 2.0237e-319,
+     "significativo_5%": 1.0
+    },
+    {
+     "A": "mimo",
+     "B": "glm",
+     "scoreA": 33.45,
+     "scoreB": 20.03,
+     "so_A_detecta": 210,
+     "so_B_detecta": 11,
+     "p_mcnemar_exato": 7.479167569822645e-49,
+     "p_holm": 2.2437502709467938e-48,
+     "significativo_5%": 1.0
+    },
+    {
+     "A": "mimo",
+     "B": "gemini",
+     "scoreA": 33.45,
+     "scoreB": 8.02,
+     "so_A_detecta": 404,
+     "so_B_detecta": 27,
+     "p_mcnemar_exato": 2.0879437680497364e-87,
+     "p_holm": 1.0439718840248683e-86,
+     "significativo_5%": 1.0
+    },
+    {
+     "A": "mimo",
+     "B": "nemotron",
+     "scoreA": 33.45,
+     "scoreB": 0.61,
+     "so_A_detecta": 487,
+     "so_B_detecta": 0,
+     "p_mcnemar_exato": 5.0052077379577523e-147,
+     "p_holm": 3.5036454165704266e-146,
+     "significativo_5%": 1.0
+    },
+    {
+     "A": "glm",
+     "B": "gemini",
+     "scoreA": 20.03,
+     "scoreB": 8.02,
+     "so_A_detecta": 215,
+     "so_B_detecta": 37,
+     "p_mcnemar_exato": 1.066567767799326e-31,
+     "p_holm": 1.066567767799326e-31,
+     "significativo_5%": 1.0
+    },
+    {
+     "A": "glm",
+     "B": "nemotron",
+     "scoreA": 20.03,
+     "scoreB": 0.61,
+     "so_A_detecta": 288,
+     "so_B_detecta": 0,
+     "p_mcnemar_exato": 4.021529366771898e-87,
+     "p_holm": 1.608611746708759e-86,
+     "significativo_5%": 1.0
+    },
+    {
+     "A": "gemini",
+     "B": "nemotron",
+     "scoreA": 8.02,
+     "scoreB": 0.61,
+     "so_A_detecta": 110,
+     "so_B_detecta": 0,
+     "p_mcnemar_exato": 1.5407439555097887e-33,
+     "p_holm": 3.0814879110195774e-33,
+     "significativo_5%": 1.0
+    }
+   ]
+  }
+ }
+}

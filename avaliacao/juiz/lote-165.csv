@@ -1,0 +1,3 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+mimo-0511;6;8;6;8;4;6.4;"Estado vazio com mensagem tem relação fraca com RNF06 (mensagens de erro em português); verifica texto e presença de um SVG qualquer, sem checar o ícone 'usuarios' nem semântica acessível; risco baixo."
+mimo-0512;2;6;6;8;2;4.8;"Contagem de linhas de esqueleto não tem relação com RNF07 (regras puras em src/domain, relógio injetável) nem com modularidade; comportamento sem base nos requisitos, só confere células da primeira linha; risco cosmético trivial."

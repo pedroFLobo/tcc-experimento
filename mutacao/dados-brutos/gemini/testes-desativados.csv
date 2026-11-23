@@ -1,0 +1,8 @@
+﻿arquivo;caso;titulo;statusOriginal;tratamento
+backend/__testes__/api/admin-api.test.js;CT-API-044;GET /api/admin/relatorios/resumo - recepção obtém relatório do período;falhou;skip (falhou na execução original)
+backend/__testes__/api/auth-api.test.js;CT-API-005;POST /api/auth/registro - auto-cadastro de paciente retorna 201;falhou;skip (falhou na execução original)
+backend/__testes__/api/pacientes-api.test.js;CT-API-027;POST /api/pacientes - recepção cadastra novo paciente;falhou;skip (falhou na execução original)
+backend/__testes__/integracao/cadastro-service.test.js;CT-INT-018;deve ativar e inativar usuário;falhou;skip (falhou na execução original)
+backend/__testes__/integracao/cadastro-service.test.js;CT-INT-020;deve reverter inserção de usuário se a transação do paciente falhar;falhou;skip (falhou na execução original)
+backend/__testes__/integracao/consultas-service.test.js;CT-INT-041;deve remarcar consulta atualizando horário e contador de remarcações;falhou;skip (falhou na execução original)
+frontend/__testes__/integracao/TabelaConsultas.test.jsx;CT-INT-049;deve renderizar consultas com identificador na linha e valores formatados;falhou;skip (falhou na execução original)

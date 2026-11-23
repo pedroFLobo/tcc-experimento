@@ -1,0 +1,9 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+deepseek-0604;6;8;8;8;4;6.8;"Verifica status, codigo e mensagem do AppError, ligado ao formato de erro do RNF04, mas o atributo adequacao-funcional e discutivel (RNF04 e confiabilidade) e o status 418 nao pertence a secao 5. Risco baixo: testa uma classe utilitaria quase trivial."
+deepseek-0605;6;10;8;8;4;7.2;"400/VALIDACAO confere com a secao 5 e a assercao cobre status, codigo e mensagem; porem e so o mapeamento de uma constante, sem exercitar validacao real nem o JSON do RNF04, e o atributo declarado e discutivel."
+deepseek-0606;4;8;8;10;4;6.8;"401/NAO_AUTENTICADO confere com a secao 5, mas declarar seguranca/autenticidade (RF01.2, RNF02) para uma fabrica de erro nao verifica rejeicao de token; a mensagem 'Autenticação necessária.' nao e sustentada pela especificacao."
+deepseek-0607;4;10;8;8;4;6.8;"403/SEM_PERMISSAO confere com RN30 e a secao 5, mas o subatributo responsabilizacao nao se aplica e nenhum acesso indevido e exercitado; apenas mapeamento de constante."
+deepseek-0608;6;10;6;8;4;6.8;"404/NAO_ENCONTRADO confere com RN30 e a secao 5; nao verifica a mensagem recebida, diferente dos casos vizinhos, e repete o mesmo padrao de fabrica de erro."
+deepseek-0609;4;10;6;8;4;6.4;"409/CONFLITO confere com a secao 5, mas RN01, RN03 e RN07 (unicidade) nao sao exercitados; chama a fabrica duas vezes e nao verifica a mensagem."
+deepseek-0610;6;10;8;8;4;7.2;"422/REGRA_NEGOCIO e a mensagem conferem com a secao 5; RN16 e RN19 sao citados sem ser exercitados, e o caso repete o padrao das demais fabricas."
+deepseek-0611;4;10;8;8;4;6.8;"423/CONTA_BLOQUEADA confere com a secao 5, mas nao exercita o bloqueio apos 5 tentativas do RN04 nem a autenticidade declarada; mapeamento de constante repetido no lote."

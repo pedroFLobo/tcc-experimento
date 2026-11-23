@@ -1,0 +1,7 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+mimo-0460;8;8;8;8;6;7.6;"Verifica rótulos associados e ids estáveis do formulário (SPEC 7.3), coerente com acessibilidade; RNF06 trata de mensagens em português, então o vínculo com o requisito é indireto, e o id 'form-login' não consta da spec."
+mimo-0461;8;8;6;8;4;6.8;"Exercita o caminho de auto-cadastro (RF02.1) pela tela de login; o oráculo só confere a troca de rota e o texto do link é suposição, cobrindo risco menor."
+mimo-0462;8;8;8;8;8;8.0;"Confere alerta inline com id, mensagem em português e chamada à API com os dados digitados, mantendo o usuário fora da área (RNF06); a mensagem vem do mock, então não valida o texto real do backend."
+mimo-0463;8;8;8;8;8;8.0;"Fluxo de login do paciente (RF01.1) com verificação do token gravado, navegação para /paciente e toast; RF01.3 (/me) não é exercitado e o texto do toast não é sustentado pela base de teste."
+mimo-0464;8;8;8;8;8;8.0;"Garante botão desabilitado com 'Entrando...' durante a requisição, protegendo contra envio repetido; RNF06 cobre o caso apenas parcialmente e não se verifica que login foi chamado uma única vez."
+mimo-0465;6;8;8;8;6;7.2;"Redireciona usuário com sessão restaurada e oculta o formulário; o atributo segurança/confidencialidade e o RF01.2 (token exigido na API) são discutíveis para um redirecionamento de interface."

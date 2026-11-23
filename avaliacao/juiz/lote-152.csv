@@ -1,0 +1,6 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+mimo-0439;6;8;8;8;4;6.8;"Verifica type submit, classes e estado habilitado do botão ocioso, mas a ligação com RNF06 (mensagens em português) é fraca e um componente isolado está rotulado como integração. Risco baixo, mais estrutural que de usabilidade."
+mimo-0440;8;8;10;8;8;8.4;"Exercita bem a proteção contra envio duplicado: verifica disabled, aria-busy='true' e troca do texto, com asserção negativa sobre o texto original. O texto 'Salvando...' não consta da base de teste, mas é coerente com o componente."
+mimo-0441;6;8;6;8;4;6.4;"Confere apenas o texto customizado durante o envio, sem checar disabled ou ausência do texto original; relação com RNF06 é indireta. Repete em grande parte o cenário do caso anterior."
+mimo-0442;8;8;8;8;6;7.6;"Garante que o disabled vindo da página prevalece sem envio em curso, cenário útil de proteção contra erro do usuário (ex.: confirmar sem horário). Asserção única, mas direta sobre o estado relevante."
+mimo-0443;4;8;6;6;4;5.6;"Repasse de props não exercita RNF07 (regras puras no domínio, relógio injetável), então manutenibilidade/modularidade é discutível. O @resultadoEsperado cita className, que não é verificado, e o id já era coberto no primeiro caso."

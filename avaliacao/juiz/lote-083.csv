@@ -1,0 +1,5 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+gemini-0164;6;8;4;8;4;6.0;"Só verifica que o filtro de data e a tabela estão visíveis; não exercita RF10.2 (ver apenas consultas da própria agenda), com oráculo fraco de mera visibilidade."
+gemini-0165;6;4;4;6;4;4.8;"Clica em salvar sem alterar a grade, logo não verifica a substituição de RF05.2 nem o estado gravado; falhou por esperar '.mensagem[role=status]' e texto inventado, enquanto a SPEC define sucesso como toast data-tipo='sucesso' (erro do teste)."
+gemini-0166;8;4;6;8;6;6.4;"Exercita RF06.1 com dados futuros e verifica o motivo na tabela, mas falhou por buscar mensagem de sucesso em seletor e texto inventados, contrariando o toast definido na SPEC (erro do teste)."
+gemini-0167;8;4;6;8;8;6.8;"Cobre bem a regra de RN12 (bloqueio no passado) sob proteção contra erro, mas falhou por usar contêiner '#bloqueio-mensagem' e texto de mensagem não previstos na especificação (erro do teste)."

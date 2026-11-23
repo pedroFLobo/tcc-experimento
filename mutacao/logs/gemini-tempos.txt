@@ -1,0 +1,8 @@
+backend-domain exit=0 seg=417
+backend-services exit=0 seg=272
+backend-repositories exit=0 seg=98
+backend-routes exit=0 seg=111
+backend-outros exit=0 seg=135
+frontend-pages exit=0 seg=1231
+frontend-components exit=0 seg=151
+frontend-outros exit=0 seg=51

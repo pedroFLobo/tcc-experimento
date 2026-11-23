@@ -1,0 +1,4 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+gemini-0180;8;8;8;8;6;7.6;"Verifica por getByLabelText a associação rótulo-campo de todos os campos do RF02.3, exercitando acessibilidade; RNF06 trata de mensagens e é citado de forma frouxa, e os textos dos rótulos não constam da base de teste."
+gemini-0181;8;8;8;8;6;7.6;"Preenche os campos do RF02.3 e confere os valores exatos repassados a onEnviar; cobre só o caminho feliz do formulário, sem validação (RN01–RN03) nem o campo de responsável."
+gemini-0182;6;6;4;8;4;5.6;"Só confere a presença de um texto estático de ajuda; não verifica que o formulário exige o responsável para menores (RN06), e o texto exato não está na base de teste."

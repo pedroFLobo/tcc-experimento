@@ -1,0 +1,11 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+glm-0363;6;8;6;8;6;6.8;"Formatação de moeda em centavos segue a convenção da base, mas RNF06 trata de mensagens de erro, o que torna a rastreabilidade discutível; toContain('150,00') e 'R$' não fixam o formato exato."
+glm-0364;6;8;4;8;4;6.0;"Caso de borda zero útil, porém toContain('0,00') também passaria com 'R$ 10,00' ou '100,00', oráculo fraco; repete o mesmo caminho do caso anterior e RNF06 não cobre formatação."
+glm-0365;4;8;6;6;4;5.6;"Cita RN23 e o objetivo fala de desconto de idoso, mas o teste só formata 24300 sem calcular desconto; título 'centavos exatos' destoa do objetivo e o caso repete a formatação já coberta."
+glm-0366;6;8;8;10;6;7.6;"Asserção exata '20/10/2026 08:00' com dado claro; formato nacional é razoável, mas RNF06 (mensagens de erro) não sustenta diretamente a regra de formatação."
+glm-0367;6;8;8;10;6;7.6;"Cobre o ramo sem hora com valor exato '20/10/2026'; claro e objetivo, mas a ligação com RNF06 é indireta e o risco é menor."
+glm-0368;8;6;8;8;6;7.2;"Tolerância a falhas com entradas vazia e nula, ambas com toBe(''); o retorno de string vazia é suposição não especificada na base de teste."
+glm-0369;4;8;10;6;6;6.8;"Relógio falso e asserção exata '2026-10-19' são bons, mas o describe cita RNF07 enquanto @requisito diz RNF06, que não trata de datas; rastreabilidade inconsistente."
+glm-0370;4;8;10;8;6;7.2;"Verifica zeros à esquerda com valor exato '2026-03-05', limite plausível de formatação; o requisito citado (RNF06) não tem relação com o comportamento testado."
+glm-0371;8;8;10;8;2;7.2;"toEqual exato sobre os 5 status de RN25 em ordem; porém testa apenas uma constante, risco trivial."
+glm-0372;8;10;10;10;8;9.2;"Confere a definição de consulta ativa (AGENDADA/CONFIRMADA) usada em RN19 para todos os 5 status com asserções exatas; claro e relevante para os limites de agendamento."

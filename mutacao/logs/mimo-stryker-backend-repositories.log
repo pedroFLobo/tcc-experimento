@@ -1,0 +1,33 @@
+23:56:12 (24486) INFO ProjectReader Found 5 of 110 file(s) to be mutated.
+23:56:12 (24486) INFO Instrumenter Instrumented 5 source file(s) with 219 mutant(s)
+23:56:12 (24486) INFO ConcurrencyTokenProvider Creating 4 test runner process(es).
+23:56:13 (24486) INFO DryRunExecutor Starting initial test run (jest test runner with "perTest" coverage analysis). This may take a while.
+23:56:20 (24486) INFO DryRunExecutor Initial test run succeeded. Ran 397 tests in 7 seconds (net 5654 ms, overhead 1861 ms).
+Mutation testing 2% (elapsed: <1m, remaining: ~6m) 9/219 tested (0 survived, 0 timed out)
+Mutation testing 5% (elapsed: <1m, remaining: ~5m) 40/219 tested (3 survived, 0 timed out)
+Mutation testing 7% (elapsed: <1m, remaining: ~6m) 59/219 tested (5 survived, 0 timed out)
+Mutation testing 9% (elapsed: <1m, remaining: ~6m) 78/219 tested (5 survived, 0 timed out)
+Mutation testing 11% (elapsed: <1m, remaining: ~6m) 93/219 tested (9 survived, 0 timed out)
+Mutation testing 19% (elapsed: ~1m, remaining: ~4m) 103/219 tested (9 survived, 0 timed out)
+Mutation testing 25% (elapsed: ~1m, remaining: ~3m) 109/219 tested (9 survived, 0 timed out)
+Mutation testing 29% (elapsed: ~1m, remaining: ~3m) 113/219 tested (9 survived, 0 timed out)
+Mutation testing 33% (elapsed: ~1m, remaining: ~3m) 121/219 tested (9 survived, 0 timed out)
+Mutation testing 38% (elapsed: ~1m, remaining: ~2m) 129/219 tested (9 survived, 0 timed out)
+Mutation testing 43% (elapsed: ~1m, remaining: ~2m) 138/219 tested (9 survived, 0 timed out)
+Mutation testing 46% (elapsed: ~2m, remaining: ~2m) 141/219 tested (9 survived, 0 timed out)
+Mutation testing 50% (elapsed: ~2m, remaining: ~2m) 149/219 tested (9 survived, 0 timed out)
+Mutation testing 51% (elapsed: ~2m, remaining: ~2m) 157/219 tested (9 survived, 0 timed out)
+Mutation testing 54% (elapsed: ~2m, remaining: ~2m) 160/219 tested (9 survived, 0 timed out)
+Mutation testing 58% (elapsed: ~2m, remaining: ~1m) 164/219 tested (9 survived, 1 timed out)
+Mutation testing 62% (elapsed: ~2m, remaining: ~1m) 168/219 tested (9 survived, 1 timed out)
+Mutation testing 66% (elapsed: ~3m, remaining: ~1m) 178/219 tested (9 survived, 1 timed out)
+Mutation testing 69% (elapsed: ~3m, remaining: ~1m) 182/219 tested (9 survived, 1 timed out)
+Mutation testing 73% (elapsed: ~3m, remaining: ~1m) 186/219 tested (10 survived, 1 timed out)
+Mutation testing 79% (elapsed: ~3m, remaining: <1m) 192/219 tested (10 survived, 1 timed out)
+Mutation testing 83% (elapsed: ~3m, remaining: <1m) 197/219 tested (10 survived, 1 timed out)
+Mutation testing 87% (elapsed: ~3m, remaining: <1m) 204/219 tested (10 survived, 1 timed out)
+Mutation testing 90% (elapsed: ~4m, remaining: <1m) 210/219 tested (10 survived, 1 timed out)
+Mutation testing 95% (elapsed: ~4m, remaining: <1m) 215/219 tested (10 survived, 2 timed out)
+00:00:38 (24486) INFO JsonReporter Your report can be found at: file://{trabalho}/mut/mimo/reports/mutacao/backend-repositories.json
+00:00:38 (24486) INFO HtmlReporter Your report can be found at: file://{trabalho}/mut/mimo/reports/mutacao/backend-repositories.html
+00:00:38 (24486) INFO MutationTestExecutor Done in 4 minutes and 26 seconds.

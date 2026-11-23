@@ -1,0 +1,5 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+mimo-0552;6;8;8;8;6;7.2;"Verifica com toEqual exato que erro() registra tipo 'erro' e o texto, base da exibição inline de erros; a ligação com RNF06 (mensagens em português) é indireta, pois o hook apenas repassa o texto recebido."
+mimo-0553;6;8;8;8;4;6.8;"Confirma que limpar() zera a mensagem para null após um erro; asserção precisa, mas cobre um risco menor de estado do hook com vínculo fraco a RNF06."
+mimo-0554;8;8;8;8;8;8.0;"Verifica que sucesso() limpa o erro anterior e publica o toast com título e texto, coerente com a convenção de sucesso como toast (RNF06); não confere o tipo do toast (data-tipo='sucesso')."
+mimo-0555;4;8;6;8;4;6.0;"Checa apenas o estado inicial null do hook; a classificação como manutenibilidade/testabilidade e RNF07 (regras puras no domain, relógio injetável) não confere com o que o teste faz e o risco coberto é trivial."

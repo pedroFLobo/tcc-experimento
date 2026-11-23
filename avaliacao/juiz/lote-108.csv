@@ -1,0 +1,9 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+glm-0256;6;8;10;10;6;8.0;"Testa função utilitária pura (RNF07) com data válida, inexistente e formato errado; a ligação com testabilidade é indireta e o retorno null não está na base de teste, embora seja coerente."
+glm-0257;6;8;10;10;6;8.0;"Cobre os dois separadores e horas-limite inválidas (24:00, 08:60) com valores exatos; aderência a RNF07 indireta e o comportamento null é suposição não especificada."
+glm-0258;4;10;10;8;6;7.6;"Formato AAAA-MM-DD HH:mm confere com a convenção da spec, mas compatibilidade/interoperabilidade com RNF07 é rótulo discutível; título genérico."
+glm-0259;6;10;8;8;6;7.6;"Conversão hora/minutos com valores exatos (510, 420) útil para RN14; modularidade é discutível e a terceira asserção foge do título 'simétricos'."
+glm-0260;6;6;8;10;6;7.2;"Entradas malformadas tratadas sem lançar erro combinam com tolerância a falhas, mas cita RNF07 em vez de RNF04 e o retorno null é suposição não sustentada pela base."
+glm-0261;6;10;8;10;4;7.6;"Virada de mês correta, porém RN16 só é tocada indiretamente; uma única asserção sem limites de ano ou mês curto, risco baixo."
+glm-0262;6;10;10;8;6;8.0;"Valores exatos (08:15, 150 min) corretos e ligados à tolerância de 15 min da RN29, mas não exercita a regra de falta em si; utilitário de risco moderado."
+glm-0263;6;10;10;10;4;8.0;"Asserção exata e clara sobre inicioDoDia, mas é utilitário trivial com ligação genérica a RNF07 e baixo risco de negócio."

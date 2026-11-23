@@ -1,0 +1,11 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+gemini-0031;6;8;4;6;4;5.6;"Listagem de médicos cita RF04, que trata de cadastro; o @objetivo menciona filtro por especialidade que não é testado. Asserções fracas (>= 4 itens e presença de propriedades), sem conferir nomes ou especialidades do seed."
+gemini-0032;8;10;6;8;8;8.0;"Cadastro de médico pela recepção (RF04.1) com 201, CRM e duração corretos; cita RN07/RN08 mas só cobre o caminho feliz e não verifica persistência (ex.: GET posterior ou login do novo médico)."
+gemini-0033;8;10;8;8;10;8.8;"Verifica 403 com SEM_PERMISSAO quando paciente tenta cadastrar médico (RF04.1); subatributo confidencialidade é discutível e o @objetivo cita médico, que não é testado; não confere que nada foi gravado."
+gemini-0034;8;8;4;8;4;6.4;"Leitura da grade (RF05.1) só verifica status 200, ser array e ter diaSemana no primeiro item; não confere os blocos do seed do Dr. Carlos (seg–sex 08–12 e 14–18). Risco baixo."
+gemini-0035;8;8;6;8;8;7.6;"Médico dono substitui a grade (RF05.1/RF05.2) e confere 200 com 2 blocos; não verifica o conteúdo salvo nem, por leitura posterior, que a grade anterior foi descartada."
+gemini-0036;8;10;8;10;10;9.2;"Médico tentando alterar a grade de outro recebe 403 SEM_PERMISSAO (RN30), status e código corretos; subatributo responsabilizacao é discutível e não verifica que a grade do médico 2 ficou inalterada."
+gemini-0037;8;10;6;8;6;7.6;"Criação de bloqueio futuro pelo médico dono (RF06.1) com 201 e motivo; caminho feliz que não confere datas gravadas nem efeito nos horários livres; RN12 citada só no lado válido."
+gemini-0038;6;6;6;6;8;6.4;"Busca RN12 (data final anterior à inicial), mas o envio omite o motivo exigido por RF06.1, então o 400 VALIDACAO pode vir da falta de motivo e não da regra testada; subatributo pertinencia e RNF04 pouco aderentes."
+gemini-0039;8;8;4;8;6;6.8;"Remoção de bloqueio (RF06.2) só confere 204, código não definido na base; não verifica que a criação deu certo nem que o bloqueio sumiu da listagem (estado final)."
+gemini-0040;8;8;4;6;6;6.4;"Horários livres (RF07.1) para terça 2026-10-20 só verifica lista não vazia, sem conferir os 16 horários esperados de 30 min (RN14); RN16 não é exercitada e o @resultadoEsperado (array de strings) não confere com o objeto {horarios} verificado."

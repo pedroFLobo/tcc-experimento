@@ -1,0 +1,6 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+glm-0320;8;8;8;8;8;8.0;"Verifica que o login guarda o token e expõe o usuário (RF01.1), mas não exercita a validade de 8h nem confere os argumentos passados a authApi.login; a chave 'clinica.token' é detalhe de implementação não especificado."
+glm-0321;8;8;8;8;6;7.6;"Restaura a sessão via /auth/me (RF01.3), checando o estado intermediário 'Carregando', o nome e uma única chamada a me(); não verifica se o token foi enviado, e o risco coberto é moderado."
+glm-0322;8;8;8;8;8;8.0;"Cobre o descarte de token inválido ao montar (RNF02, autenticidade) com asserções sobre o usuário nulo e a remoção do token do localStorage; o 401 é simulado só como erro genérico, sem o codigo NAO_AUTENTICADO."
+glm-0323;6;8;8;8;6;7.2;"O logout não está explícito nos requisitos (cita só RF01 genérico); as asserções sobre o usuário limpo e o token removido são adequadas, mas o caso repete o preparo do login de glm-0320."
+glm-0324;4;8;8;8;4;6.4;"Não chamar me() sem token tem pouca relação com tolerância a falhas (nenhuma falha é injetada); as asserções sobre a ausência de chamada e o estado final são claras, mas o risco coberto é baixo."

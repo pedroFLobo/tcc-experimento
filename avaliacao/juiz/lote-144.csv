@@ -1,0 +1,7 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+mimo-0398;8;10;8;8;8;8.4;"Exercita login e sessão (RF01.1, RF01.3) com URL, nome no cabeçalho e toast; o token só é checado com toBeTruthy e a validade de 8h não é verificada."
+mimo-0399;8;10;10;10;8;9.2;"Senha errada recusada (RF01.1) com mensagem exata, permanência em /login e ausência de token; não verifica o 401/NAO_AUTENTICADO, mas o oráculo de interface é completo."
+mimo-0400;8;10;8;8;6;8.0;"Login do paciente com redirecionamento e nome no cabeçalho (RF01.1); caminho feliz muito próximo de CT-E2E-001, sem checar token, e subatributo 'pertinencia' discutível."
+mimo-0401;6;8;8;8;8;7.6;"Logout apaga clinica.token e volta para /login; logout não está na base de teste, RNF02 trata de expiração/401 e 'confidencialidade' é discutível; não verifica que a rota protegida fica inacessível depois."
+mimo-0402;8;10;8;10;8;8.8;"Rota protegida sem sessão redireciona para /login, risco de autorização relevante; RF01.2/RNF02 tratam da API (401) e o teste cobre só a proteção no frontend."
+mimo-0403;6;8;8;10;4;7.2;"Página 404 com texto em português; RNF06 trata de mensagens de erro e o texto exato não consta na base de teste; risco baixo para o sistema."

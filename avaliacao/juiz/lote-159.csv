@@ -1,0 +1,9 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+mimo-0469;6;8;8;8;6;7.2;"Verifica a ordem decrescente por início com ids exatos, mas RF10.1 trata de o paciente ver só as próprias consultas, o que não é exercitado; a ordenação não está na base de teste."
+mimo-0470;6;6;8;8;4;6.4;"Asserção exata do texto de contagem, coerente com a definição de consulta ativa, mas o texto é suposição não sustentada pelos requisitos e a ligação com RNF06 é fraca; risco menor."
+mimo-0471;4;6;8;6;4;5.6;"Declara adequação-funcional/pertinência citando RNF06, que é de usabilidade; mensagem de lista vazia inventada e risco trivial, embora as asserções de texto sejam exatas."
+mimo-0472;8;8;8;8;8;8.0;"Confirma presença (RF09.1) verificando chamada com o id, recarga da lista e toast com data formatada; não exercita a janela de 48 h da RN25."
+mimo-0473;8;8;6;8;6;7.2;"Verifica o diálogo de confirmação antes do cancelamento com texto e botões, adequado à proteção contra erro; não confere o id #cancelar-confirmar da convenção nem que a API não foi chamada, e sobrepõe os casos seguintes."
+mimo-0474;8;8;8;8;8;8.0;"Cancela pelo paciente (RF09.2) verificando chamada com id e motivo e o toast de sucesso; o motivo padrão é suposição da interface, pois a RN26 não exige motivo do paciente, e não confere a recarga da lista."
+mimo-0475;8;8;8;8;6;7.6;"Desistir no diálogo fecha-o sem chamar cancelar, oráculo adequado para proteção contra erro do usuário; risco menor e fluxo parcialmente repetido de outros casos."
+mimo-0476;6;8;8;8;8;7.6;"Erro da API vira alerta inline (role=alert) com a mensagem e a lista não é recarregada; RNF04 trata do formato JSON de erro do servidor, por isso a aderência é parcial."

@@ -1,0 +1,10 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+deepseek-0486;10;10;8;8;8;8.8;"Exercita RN14 com passo de 30 min em bloco de 4h; o oráculo verifica só tamanho, primeiro e último horário, sem conferir os intermediários, e o número 8 no título fica sem explicação além do metadado."
+deepseek-0487;10;10;10;10;8;9.6;"Verifica a lista exata de horários com duração de 45 min (RN14), conforme a grade da Dra. Beatriz; é uma variação do caminho feliz já coberto com 30 min."
+deepseek-0488;10;10;10;10;6;9.2;"Lista exata para a duração mínima de 15 min (RN08/RN14), correta; acrescenta pouco risco em relação aos casos de 30 e 45 min do mesmo lote."
+deepseek-0489;10;10;10;8;10;9.6;"Cobre o limite central da RN14 (horário que não cabe inteiro é descartado) com asserção exata; o bloco 08:50 não respeita os minutos múltiplos de 15 da RN10, dado pouco realista mas válido para a função pura."
+deepseek-0490;10;10;10;10;10;10.0;"Valor-limite da RN14: duração igual ao bloco gera exatamente um horário; asserção exata e dados claros."
+deepseek-0491;8;8;10;4;6;7.2;"A ordenação dos blocos não está explícita na RN14, sendo suposição razoável; o @resultadoEsperado diz que os horários da tarde vêm antes dos da manhã, contradizendo a asserção que espera a manhã primeiro."
+deepseek-0492;8;10;10;10;4;8.4;"Caso de borda trivial (sem blocos gera lista vazia) com asserção exata; risco baixo para a RN14."
+deepseek-0493;10;10;10;10;8;9.6;"Verifica que duração maior que o bloco não gera horários (RN14, 'caibam inteiros'), com asserção exata; complementa o caso de descarte parcial."
+deepseek-0494;10;10;10;10;8;9.6;"Blocos encostados (permitidos pela RN11) geram sequência contínua conforme RN14; asserção exata da lista completa."

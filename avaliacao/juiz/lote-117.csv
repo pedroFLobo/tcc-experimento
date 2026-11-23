@@ -1,0 +1,9 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+glm-0329;8;8;8;6;6;7.2;"Verifica a contagem exata de ativas (2 de 3) e a ordem dos ids por data decrescente na listagem do paciente (RF10.1), mas não testa a restrição às próprias consultas; a variável 'linhas' com regex genérica e asserção toBeGreaterThan(0) é um smell sem propósito claro."
+glm-0330;8;8;8;8;4;7.2;"Estado vazio da listagem verificado com textos exatos do convite e da contagem zero (RF10.1, RNF06); claro, porém cobre um risco menor de interface."
+glm-0331;6;6;8;8;4;6.4;"Verifica o href exato do link 'Nova consulta', mas o atalho de navegação não decorre de RF10.1 nem de regra da base de teste; risco baixo."
+glm-0332;8;8;8;8;8;8.0;"Confirma presença (RF09.1) verificando a chamada com o id correto, o texto do toast e a recarga da lista; não exercita a janela de 48h da RN25 citada nem o data-tipo do toast."
+glm-0333;10;8;8;8;8;8.4;"Exige confirmação em modal antes de cancelar e verifica chamada cancelar(2, motivo) e toast (RF09.2, RN26), protegendo contra erro do usuário; o motivo fixo 'Cancelado pelo paciente' é suposição não exigida pela RN26 e o modal não é verificado pelo id #cancelar-confirmar."
+glm-0334;10;8;8;8;6;8.0;"Desistir no modal fecha o diálogo e não chama cancelar, verificação direta de proteção contra erro (RN26); complementa o caso anterior com o mesmo fluxo inicial."
+glm-0335;6;8;8;8;6;7.2;"Verifica o alerta inline com role='alert' e a mensagem do servidor quando a confirmação falha; RNF04 trata do formato JSON de erro da API, não da exibição no frontend, então a aderência é parcial."
+glm-0336;8;4;8;6;8;6.8;"Remarcação pelo diálogo (RF09.3, RN27) com asserções sobre chamada e toast, mas falhou porque o teste supõe um botão de horário com nome exato '08:00' que a interface não expõe, erro do próprio teste; mistura fireEvent e userEvent."

@@ -1,0 +1,4 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+mimo-0466;4;6;8;8;4;6.0;"Declara adequacao-funcional/correcao com RNF06, mas verificar que nada é renderizado com mensagem null não tem relação com mensagens em português; a base de teste não define esse comportamento. Oráculo exato (innerHTML vazio), porém risco baixo."
+mimo-0467;8;8;8;8;6;7.6;"Verifica role='alert' com o texto em português, coerente com a convenção da SPEC (erro inline com role alert) e RNF06; asserções de id, classe e texto são específicas, embora as classes 'mensagem erro' sejam suposição de implementação."
+mimo-0468;6;6;8;8;4;6.4;"Checa role='status', id, classe e texto da mensagem de sucesso; a SPEC prevê sucesso como toast e não define role status, e anúncio a leitor de tela caberia melhor em acessibilidade que em reconhecibilidade. Estrutura quase idêntica ao caso de erro."

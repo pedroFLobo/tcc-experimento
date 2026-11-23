@@ -1,0 +1,6 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+nemotron-0001;6;4;6;4;6;5.2;"Exercita PATCH /admin/usuarios/:id/ativo (RN21), mas falhou por supor campo 'ativo' no corpo da resposta, formato que a especificação não define (erro do teste); usa id de paciente como id de usuário e não verifica efeito da inativação. Sem bloco de metadados."
+nemotron-0002;8;8;6;4;8;6.8;"Verifica 403 para paciente na rota de admin (RN30), coerente com a especificação; falta checar o codigo SEM_PERMISSAO e o estado do usuário inalterado. Sem metadados (@objetivo, @requisito)."
+nemotron-0003;6;8;6;4;6;6.0;"Entrada malformada retorna 400 (RNF03/RNF04) conforme a especificação, mas não verifica codigo VALIDACAO nem o formato do erro; atributo e requisito não declarados no caso."
+nemotron-0004;6;4;4;4;6;4.8;"Monta cenário para o relatório (RF11.1), mas falhou por exigir propriedade 'totalPorStatus' com nome inventado (erro do teste); só verifica existência de chaves, sem conferir totais, taxa de faltas ou faturamento de 15000 centavos, nem o sucesso dos agendamentos."
+nemotron-0005;8;8;6;4;6;6.4;"Verifica 403 para paciente no relatório (RF11, RN30), correto; falta o codigo SEM_PERMISSAO e repete o padrão do caso de autorização anterior. Sem metadados."

@@ -1,0 +1,7 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+mimo-0495;8;8;8;8;6;7.6;"Verifica rótulo em português do status AGENDADA (RNF06, reconhecibilidade) com data-status e classe; os textos exatos dos rótulos não constam da base de teste e o risco coberto é menor."
+mimo-0496;4;8;8;8;4;6.4;"Só verifica o rótulo 'Confirmada' de um componente visual, sem exercitar a confirmação de RF09.1; atributo adequação funcional é discutível e o caso repete o padrão do caso de AGENDADA."
+mimo-0497;4;8;8;8;4;6.4;"Cita RF09.4, mas apenas testa a tradução do rótulo REALIZADA, sem registrar atendimento; caso praticamente idêntico aos demais do lote."
+mimo-0498;4;8;8;8;4;6.4;"Cita RF09.5, mas só verifica o rótulo 'Falta' do selo; não exercita o registro de falta e repete os outros casos de tradução de status."
+mimo-0499;4;8;8;8;4;6.4;"Cita RF09.2, mas só verifica o rótulo 'Cancelada'; não exercita cancelamento nem motivo, e é quase idêntico aos casos anteriores."
+mimo-0500;4;6;6;6;6;5.6;"Fallback para status desconhecido tem pouca relação com RNF06 (mensagens em português) e o comportamento de exibir o valor cru não está na base de teste; verifica texto e data-status, mas o objetivo 'não quebrar a linha' é vago."

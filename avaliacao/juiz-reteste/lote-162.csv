@@ -1,0 +1,9 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+mimo-0487;8;10;8;8;6;8.0;"Verifica que sem médico e data não há chamada à API, aria-busy false e nenhum botão (RF07.1); o título fala em 'sem médico ou sem data', mas só testa os dois vazios juntos."
+mimo-0488;8;10;10;10;8;9.2;"Confere os argumentos da chamada e cada botão com rótulo e data-inicio exatos (RF07.1); RN14 é citado, mas a geração dos horários vem do mock e não é exercitada."
+mimo-0489;8;8;8;10;6;8.0;"Verifica o aviso em português para lista vazia (RNF06) com texto exato; o texto é do componente e não da base de teste, e o risco coberto é menor."
+mimo-0490;6;8;6;8;6;6.8;"Mostra a mensagem de erro rejeitada pelo mock, mas RNF04 trata do formato JSON da API e o caso não verifica que o formulário continua operável; a data '2026-13-40' é irrelevante com a API mockada."
+mimo-0491;6;10;8;10;6;8.0;"Confere que o clique entrega o horário completo a onEscolher; RN17 é regra do servidor e só é tocada indiretamente, e não verifica que foi chamado uma única vez."
+mimo-0492;6;8;10;10;6;8.0;"Asserções precisas sobre aria-pressed true/false e a classe; reconhecibilidade é plausível, mas RNF06 trata de mensagens em português e a classe 'selecionado' é detalhe de implementação."
+mimo-0493;4;8;6;6;4;5.6;"Comportamento funcional de recarga rotulado como manutenibilidade/RNF07, que trata de regras puras no domain; só conta duas chamadas, sem conferir argumentos ou o novo conteúdo, e repete o render em vez de usar o helper."
+mimo-0494;6;8;8;8;6;7.2;"Verifica aria-busy true durante a busca e false ao concluir, bom para acessibilidade; RNF06 (mensagens em português) não corresponde bem ao que é testado."

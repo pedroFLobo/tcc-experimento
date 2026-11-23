@@ -1,0 +1,38 @@
+{
+  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "testRunner": "jest",
+  "jest": {
+    "configFile": "jest.config.cjs",
+    "enableFindRelatedTests": false
+  },
+  "mutate": [
+    "backend/src/**/*.js",
+    "!backend/src/server.js",
+    "!backend/src/config.js",
+    "!backend/src/db/**"
+  ],
+  "coverageAnalysis": "perTest",
+  "concurrency": 4,
+  "timeoutMS": 5000,
+  "reporters": [
+    "json",
+    "html",
+    "progress-append-only"
+  ],
+  "jsonReporter": {
+    "fileName": "reports/mutacao/backend.json"
+  },
+  "htmlReporter": {
+    "fileName": "reports/mutacao/backend.html"
+  },
+  "tempDirName": ".stryker-tmp-back",
+  "ignorePatterns": [
+    "frontend/__testes__",
+    "e2e",
+    ".jest.json",
+    ".vitest.json",
+    "reports"
+  ],
+  "cleanTempDir": true,
+  "disableBail": true
+}

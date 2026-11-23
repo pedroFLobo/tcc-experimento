@@ -1,0 +1,11 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+mimo-0429;6;4;8;8;6;6.4;"Exercita a listagem de especialidades (RF03.2), mas o foco no preço formatado é marginal ao requisito. A falha vem do próprio teste: o texto renderizado contém o preço com espaço não separável e o toContain com espaço comum não casa, então não revela defeito do sistema."
+mimo-0430;6;8;8;8;6;7.2;"Verifica select de médico desabilitado e ausência de chamada à API, boa proteção contra erro do usuário; porém RNF06 trata de mensagens em português, não de campos desabilitados."
+mimo-0431;6;8;8;8;8;7.6;"Confere que só o médico ativo da especialidade aparece e que a API é chamada com a especialidade; o requisito citado (RF04.1, cadastro de médico) não corresponde, o mais adequado seria RN21."
+mimo-0432;6;8;8;8;4;6.8;"Verifica habilitação do campo de data após escolher o médico; RNF06 não corresponde ao comportamento testado e o caso repete o padrão de campo desabilitado do CT-INT-201."
+mimo-0433;8;8;8;8;6;7.6;"Confere a chamada de horários com médico e data e a exibição do botão (RF07.1); RN14 não é de fato exercitada, pois os horários vêm de mock, e só um dos dois horários é verificado."
+mimo-0434;6;8;8;8;6;7.2;"Verifica médico, especialidade, data formatada e duração no resumo com valores exatos; relação com RNF06 (mensagens de erro) é discutível e o risco coberto é menor."
+mimo-0435;6;8;8;8;4;6.8;"Verifica botão de confirmar desabilitado sem horário e habilitado depois; RNF06 não corresponde e repete o padrão de habilitação dos casos CT-INT-201 e CT-INT-203."
+mimo-0436;8;8;10;8;8;8.4;"Verifica o payload exato do agendamento (RF08.1), o toast e o valor de R$ 150,00 exibido e a limpeza do resumo; o cálculo do valor (RF08.2) vem do mock, então só a exibição é testada."
+mimo-0437;6;8;8;8;8;7.6;"Confere alerta inline com a mensagem do servidor, preservação do resumo e chamada única; RNF04 trata do formato de erro da API, aqui só o tratamento no frontend é exercitado."
+mimo-0438;6;8;8;8;8;7.6;"Verifica que trocar a especialidade zera o médico e o resumo e recarrega médicos da nova especialidade, risco real de agendar com médico errado; RNF06 não corresponde ao comportamento."

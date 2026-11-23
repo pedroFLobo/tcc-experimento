@@ -1,0 +1,4 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+gemini-0046;4;6;8;8;6;6.4;"Verifica que /api/saude é público (RF01.2), mas declara compatibilidade/RNF08, que trata de navegadores e não tem relação com o teste; o corpo { status: 'ok' } não está na base de teste, embora o caso tenha passado."
+gemini-0047;8;8;8;8;6;7.6;"Exercita RNF04 com status 404 e codigo NAO_ENCONTRADO conforme a seção 5; a mensagem 'Rota não encontrada' é suposição não sustentada pela especificação e falta verificar a ausência de stack trace."
+gemini-0048;4;6;6;8;4;5.6;"Ocultar X-Powered-By não é exigido por RNF01 (hash de senha) nem por RNF04 (formato de erro), e o subatributo integridade não confere; única asserção sobre o cabeçalho, risco menor."

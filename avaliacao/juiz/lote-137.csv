@@ -1,0 +1,12 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+mimo-0245;10;10;10;10;10;10.0;"Exercita RF07.1, RN14 e RN16 com valores exatos conferidos com a grade do Dr. Carlos (10:00 a 17:30, 12 horários, 09:30 excluído pela antecedência de 2h); oráculo forte e metadados coerentes."
+mimo-0246;8;10;8;10;6;8.4;"Domingo sem bloco devolve lista vazia, conforme RN14; asserção exata, mas risco menor e subatributo pertinencia discutível."
+mimo-0247;8;10;8;10;4;8.0;"Correto segundo RN14 (Dr. Eduardo só atende ter/qui), porém praticamente repete o caso de dia sem bloco da grade já presente no lote."
+mimo-0248;10;10;10;10;8;9.6;"Verifica RN14 com duração de 15 min no sábado da Dra. Fernanda: 16 horários de 08:00 a 11:45, valores conferem com os dados de exemplo."
+mimo-0249;10;10;8;8;8;8.8;"Cobre a exclusão por bloqueio (RN15) e o contraponto da data vizinha; a verificação da vizinha é fraca (not.toHaveLength(0)) e o dia 2026-11-03 do bloqueio não é checado."
+mimo-0250;8;10;10;8;8;8.8;"Consulta ativa remove exatamente o 14:00 e mantém o 14:30 (RN15), com contagem antes/depois; a consulta é inserida direto no repositório e o subatributo pertinencia é discutível."
+mimo-0251;8;10;8;8;8;8.4;"Mostra que consulta cancelada deixa de ocupar o horário (RN15, consulta ativa); o cancelamento é feito por UPDATE SQL direto, sem passar pelo fluxo de cancelamento."
+mimo-0252;8;10;6;6;4;6.8;"Correto quanto a RN15, mas na prática repete o caso da consulta ativa ocupando o horário, só trocando o paciente; usa id 3 mágico e verifica apenas a ausência do horário."
+mimo-0253;8;8;10;10;8;8.8;"Médico inativo sem horários é inferência razoável de RN21/RN17, não explícita na base; asserção exata com estado anterior verificado."
+mimo-0254;6;6;8;6;6;6.4;"Checa 400 e mensagem exata, mas a mensagem não está na especificação e o codigo VALIDACAO prometido no resultado esperado não é verificado; nível integração não exercita o JSON de erro do RNF04 e há try/catch sem expect.assertions."
+mimo-0255;8;10;10;8;8;8.8;"Verifica 404 e codigo NAO_ENCONTRADO para médico inexistente conforme RN30 e seção 5; try/catch manual reduz um pouco a clareza."

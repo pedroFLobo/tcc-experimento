@@ -1,0 +1,12 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+nemotron-0065;6;10;10;4;8;7.6;"Verifica 401 e codigo NAO_AUTENTICADO sem token (RF01.2, RNF02), conforme a especificação; o caso não tem bloco de metadados (@caso, @atributo, @nivel), o que prejudica aderência declarada e clareza."
+nemotron-0066;6;10;6;4;8;6.8;"Token inválido deve gerar 401 (RNF02) e o valor está correto, mas só verifica o status, sem o codigo NAO_AUTENTICADO; caso sem metadados."
+nemotron-0067;6;10;8;4;4;6.4;"Confirma que /api/saude é pública com status 200 e corpo 'ok' (RF01.2); risco menor e caso sem metadados declarados."
+nemotron-0068;4;2;6;2;6;4.0;"Falhou por erro do próprio teste: tokJoao é obtido com as credenciais de Ana, que acessa a própria consulta (200), logo RN30 não é exercitado; comentários contraditórios e ausência de metadados."
+nemotron-0069;8;8;6;4;8;6.8;"Exercita RN30 (médico alterando grade de outra médica, 403), mas depende de um CRM '654321/RJ' que a spec não informa, tem requisição morta ao médico 99 e só verifica o status, sem SEM_PERMISSAO."
+nemotron-0070;8;10;6;4;8;7.2;"Tentativa de injeção SQL no login retorna 401 (RNF03), valor correto; não verifica o codigo NAO_AUTENTICADO nem ausência de token no corpo, e o caso não tem metadados."
+nemotron-0071;6;8;4;4;6;5.6;"Aceita 400 ou 404 para ID não numérico (RNF03/RNF04), oráculo tolerante que não fixa o comportamento nem verifica codigo de erro ou ausência de stack; sem metadados."
+nemotron-0072;8;8;10;4;8;7.6;"Entrada inválida (medicoId não numérico, inicio 'x') deve resultar em 400 VALIDACAO (RNF04, seção 5); a falha (404) indica plausível defeito do sistema na ordem de validação, com asserções completas sobre o formato do erro."
+nemotron-0073;8;10;6;4;6;6.8;"Verifica 404 para consulta inexistente e ausência de stack (RNF04), mas não confere codigo NAO_ENCONTRADO nem o formato do erro; sobrepõe-se parcialmente ao caso anterior."
+nemotron-0074;8;10;6;4;8;7.2;"Verifica que o login não devolve senha nem senhaHash (RNF01); não confere o status 200 nem outros nomes possíveis do campo de hash, e o caso não tem metadados."
+nemotron-0075;8;10;4;4;6;6.4;"Checa ausência de senha na listagem de médicos (RNF01), mas sem verificar status nem que a lista é não vazia, de modo que every() passaria com corpo vazio; repete o risco do caso anterior."

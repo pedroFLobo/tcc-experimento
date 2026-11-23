@@ -1,0 +1,9 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+deepseek-0367;8;10;8;8;8;8.4;"Verifica que o paciente não registra falta (RN29, RN30) com status 403 e mensagem; não confere o codigo SEM_PERMISSAO citado no resultado esperado nem que o status da consulta continua inalterado."
+deepseek-0368;10;10;8;8;8;8.8;"Exercita a transição inválida REALIZADA para FALTA (RN29, estados finais) com 422 e mensagem exata; falta verificar o codigo REGRA_NEGOCIO e que a consulta segue REALIZADA."
+deepseek-0369;10;10;6;8;6;8.0;"Testa falta sobre consulta CANCELADA (estado final, RN29), mas só verifica status 422, sem mensagem, codigo ou estado final; cenário muito parecido com o de consulta realizada."
+deepseek-0370;8;10;6;8;6;7.6;"Caminho feliz de acesso do paciente à própria consulta (RF10.1, RN30); oráculo só compara o id, sem checar os demais dados devolvidos; risco menor."
+deepseek-0371;10;10;8;8;10;9.2;"Cobre diretamente a confidencialidade (RN30): paciente lendo consulta de outro recebe 403 com mensagem; falta apenas checar o codigo SEM_PERMISSAO."
+deepseek-0372;8;10;6;8;6;7.6;"Caminho feliz do médico lendo consulta da própria agenda (RF10.2, RN30); asserção apenas sobre medicoId, sem verificar o restante do registro."
+deepseek-0373;10;10;6;8;8;8.4;"Verifica que outro médico não lê a consulta (RN30), mas a asserção é só o status 403, sem mensagem nem codigo SEM_PERMISSAO."
+deepseek-0374;8;10;8;8;6;8.0;"Confere 404 com mensagem para consulta inexistente (RN30, RNF04); atributo confiabilidade discutível e cenário praticamente igual ao 404 já testado em confirmar, com o mesmo título."

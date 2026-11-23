@@ -1,0 +1,12 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+deepseek-0060;6;8;8;8;6;7.2;"Verifica o contrato JSON da consulta criada com valores exatos de nomes, ids e status AGENDADA; RNF08 trata de navegadores, então a ligação com o requisito é discutível, e valorCentavos só é checado como número."
+deepseek-0061;6;8;8;8;6;7.2;"Confere campos do paciente com valores exatos do seed (RF02.3); CPF e telefone não constam da especificação e RNF08 (navegadores) não é exercitado diretamente."
+deepseek-0062;6;6;8;8;6;6.8;"Usa a rota GET /api/medicos/:id, que não consta da API documentada, e supõe CRM '123456/SP' e especialidadeId 1 não sustentados pela base; asserções com valores exatos de preço e duração."
+deepseek-0063;6;8;6;8;6;6.8;"Verifica só tipos de id, nome e precoCentavos em todas as especialidades (RF03.2); sem valores exatos e o every passaria com lista vazia."
+deepseek-0064;6;8;8;8;6;7.2;"Compara o usuário do login com toEqual (RF01.1), detectando campos extras como senha; ligação com RNF08 é indireta e não verifica o token."
+deepseek-0065;6;8;4;8;6;6.4;"Checa o formato de data e dos horários (RF07.1), mas o every passa com lista vazia e não há nenhum horário esperado concreto para terça 2026-10-20."
+deepseek-0066;6;8;6;8;6;6.8;"Verifica as chaves de porStatus e os tipos de faltasPorMedico e faturamento (RF11.1), sem valores esperados; contrato útil, mas oráculo apenas estrutural."
+deepseek-0067;6;6;6;8;6;6.4;"Verifica 204 e corpo vazio na remoção de bloqueio (RF06.2), mas cria o bloqueio sem motivo (RF06.1) sem checar a criação e não confirma que o bloqueio foi de fato removido."
+deepseek-0068;6;8;6;8;6;6.8;"Valida por regex o formato AAAA-MM-DD HH:mm de inicio, fim, criadoEm e atualizadoEm, conforme a convenção; não confere os valores (ex.: fim = 09:30) e usa laço no teste."
+deepseek-0069;6;8;4;8;2;5.6;"Só verifica que o status pertence ao enum, asserção mais fraca que a do caso deepseek-0060, que já exige status AGENDADA; praticamente redundante."
+deepseek-0070;8;8;8;8;8;8.0;"Verifica 409 com codigo CONFLITO e mensagem textual ao agendar horário já ocupado do médico (RNF04, seção 5); bom oráculo de formato de erro e conflito de agenda."

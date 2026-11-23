@@ -1,0 +1,6 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+mimo-0106;10;10;10;8;10;9.6;"Mede o tempo da listagem de horários livres com 10 mil consultas contra o limite de 500 ms do RNF05 e confere os 16 horários de segunda do Dr. Carlos (08-12 e 14-18 em passos de 30 min, RN14). A geração da massa usa aritmética pouco explicada (dia 49, módulos)."
+mimo-0107;10;10;8;8;10;9.2;"Mede o agendamento contra os 500 ms do RNF05 e confere 201 e valor de 15000 centavos (RN22, paciente de 36 anos sem desconto). Não verifica a gravação da consulta nem o status AGENDADA."
+mimo-0108;6;6;8;8;6;6.8;"O RNF05 cobre só listagem de horários e agendamento; aplicar 500 ms à listagem completa da recepção é extrapolação, e supõe corpo em array sem paginação, que a base não define. Oráculo combina status, quantidade e tempo."
+mimo-0109;6;6;8;8;6;6.8;"Relatório (RF11.1) não está no escopo do RNF05, então o limite de 500 ms é suposição; os valores esperados (2000 realizadas, faturamento 2000 x 15000) conferem com a massa inserida. Asserções específicas sobre contagem, faturamento e tempo."
+mimo-0110;2;6;6;6;4;4.8;"Declara utilizacao-de-recursos e RNF05/RNF03, mas não mede tempo nem recurso: é só uma checagem funcional do total do relatório (RF11.1, não citado). Usa medir sem usar o tempo, não verifica o status HTTP e repete a mesma requisição do caso anterior."

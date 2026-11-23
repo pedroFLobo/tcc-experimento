@@ -1,0 +1,4 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+mimo-0426;10;10;8;8;8;8.8;"Exercita o cadastro de paciente pela recepção com todos os campos de RF02.3 (RF02.2) e passou; verifica aviso e linha com nome e e-mail, mas não confere outros dados gravados (CPF, nascimento)."
+mimo-0427;6;8;8;6;8;7.2;"Cobre a unicidade de e-mail da RN01, mas o atributo segurança/integridade é discutível para uma regra de cadastro; verifica a mensagem e a contagem, porém o valor 4 depende do caso anterior e a mensagem não está na base de teste."
+mimo-0428;6;8;6;8;6;6.8;"Cita RN21, mas só verifica a desativação na interface e não que o paciente inativo fica impedido de agendar; oráculo restrito ao aviso e ao texto 'Inativo', sem conferir o estado no servidor, e depende do caso 025."

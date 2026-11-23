@@ -1,0 +1,7 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+glm-0345;6;8;8;8;6;7.2;"Verifica data formatada, data-consulta-id, médico e data-status na linha, mas RF10.1 trata de o paciente ver só as próprias consultas, o que o teste não exercita; é apenas exibição."
+glm-0346;6;6;6;8;6;6.4;"Liga o valor zero ao rótulo 'Retorno gratuito', mas não exercita a regra RN24 em si e o texto exibido não consta na base de teste; só checa a presença do texto."
+glm-0347;4;8;4;6;4;5.2;"Cita RN22/RN23 mas só testa a formatação de moeda com o número mágico 24300; a asserção por regex /243,00/ não verifica o prefixo R$ prometido no resultado esperado."
+glm-0348;6;8;6;8;4;6.4;"Mensagem de lista vazia é útil para a usabilidade, mas o texto é passado pelo próprio teste via prop, então só confirma o repasse; risco baixo."
+glm-0349;6;8;8;8;8;7.6;"Bom oráculo positivo e negativo (botão na linha AGENDADA, nenhum botão na CANCELADA), cobrindo a regra de ações só em consultas ativas; RN25 (prazo de confirmação) é citado sem relação direta."
+glm-0350;4;6;4;6;4;4.8;"Estado de carregamento não tem relação com RNF06 (mensagens de erro em português) nem está na base de teste; asserção fraca de que existe ao menos um elemento .esqueleto."

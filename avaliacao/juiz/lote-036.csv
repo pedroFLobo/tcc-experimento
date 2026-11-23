@@ -1,0 +1,6 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+deepseek-0599;8;8;6;8;8;7.6;"Verifica a independência do domínio em relação ao banco (RNF07) via cache de módulos; o oráculo é indireto e passaria trivialmente se o cache estivesse vazio ou se o import ocorresse depois."
+deepseek-0600;8;8;6;8;4;6.8;"Mesma técnica do caso anterior aplicada ao Express (RNF07, sem HTTP); oráculo indireto pelo cache de módulos e praticamente repete a estrutura do caso do driver do banco."
+deepseek-0601;6;8;8;8;6;7.2;"Mostra que as regras rodam com dados em memória (RNF07), com valores exatos coerentes com RN14 e RN22; mas são verificações funcionais soltas que pouco demonstram testabilidade além de 'executa sem banco'."
+deepseek-0602;10;8;8;8;8;8.4;"Verifica diretamente o relógio injetável de RNF07: antecedência de 1h é rejeitada (RN16) com 'agora' por parâmetro e clock.js não é carregado; a asserção sobre o texto '2 horas' supõe uma mensagem não definida na especificação."
+deepseek-0603;6;6;4;6;4;5.2;"Pretende provar funções puras sem estado (RNF07), mas só checa typeof e aridade maior que zero, critério que a especificação não sustenta; usa lógica condicional no forEach e não verifica ausência de estado."

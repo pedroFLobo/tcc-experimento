@@ -1,0 +1,11 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+deepseek-0890;4;6;8;8;4;6.0;"Verifica aria-expanded='false' no botão do menu (acessibilidade), mas RNF06 trata de mensagens de erro em português e o comportamento do menu não está na base de teste; risco menor."
+deepseek-0891;4;6;8;8;4;6.0;"Alterna o menu e confere nome 'Fechar menu' e aria-expanded='true'; asserção específica, porém sem relação direta com RNF06 e sem suporte na especificação."
+deepseek-0892;4;6;8;8;4;6.0;"Subatributo 'inteligibilidade' não é identificador válido e RNF06 não define título de aba; o título 'Agenda · Clínica+' é suposição não sustentada pela base, embora a asserção seja exata."
+deepseek-0893;4;6;8;8;2;5.6;"Verifica h1 'Agenda', mas o subatributo 'inteligibilidade' é inválido e o requisito não cobre o cabeçalho; praticamente repete o caso do título da seção e serve de espera nos demais casos."
+deepseek-0894;4;6;8;6;4;5.6;"Confere o texto '01 / 03' da faixa de contexto, comportamento não previsto na base; subatributo inválido e valor mágico sem explicação do que significa."
+deepseek-0895;6;6;8;8;6;6.8;"Navega pelo link 'Minha grade' e verifica título, h1 e '02 / 03'; oráculo bom, mas cita RF05.1 sem exercitar a definição da grade, apenas a navegação."
+deepseek-0896;4;6;8;8;4;6.0;"Verifica que o menu fecha após navegar para 'Bloqueios' (aria-expanded='false'); operabilidade plausível, mas sem base em RNF06 e de risco baixo."
+deepseek-0897;4;8;8;6;4;6.0;"Confere o nome do médico vindo do mock em #nome-usuario; subatributo inválido, seletor por id não documentado na spec e risco pequeno."
+deepseek-0898;4;6;4;6;4;4.8;"Asserção fraca (getAllByText('Médico').length > 0) não confirma o que o @resultadoEsperado promete (cabeçalho e faixa); subatributo inválido e sem relação com RNF06."
+deepseek-0899;2;6;8;6;4;5.2;"Subatributo 'estetica' não existe na lista permitida e RNF06 não trata de avatar; verifica iniciais 'CA' por seletor de classe, regra de iniciais sem suporte na base."

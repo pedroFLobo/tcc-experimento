@@ -1,0 +1,9 @@
+--- {trabalho}/run/clinica-plus/backend/src/config.js	2026-11-19 12:23:41.939275773 +0000
++++ {trabalho}/mut/deepseek/backend/src/config.js	2026-11-20 19:17:41.614378252 +0000
+@@ -9,5 +9,5 @@
+   jwtExpiracao: '8h',
+   // Origens do frontend autorizadas a chamar a API (separadas por vírgula).
+   corsOrigens: (process.env.CORS_ORIGINS || 'http://localhost:5173').split(',').map((o) => o.trim()),
+-  bcryptCusto: 10,
++  bcryptCusto: 4,
+ };

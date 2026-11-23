@@ -1,0 +1,35 @@
+20/11 17:47:03 piloto deepseek concluido: back exit=0 seg=2702 front exit=0 seg=2642 
+20/11 17:47:13 mimo referencia: .jest.json aprovados 392 falhos 0 skip 5 suitesFalhas 0 | .vitest.json aprovados 122 falhos 0 skip 5 suitesFalhas 0 | 
+20/11 17:47:13 mimo stryker iniciando
+20/11 17:47:33 INTERROMPIDO: resultado do frontend do DeepSeek inconsistente (mutante aplicado à mão mata 8 testes, Stryker marcou como sobrevivente). Investigando o runner do Vitest antes de seguir.
+20/11 17:49:23 CAUSA: @stryker-mutator/vitest-runner 9.6.1 nao executava nenhum teste nos mutantes com Vitest 5 ('Ran 0.00 tests per mutant'). Corrigido atualizando para StrykerJS 10.1.1 (teste de controle: 6/6 mutantes mortos; amostra do backend identica a 9.6.1). Piloto arquivado em logs/piloto-stryker9; todos os modelos serao rodados com 10.1.1.
+20/11 17:49:23 inicio (StrykerJS 10.1.1)
+20/11 17:49:37 deepseek referencia: .jest.json aprovados 638 falhos 0 skip 60 suitesFalhas 0 | .vitest.json aprovados 447 falhos 0 skip 3 suitesFalhas 0 | 
+20/11 17:49:38 deepseek stryker iniciando
+20/11 18:26:58 REINICIO DO CONTAINER na nuvem matou a execucao (deepseek backend em 75%). Para nao perder trabalho de novo, o Stryker agora roda em blocos por camada (cada bloco com relatorio proprio; blocos prontos sao pulados ao retomar).
+20/11 18:26:58 inicio/retomada (StrykerJS 10.1.1, em blocos por camada)
+20/11 18:27:21 deepseek referencia: .jest.json aprovados 638 falhos 0 skip 60 suitesFalhas 0 | .vitest.json aprovados 447 falhos 0 skip 3 suitesFalhas 0 | 
+20/11 18:27:21 deepseek stryker iniciando/retomando
+20/11 20:34:41 deepseek stryker fim: backend-domain exit=0 seg=1243 backend-services exit=0 seg=865 backend-repositories exit=0 seg=430 backend-routes exit=0 seg=177 backend-outros exit=0 seg=457 frontend-pages exit=0 seg=808 frontend-components exit=0 seg=1555 frontend-outros exit=0 seg=2099 
+20/11 20:34:53 mimo referencia: .jest.json aprovados 392 falhos 0 skip 5 suitesFalhas 0 | .vitest.json aprovados 122 falhos 0 skip 5 suitesFalhas 0 | 
+20/11 20:34:54 mimo stryker iniciando/retomando
+20/11 21:28:56 mimo stryker fim: backend-domain exit=0 seg=778 backend-services exit=0 seg=498 backend-repositories exit=0 seg=267 backend-routes exit=0 seg=172 backend-outros exit=0 seg=312 frontend-pages exit=0 seg=219 frontend-components exit=0 seg=552 frontend-outros exit=0 seg=440 
+20/11 21:29:02 glm referencia: .jest.json aprovados 239 falhos 1 skip 35 suitesFalhas 1 | .vitest.json aprovados 55 falhos 0 skip 1 suitesFalhas 0 | 
+20/11 21:29:02 glm stryker iniciando/retomando
+20/11 21:30:09 GLM: o teste 'senha correta durante o bloqueio é recusada' (CT-INT-084) depende do teste anterior, que falhou na execucao original e virou skip; sem ele a conta nao fica bloqueada e o teste falha. Marcado como skip (dependente de teste reprovado). Referencia agora: 239 aprovados, 0 falhos. Backend do GLM sera rodado ao final (pendentes.sh).
+20/11 21:39:59 glm stryker fim: frontend-pages exit=0 seg=65 frontend-components exit=0 seg=253 frontend-outros exit=0 seg=310 
+20/11 21:40:03 nemotron referencia: .jest.json aprovados 180 falhos 0 skip 81 suitesFalhas 0 | .vitest.json aprovados 1 falhos 0 skip 0 suitesFalhas 0 | 
+20/11 21:40:03 nemotron stryker iniciando/retomando
+20/11 22:02:44 nemotron stryker fim: backend-domain exit=0 seg=407 backend-services exit=0 seg=303 backend-repositories exit=0 seg=115 backend-routes exit=0 seg=112 backend-outros exit=0 seg=142 frontend-pages exit=0 seg=169 frontend-components exit=0 seg=6 frontend-outros exit=0 seg=103 
+20/11 22:02:49 gemini referencia: .jest.json aprovados 157 falhos 0 skip 6 suitesFalhas 0 | .vitest.json aprovados 19 falhos 0 skip 1 suitesFalhas 0 | 
+20/11 22:02:49 gemini stryker iniciando/retomando
+20/11 22:43:59 gemini stryker fim: backend-domain exit=0 seg=417 backend-services exit=0 seg=272 backend-repositories exit=0 seg=98 backend-routes exit=0 seg=111 backend-outros exit=0 seg=135 frontend-pages exit=0 seg=1231 frontend-components exit=0 seg=151 frontend-outros exit=0 seg=51 
+20/11 22:43:59 repeticoes para instabilidade (3x por modelo)
+20/11 22:45:01 deepseek repeticoes ok
+20/11 22:45:40 mimo repeticoes ok
+20/11 22:46:01 glm repeticoes ok
+20/11 22:46:16 nemotron repeticoes ok
+20/11 22:46:34 gemini repeticoes ok
+20/11 22:46:34 TUDO CONCLUIDO
+20/11 23:07:32 PENDENTES fim: glm frontend-pages exit=0 seg=65 frontend-components exit=0 seg=253 frontend-outros exit=0 seg=310 backend-domain exit=0 seg=478 backend-services exit=0 seg=365 backend-repositories exit=0 seg=167 backend-routes exit=0 seg=82 backend-outros exit=0 seg=137 
+20/11 23:07:32 FINALIZADO

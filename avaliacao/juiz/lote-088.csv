@@ -1,0 +1,4 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+gemini-0183;8;8;8;8;8;8.0;"Exercita a seleção de horários livres (RF07.1) com aria-pressed, classe e callback com valor exato; não verifica se a API foi chamada com medicoId e data, e o vínculo com RNF06 (mensagens) é fraco."
+gemini-0184;6;8;6;8;6;6.8;"Cobre o estado vazio da listagem de horários (RF07.1), mas o subatributo protecao-contra-erro-do-usuario é discutível para uma mensagem informativa; o oráculo verifica apenas o texto, cuja redação não consta da base de teste."
+gemini-0185;6;8;6;8;6;6.8;"Verifica que a falha da API é exibida, mas RNF04 trata do formato JSON de erro do backend, relação apenas parcial; não confere o role='alert' previsto na convenção de erro inline nem a ausência da lista de horários."

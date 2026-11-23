@@ -1,0 +1,8 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+deepseek-0771;4;6;6;8;4;5.6;"Subatributo 'apreensibilidade' não é identificador válido (seria reconhecibilidade) e o caso só checa um texto de orientação e o rótulo do botão, sem ligação real com RF11.1; texto esperado não consta da especificação."
+deepseek-0772;8;8;8;8;6;7.6;"Verifica RF11.1 em período sem consultas com total 0, faturamento R$ 0,00 e mensagem de faltas vazia; depende de o banco estar sem consultas e a mensagem exata não está na especificação."
+deepseek-0773;8;8;8;8;8;8.0;"Agenda pela UI uma consulta válida (segunda 10:00, antecedência de 2h respeitada) e confere total 1 e indicador Agendada 1 (RF11.1); ids '1' de paciente e médico sem explicação."
+deepseek-0774;8;8;6;6;6;6.8;"Confere que faturamento ignora consulta não realizada (RF11.1), mas depende implicitamente da consulta criada no caso anterior e não compara com uma consulta realizada para provar a soma."
+deepseek-0775;8;6;8;8;6;7.2;"Período invertido é recusado com alerta e sem resultado exibido, boa proteção contra erro; a mensagem exata é suposição não sustentada pela especificação e RNF04 não é verificado de fato."
+deepseek-0776;8;6;6;8;4;6.4;"Verifica alerta ao omitir as datas, mas só pela mensagem exata não definida na especificação e sem checar ausência de resultado; risco semelhante ao do caso de período invertido."
+deepseek-0777;8;8;6;6;4;6.4;"Verifica que o período exclui a consulta do dia 19 (RF11.1), porém depende de estado criado por outro caso sem verificá-lo e as asserções repetem as do caso de período vazio."

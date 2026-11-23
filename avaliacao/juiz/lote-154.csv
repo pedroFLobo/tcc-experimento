@@ -1,0 +1,7 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+mimo-0448;8;8;6;8;6;7.2;"Exercita a listagem da recepção (RF10.3) com API simulada; verifica cabeçalhos e quantidade de linhas, mas não confere nomes de paciente e médico em cada linha nem os filtros, cobrindo só o caminho feliz."
+mimo-0449;8;8;8;8;8;8.0;"Verifica que os filtros de data e status da recepção (RF10.3) são repassados à API com parâmetros exatos; não confere a tabela atualizada após o filtro."
+mimo-0450;4;6;8;8;4;6.0;"Comportamento do botão Limpar não decorre de RNF06 (mensagens em português) nem de proteção contra erro do usuário; asserções precisas sobre os parâmetros zerados, mas o risco coberto é menor e repete o fluxo de filtros."
+mimo-0451;6;6;8;8;6;6.8;"Verifica a chamada de falta com o id e o aviso de sucesso, mas não exercita a regra de RN29 (só após 15 minutos do início) e a mensagem exata não é sustentada pela especificação."
+mimo-0452;8;8;8;8;6;7.6;"Cobre o cancelamento pela recepção com motivo (RF09.2, RN26), conferindo id e motivo enviados e o aviso; não testa a obrigatoriedade do motivo (envio vazio) nem o prazo até o início."
+mimo-0453;6;6;8;8;6;6.8;"RNF04 trata do formato JSON de erro da API, não da exibição no frontend; o caso verifica alerta com id e texto exatos, mas o id 'consultas-mensagem' é um detalhe de implementação não especificado."

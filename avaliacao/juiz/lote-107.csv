@@ -1,0 +1,13 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+glm-0244;10;10;10;10;6;9.2;"Verifica o preço base integral (RN22) com valor exato de 15000 centavos; caminho feliz simples, de risco menor."
+glm-0245;10;10;10;10;8;9.6;"Confere o desconto de 10% para idoso (RN23) com valor exato 13500; regra de negócio central, embora parcialmente coberta pelo caso-limite de 60 anos."
+glm-0246;10;10;10;8;10;9.6;"Valor-limite de exatamente 60 anos (RN23) com valor exato 27000; o @resultadoEsperado é vago ('valor com desconto') em vez de citar 27000."
+glm-0247;10;10;10;8;10;9.6;"Valor-limite de 59 anos sem desconto (RN23), valor exato 30000; complementa bem o limite de 60 anos, @resultadoEsperado poderia citar o valor."
+glm-0248;10;10;10;10;10;10.0;"Testa o arredondamento ao centavo mais próximo (RN23) nos dois sentidos (8999,1 e 13950,9) com valores exatos explicados nos metadados."
+glm-0249;10;10;10;10;8;9.6;"Verifica que o retorno gratuito custa zero (RN24) com asserção exata; regra importante, embora a decisão de ser retorno venha pronta (ehRetorno)."
+glm-0250;10;10;10;10;10;10.0;"Cobre a precedência do retorno sobre o desconto de idade (RN24, RN23), regra explícita da base, com asserção exata 0."
+glm-0251;10;8;10;8;8;8.8;"Exercita a seleção da realizada dentro da janela de 30 dias (RN24); 'mais recente' é uma escolha não definida pela base e o helper realizada(id, dia, mes) exige atenção."
+glm-0252;10;4;8;6;8;7.2;"Falhou por erro do teste: a realizada às 09:00 de 2026-09-19 fica 30 dias e 1 hora antes do novo início (10:00), fora da janela de 30 dias da RN24; o título 'exatamente 30 dias' não confere com os dados."
+glm-0253;10;8;10;8;8;8.8;"Verifica exclusão fora da janela de 30 dias (RN24) com toBeNull; correto, mas o limite real não é testado com precisão (31 dias, e o caso de 30 dias também já fica fora)."
+glm-0254;10;10;10;10;10;10.0;"Cobre que cada realizada dá direito a um único retorno (RN24), passando o id já usado; risco de negócio relevante com oráculo exato."
+glm-0255;10;8;8;8;8;8.4;"Verifica que realizadas no mesmo instante ou futuras não geram retorno (RN24), coerente com 'anteriores ao novo horário'; agrupa dois cenários numa só asserção, sem isolar qual causa o null."

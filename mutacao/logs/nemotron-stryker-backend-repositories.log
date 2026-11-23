@@ -1,0 +1,18 @@
+00:51:56 (12098) INFO ProjectReader Found 5 of 107 file(s) to be mutated.
+00:51:56 (12098) INFO Instrumenter Instrumented 5 source file(s) with 219 mutant(s)
+00:51:56 (12098) INFO ConcurrencyTokenProvider Creating 4 test runner process(es).
+00:51:57 (12098) INFO DryRunExecutor Starting initial test run (jest test runner with "perTest" coverage analysis). This may take a while.
+00:52:01 (12098) INFO DryRunExecutor Initial test run succeeded. Ran 261 tests in 3 seconds (net 1983 ms, overhead 1655 ms).
+Mutation testing 4% (elapsed: <1m, remaining: ~3m) 66/219 tested (9 survived, 0 timed out)
+Mutation testing 8% (elapsed: <1m, remaining: ~3m) 97/219 tested (17 survived, 0 timed out)
+Mutation testing 24% (elapsed: <1m, remaining: ~1m) 118/219 tested (18 survived, 0 timed out)
+Mutation testing 34% (elapsed: <1m, remaining: ~1m) 133/219 tested (24 survived, 0 timed out)
+Mutation testing 43% (elapsed: <1m, remaining: ~1m) 147/219 tested (26 survived, 0 timed out)
+Mutation testing 50% (elapsed: ~1m, remaining: <1m) 162/219 tested (30 survived, 0 timed out)
+Mutation testing 61% (elapsed: ~1m, remaining: <1m) 173/219 tested (31 survived, 0 timed out)
+Mutation testing 70% (elapsed: ~1m, remaining: <1m) 186/219 tested (32 survived, 0 timed out)
+Mutation testing 79% (elapsed: ~1m, remaining: <1m) 195/219 tested (33 survived, 0 timed out)
+Mutation testing 89% (elapsed: ~1m, remaining: <1m) 208/219 tested (34 survived, 0 timed out)
+00:53:50 (12098) INFO JsonReporter Your report can be found at: file://{trabalho}/mut/nemotron/reports/mutacao/backend-repositories.json
+00:53:50 (12098) INFO HtmlReporter Your report can be found at: file://{trabalho}/mut/nemotron/reports/mutacao/backend-repositories.html
+00:53:50 (12098) INFO MutationTestExecutor Done in 1 minute and 54 seconds.

@@ -1,0 +1,5 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+glm-0337;6;8;8;8;6;7.2;"Verifica indicador de carregamento e que nem conteúdo nem login aparecem; a ligação com RF01.2 (token na API) é indireta e o rótulo 'Carregando' não está na base de teste."
+glm-0338;6;8;8;10;8;8.0;"Verifica redirecionamento ao login sem sessão e ocultação do conteúdo; é guarda de rota no cliente com useAuth mockado, relação apenas parcial com a autenticidade de RF01.2/RNF02 (401 na API)."
+glm-0339;4;8;8;8;6;6.8;"Verifica que médico em rota de paciente é redirecionado à própria área (RN30), mas o subatributo 'responsabilizacao' não confere (seria confidencialidade) e o redirecionamento não é o 403 previsto em RN30."
+glm-0340;8;8;6;8;6;7.2;"Caminho feliz: paciente vê o conteúdo protegido; asserção única sem verificar ausência de redirecionamento, risco menor e complementar aos demais casos."

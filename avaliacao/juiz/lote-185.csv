@@ -1,0 +1,11 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+nemotron-0224;8;10;8;6;8;8.0;"Exercita o prazo de 24h da remarcação (RN27) com tipo REGRA e trecho da mensagem; caso sem bloco de metadados (@requisito, @atributo, @resultadoEsperado), o que prejudica rastreabilidade e clareza."
+nemotron-0225;8;10;8;6;10;8.4;"Testa o limite de 2 remarcações por consulta (RN27), valor-limite relevante, verificando tipo REGRA e mensagem; faltam os metadados do caso."
+nemotron-0226;6;2;4;4;4;4.0;"A primeira asserção espera permitir a realização às 08:00 de 19/10, antes do início (20/10 10:00), contradizendo RN28; a falha é erro do teste, e o título diverge do dado usado."
+nemotron-0227;8;10;6;6;8;7.6;"Verifica que paciente e médico não dono não podem registrar atendimento (RN28/RN30), mas só checa o tipo PERMISSAO, sem mensagem; sem metadados."
+nemotron-0228;8;10;6;6;6;7.2;"Rejeita realizar consulta CANCELADA (estado final, RN28 e máquina de estados) checando apenas tipo REGRA; risco menor e já coberto em parte pelos testes de transição; sem metadados."
+nemotron-0229;8;10;8;6;8;8.0;"Verifica rejeição de realização uma hora antes do início (RN28) com tipo e trecho da mensagem; não testa o limite exato e não traz metadados."
+nemotron-0230;8;10;8;6;10;8.4;"Testa o limite exato de 15 minutos após o início para médico dono e recepção (RN29), boa análise de valor-limite; sem metadados de caso."
+nemotron-0231;8;10;6;6;6;7.2;"Verifica que paciente não pode registrar falta (RN29), só pelo tipo PERMISSAO; não cobre médico não dono; sem metadados."
+nemotron-0232;8;10;6;6;6;7.2;"Rejeita falta em consulta REALIZADA (estado final), checando só o tipo REGRA; padrão análogo ao caso de realização; sem metadados."
+nemotron-0233;8;10;8;6;8;8.0;"Rejeita falta 10 minutos após o início (RN29) com tipo e mensagem contendo '15 minutos'; bom complemento do limite, mas sem metadados."

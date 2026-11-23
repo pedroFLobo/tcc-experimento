@@ -1,0 +1,4 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+nemotron-0264;6;4;6;4;8;5.6;"Fluxo E2E amplo (RF08, RF09, RF10) sem metadados @nivel/@atributo/@requisito; falhou por erro do proprio teste (selectOption com regex no label) e usa seletores inventados (data-confirmar, data-confirma='sim'). Oraculo verifica status na tabela, mas nao confere valor nem horario."
+nemotron-0265;6;8;4;6;6;6.0;"Exercita login com senha errada (RF01, RNF06) e o erro inline role='alert' da SPEC; passou, mas sem metadados e o oraculo so verifica visibilidade do alerta e a URL, sem checar o texto da mensagem."
+nemotron-0266;6;4;4;6;8;5.6;"Cobre risco relevante de autorizacao por perfil (RN30) na interface, mas sem metadados; falhou porque supoe redirecionamento para /login ou /paciente, comportamento que a especificacao nao define, e nao espera o login concluir antes do goto. Oraculo restrito a URL."

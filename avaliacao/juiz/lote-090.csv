@@ -1,0 +1,4 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+gemini-0189;6;4;6;6;6;5.6;"Falhou por erro do próprio teste: getByText('Ana Pereira') encontra duas linhas na massa de dados; além disso o texto 'Retorno gratuito' é suposição não sustentada pelos requisitos. Título promete valores formatados, mas só verifica data-consulta-id de uma linha e o valor zero; vínculo com operabilidade/RNF06 é fraco."
+gemini-0190;6;6;8;8;6;6.8;"Verifica que ações aparecem só para AGENDADA/CONFIRMADA e não para REALIZADA, coerente com os estados finais da máquina de estados (RF09); o filtro no componente é suposição não explícita na base de teste. Asserções específicas por id, mas não verifica CANCELADA/FALTA."
+gemini-0191;6;8;6;8;4;6.4;"Confirma que o texto de lista vazia passado por prop é exibido (RF10); passou, mas apenas ecoa o valor fornecido pelo próprio teste, risco baixo e ligação com reconhecibilidade/RNF06 discutível."

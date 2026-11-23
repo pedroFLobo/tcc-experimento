@@ -1,0 +1,13 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+deepseek-0727;10;10;10;8;8;9.2;"Agenda pela interface no limite exato de 2h (RN16) e verifica data, status AGENDADA e valor R$ 150,00 (RF08.1, RF08.2, RN22); ids de especialidade e médico como números mágicos."
+deepseek-0728;6;10;10;8;10;8.8;"Testa bem o limite de antecedência (RN16): 10:00 aparece e 07:00 e 09:45 não, com grade de 15 min; atributo usabilidade é discutível para uma regra funcional de RN15/RN16."
+deepseek-0729;10;10;8;6;8;8.4;"Confirmação dentro das 48h (RN25) com toast e status CONFIRMADA; depende implicitamente da consulta criada em outro caso, sem preparar o próprio estado."
+deepseek-0730;10;10;10;8;10;9.6;"Desconto de 10% para idoso (RN23) conferido: 150,00 vira R$ 135,00 no toast e na tabela; valores corretos conforme a especificação."
+deepseek-0731;10;10;10;8;10;9.6;"Cancelamento com mais de 24h (RN26) pelo diálogo de confirmação: verifica que voltar mantém AGENDADA e que confirmar muda para CANCELADA; boa proteção contra erro do usuário."
+deepseek-0732;10;10;6;6;8;8.0;"Remarcação dentro do prazo (RN27), mas só verifica toast e a nova linha; não confere status AGENDADA, valor recalculado nem a saída do horário antigo, e depende do estado de outro caso."
+deepseek-0733;10;8;8;6;10;8.4;"Exercita o limite de 1 consulta ativa por especialidade (RN19) e confere a mensagem exata, que não está na especificação; não verifica que nenhuma consulta foi gravada e depende de estado anterior."
+deepseek-0734;10;8;8;6;10;8.4;"Testa sobreposição de horário com outro médico (RN18) pela mensagem exata, não definida na especificação; não verifica o estado final e depende da consulta criada em outro caso."
+deepseek-0735;8;8;8;8;8;8.0;"Data 63 dias à frente sem horários e botão desabilitado (RN16); mensagem de estado vazio suposta e não testa o limite exato de 60 dias."
+deepseek-0736;8;10;8;10;6;8.4;"Verifica botão de confirmar desabilitado até escolher horário, coerente com operabilidade; RNF06 citado trata de mensagens, não do botão, e o risco coberto é menor."
+deepseek-0737;6;8;6;8;4;6.4;"Subatributo 'apreensibilidade' não é identificador válido (seria reconhecibilidade); só confere texto de estado vazio inventado, sem testar o isolamento de RF10.1; risco baixo."
+deepseek-0738;8;8;10;6;10;8.4;"Recusa de cancelamento com menos de 24h (RN26) verificada pela mensagem e pela permanência em CONFIRMADA; mensagem não sustentada pela especificação e dependência do estado de casos anteriores."

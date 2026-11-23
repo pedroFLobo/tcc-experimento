@@ -1,0 +1,11 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+nemotron-0277;4;2;8;4;6;4.8;"Verifica formatação de centavos em reais com valores exatos, mas o arquivo não roda (erro de carga: describe não importado do vitest, erro do teste). Sem metadados (@caso, @nivel, @requisito); o vínculo com RNF06/usabilidade só aparece em comentário."
+nemotron-0278;4;2;6;4;4;4.0;"Erro de carga por não importar describe/test do vitest. Caso de um único valor (R$ 1,00) praticamente redundante com o anterior; sem metadados."
+nemotron-0279;4;2;8;4;6;4.8;"Assertiva exata do formato DD/MM/AAAA HH:mm, coerente com a convenção de datas, mas o arquivo não carrega por erro do próprio teste; sem metadados nem requisito explícito."
+nemotron-0280;4;2;8;4;4;4.4;"Verifica data sem hora com valor exato, porém erro de carga (globais do vitest não importados); variação menor do caso anterior e sem metadados."
+nemotron-0281;4;2;8;4;4;4.4;"Cobre entradas vazias/nulas com asserções exatas, mas o arquivo não roda por erro do teste; risco menor e sem metadados de rastreabilidade."
+nemotron-0282;2;2;6;4;2;3.2;"Erro de carga; além disso o oráculo replica a lógica da implementação e depende do relógio real (sujeito a falha na virada do dia). Sem relação com RNF06 ou outro requisito e sem metadados."
+nemotron-0283;4;2;8;4;2;4.0;"Testa uma constante de nomes de dias em português (relação fraca com RNF06); valores exatos, mas erro de carga por describe não importado e sem metadados. Teste de constante é trivial."
+nemotron-0284;2;2;8;4;2;3.6;"Apenas verifica a lista constante de status; não exercita a máquina de estados nem usabilidade. Erro de carga do próprio teste e sem metadados."
+nemotron-0285;4;2;8;4;6;4.8;"Confere a definição de consulta ativa (AGENDADA/CONFIRMADA) da base de teste com asserções exatas, mas atributo usabilidade é discutível e o arquivo não carrega (erro do teste); sem metadados."
+nemotron-0286;4;2;8;4;6;4.8;"Verifica que estados finais não são ativos, coerente com a especificação, com asserções exatas; erro de carga por não importar describe do vitest e ausência de metadados."

@@ -1,0 +1,12 @@
+01:00:55 (16432) INFO ProjectReader Found 17 of 101 file(s) to be mutated.
+01:00:56 (16432) INFO Instrumenter Instrumented 17 source file(s) with 482 mutant(s)
+01:00:56 (16432) INFO ConcurrencyTokenProvider Creating 4 test runner process(es).
+01:00:57 (16432) INFO DryRunExecutor Starting initial test run (vitest test runner with "perTest" coverage analysis). This may take a while.
+01:00:58 (16432) INFO DryRunExecutor Initial test run succeeded. Ran 1 tests in 0 seconds (net 31.387218000000075 ms, overhead 927.6127819999999 ms).
+01:00:58 (16432) WARN MutantTestPlanner Detected 6 static mutants (1% of total) that are estimated to take 67% of the time running the tests!
+  You might want to enable "ignoreStatic" to ignore these static mutants for your next run. 
+  For more information about static mutants visit: https://stryker-mutator.io/docs/mutation-testing-elements/static-mutants
+  (disable "warnings.slow" to ignore this warning)
+01:01:00 (16432) INFO JsonReporter Your report can be found at: file://{trabalho}/mut/nemotron/reports/mutacao/frontend-components.json
+01:01:00 (16432) INFO HtmlReporter Your report can be found at: file://{trabalho}/mut/nemotron/reports/mutacao/frontend-components.html
+01:01:00 (16432) INFO MutationTestExecutor Done in 5 seconds.

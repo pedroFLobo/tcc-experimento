@@ -1,0 +1,11 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+gemini-0049;8;10;6;8;8;8.0;"Exercita RF05.2 (substituição da grade de 10 blocos por 2), mas verifica só quantidade e um horaInicio, sem conferir diaSemana/horaFim nem a ausência dos blocos antigos."
+gemini-0050;6;6;6;8;8;6.8;"Cobre RN30 (médico alterando grade alheia), porém 'responsabilizacao' não é o subatributo adequado e a asserção usa mensagem não prevista na especificação em vez do codigo SEM_PERMISSAO declarado no resultado esperado."
+gemini-0051;8;10;6;8;6;7.6;"Confirma que a recepção pode salvar grade (RF05.1), mas não verifica persistência via obterGrade e é um caminho feliz próximo ao do caso anterior."
+gemini-0052;8;10;6;8;6;7.6;"Caminho feliz de RF06.1 com checagem de id, motivo e presença na listagem; não confere as datas gravadas, apesar de o resultado esperado citá-las."
+gemini-0053;8;6;6;8;8;7.2;"Testa o limite de RN12 (início um dia antes de agora), mas afirma apenas sobre texto de mensagem não definido na especificação, sem checar o codigo REGRA_NEGOCIO nem que nada foi gravado."
+gemini-0054;8;6;6;8;10;7.6;"Cobre o risco importante de RN13 com consulta ativa no período; a asserção depende de mensagem inventada e não verifica codigo REGRA_NEGOCIO nem a não criação do bloqueio."
+gemini-0055;8;10;8;8;6;8.0;"Verifica o estado final após a remoção (RF06.2) consultando a listagem; caminho feliz simples, de risco moderado."
+gemini-0056;6;8;8;6;6;6.8;"Valores de antecedência (RN16) corretos e específicos, mas a medição de tempo não usa a carga de 10 mil consultas exigida por RNF05, e o caso mistura objetivo funcional com desempenho."
+gemini-0057;10;10;8;8;8;8.8;"Verifica RN15 com consulta ativa: o horário ocupado some e o vizinho 10:30 permanece; o objetivo cita bloqueio, que não é exercitado."
+gemini-0058;8;8;8;8;8;8.0;"Exercita RN21 checando lista vazia exata em dia com grade; a especificação proíbe agendamento com médico inativo, e a ausência de horários livres é uma interpretação razoável, mas não explícita."

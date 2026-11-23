@@ -1,0 +1,36 @@
+{
+  "modelo": "gemini",
+  "data": "2026-11-18T22:34:40.735Z",
+  "copia": "C:\\tcc-rodadas\\gemini\\clinica-plus",
+  "arquivosDeTeste": [
+    "backend/__testes__/api/admin-api.test.js",
+    "backend/__testes__/api/auth-api.test.js",
+    "backend/__testes__/api/consultas-api.test.js",
+    "backend/__testes__/api/especialidades-api.test.js",
+    "backend/__testes__/api/medicos-api.test.js",
+    "backend/__testes__/api/pacientes-api.test.js",
+    "backend/__testes__/api/saude-api.test.js",
+    "backend/__testes__/integracao/agenda-service.test.js",
+    "backend/__testes__/integracao/auth-service.test.js",
+    "backend/__testes__/integracao/cadastro-service.test.js",
+    "backend/__testes__/integracao/consultas-service.test.js",
+    "backend/__testes__/unitario/agenda.test.js",
+    "backend/__testes__/unitario/consultas.test.js",
+    "backend/__testes__/unitario/validacoes.test.js",
+    "e2e/fluxo-medico.spec.js",
+    "e2e/fluxo-paciente.spec.js",
+    "e2e/fluxo-recepcao.spec.js",
+    "e2e/login-e-autenticacao.spec.js",
+    "frontend/__testes__/integracao/FormularioPaciente.test.jsx",
+    "frontend/__testes__/integracao/SeletorHorarios.test.jsx",
+    "frontend/__testes__/integracao/StatusBadge.test.jsx",
+    "frontend/__testes__/integracao/TabelaConsultas.test.jsx",
+    "frontend/__testes__/unitario/formatadores.test.js"
+  ],
+  "foraDasPastasDeTeste": {
+    "novos": [],
+    "alterados": [],
+    "apagados": []
+  },
+  "skillAlterada": false
+}

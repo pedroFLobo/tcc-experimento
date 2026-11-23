@@ -1,0 +1,11 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+deepseek-0144;8;10;6;8;6;7.6;"Verifica 200, as quatro seções e o período do resumo (RF11.1), mas só a estrutura: nenhum valor de porStatus, faltas ou faturamento é conferido."
+deepseek-0145;8;8;6;8;8;7.6;"Cria e cancela uma consulta pela recepção com motivo (RN26) e confere porStatus.CANCELADA = 1 (RF11.1); não verifica o sucesso das etapas de preparo nem os demais contadores."
+deepseek-0146;6;6;6;6;6;6.0;"Testa período ausente com 400, mas compara mensagem inventada que a especificação não define e não verifica o codigo VALIDACAO prometido no @resultadoEsperado; usabilidade é discutível para RF11.1."
+deepseek-0147;6;6;6;6;6;6.0;"Período invertido com 400 é plausível, mas a asserção depende de mensagem não especificada e omite o codigo VALIDACAO declarado; vínculo com RNF04 é parcial, pois não verifica o formato do erro."
+deepseek-0148;8;8;4;8;4;6.4;"Confere apenas o content-type JSON do relatório, sem status nem corpo; oráculo fraco e risco menor de interoperabilidade."
+deepseek-0149;6;6;8;8;8;7.2;"Desativação com corpo exato verificado é bom oráculo, mas RN21 trata de impedir agendamento e o teste verifica login com 403, comportamento que a especificação não define."
+deepseek-0150;6;8;6;6;6;6.4;"Só verifica que o login volta a 200 após reativar; não confere status nem corpo dos PATCH e a relação com RN21 (agendamento) é indireta; asserção aninhada reduz a legibilidade."
+deepseek-0151;6;6;6;8;6;6.4;"Valor não booleano retorna 400, mas a asserção usa mensagem inventada em vez do codigo VALIDACAO (RNF04 pede codigo e mensagem); atributo usabilidade discutível."
+deepseek-0152;6;6;6;6;6;6.0;"404 para usuário inexistente confere com a seção 5, mas compara mensagem não especificada e não verifica o codigo NAO_ENCONTRADO prometido no @resultadoEsperado."
+deepseek-0153;6;8;6;8;8;7.2;"Paciente recebe 403 ao tentar desativar conta (RN30), risco de autorização relevante; falta conferir o codigo SEM_PERMISSAO e o estado da conta, e responsabilizacao não é o subatributo adequado."

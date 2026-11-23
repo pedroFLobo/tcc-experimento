@@ -1,0 +1,10 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+glm-0291;8;10;10;10;8;9.2;"Cálculo de idade com aniversário já passado (36 anos) confere; função auxiliar de RN05/RN06, cuja ligação com RN05 é indireta. Asserção de valor exato."
+glm-0292;8;10;10;10;8;9.2;"Complementa o caso anterior no caminho em que o aniversário ainda não chegou (35 anos), limite relevante do cálculo; vínculo com RN05 indireto."
+glm-0293;10;10;10;8;8;9.2;"Exige responsável aos 17 anos (RN06), valor correto; o @objetivo chama de valor-limite uma data a quase 3 meses do 18º aniversário, o que não é o limite real."
+glm-0294;10;10;10;10;10;10.0;"Valor-limite exato da RN06: no dia do 18º aniversário não exige responsável; asserção booleana precisa e dados bem escolhidos."
+glm-0295;10;10;10;10;6;9.2;"Caminho feliz da RN05 com asserção exata de null; útil, porém risco menor que os casos de limite do lote."
+glm-0296;10;8;10;10;8;9.2;"Rejeita data futura (RN05) com mensagem exata; o texto da mensagem não está na base de teste e a data não é o limite (dia seguinte)."
+glm-0297;10;8;10;10;8;9.2;"Rejeita idade de 131 anos (RN05) com asserção da mensagem exata, cujo texto a base não define; não testa o limite imediato acima de 130."
+glm-0298;10;10;10;8;10;9.6;"Valor-limite de RN05: idade de 130 anos completos é aceita; 'exatamente 130 anos' é impreciso, pois a pessoa tem 130 anos e 9 meses na referência."
+glm-0299;8;8;10;8;10;8.8;"Entradas malformadas e inexistentes (30/02) rejeitadas, risco relevante de tolerância a falhas; RN05 não trata formato e a mensagem exata não está na base."

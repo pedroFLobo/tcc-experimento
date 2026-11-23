@@ -1,0 +1,18 @@
+01:15:58 (23082) INFO ProjectReader Found 6 of 108 file(s) to be mutated.
+01:15:58 (23082) INFO Instrumenter Instrumented 6 source file(s) with 128 mutant(s)
+01:15:58 (23082) INFO ConcurrencyTokenProvider Creating 4 test runner process(es).
+01:15:59 (23082) INFO DryRunExecutor Starting initial test run (jest test runner with "perTest" coverage analysis). This may take a while.
+01:16:02 (23082) INFO DryRunExecutor Initial test run succeeded. Ran 163 tests in 3 seconds (net 1795 ms, overhead 1434 ms).
+Mutation testing 11% (elapsed: <1m, remaining: ~1m) 18/128 tested (2 survived, 3 timed out)
+Mutation testing 21% (elapsed: <1m, remaining: ~1m) 27/128 tested (4 survived, 7 timed out)
+Mutation testing 27% (elapsed: <1m, remaining: ~1m) 34/128 tested (5 survived, 11 timed out)
+Mutation testing 31% (elapsed: <1m, remaining: ~1m) 40/128 tested (5 survived, 15 timed out)
+Mutation testing 34% (elapsed: <1m, remaining: ~1m) 48/128 tested (5 survived, 21 timed out)
+Mutation testing 43% (elapsed: ~1m, remaining: ~1m) 57/128 tested (7 survived, 25 timed out)
+Mutation testing 52% (elapsed: ~1m, remaining: ~1m) 68/128 tested (11 survived, 30 timed out)
+Mutation testing 69% (elapsed: ~1m, remaining: <1m) 82/128 tested (17 survived, 33 timed out)
+Mutation testing 77% (elapsed: ~1m, remaining: <1m) 93/128 tested (20 survived, 37 timed out)
+Mutation testing 85% (elapsed: ~1m, remaining: <1m) 120/128 tested (27 survived, 40 timed out)
+01:17:49 (23082) INFO JsonReporter Your report can be found at: file://{trabalho}/mut/gemini/reports/mutacao/backend-routes.json
+01:17:49 (23082) INFO HtmlReporter Your report can be found at: file://{trabalho}/mut/gemini/reports/mutacao/backend-routes.html
+01:17:49 (23082) INFO MutationTestExecutor Done in 1 minute and 50 seconds.

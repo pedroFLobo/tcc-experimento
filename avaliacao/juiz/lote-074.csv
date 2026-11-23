@@ -1,0 +1,6 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+gemini-0041;6;8;6;8;6;6.8;"Listar pacientes pela recepção não é bem o RF02.2 (cadastro); oráculo fraco, só status 200, tipo array e tamanho >= 3, sem conferir campos nem a ausência de senha (RNF01)."
+gemini-0042;10;10;10;10;8;9.6;"Verifica diretamente a autorização por perfil (RN30): paciente recebe 403 com codigo SEM_PERMISSAO ao listar todos os pacientes; o risco se sobrepõe em parte ao caso 0044."
+gemini-0043;8;2;6;6;8;6.0;"Exercita o RF02.2, mas o CPF 730.825.290-77 é inválido (o dígito verificador correto seria 730.825.290-62), então o 400 recebido é o comportamento correto pela RN03 e a falha é do teste; o oráculo não confere a persistência nem a ausência de senha."
+gemini-0044;10;8;10;8;10;9.2;"Cobre a RN30 com 200 no próprio cadastro (e-mail conferido) e 403 SEM_PERMISSAO no alheio; usa ids fixos 1 e 2 em vez dos retornos de semear e junta dois cenários num só teste."
+gemini-0045;6;10;8;10;6;8.0;"O 404 NAO_ENCONTRADO confere com a RN30 e a seção 5, mas o rótulo confiabilidade/tolerância a falhas é discutível e o teste não verifica a ausência de stack trace (RNF04); o risco é menor."

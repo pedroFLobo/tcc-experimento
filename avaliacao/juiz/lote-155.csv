@@ -1,0 +1,4 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+mimo-0454;8;8;8;8;6;7.6;"Verifica papel dialog com nome acessível, descrição e rótulo associado ao campo, coerente com usabilidade/acessibilidade (RNF06, rótulos na seção 7.6). A asserção do id 'texto-campo' é detalhe de implementação não sustentado pela spec e o risco coberto é menor."
+mimo-0455;8;10;8;8;6;8.0;"Confirma que o motivo digitado chega exatamente a onConfirmar, apoiando RF09.2 no nível do componente; não verifica que foi chamado uma única vez nem a obrigatoriedade do motivo (RN26). Botão e título com o mesmo texto 'Cancelar consulta' exigem atenção do leitor."
+mimo-0456;6;8;10;10;6;8.0;"Verifica que 'Voltar' chama onCancelar uma vez e não dispara onConfirmar, oráculo preciso e caso claro; proteção contra erro do usuário é pertinente, mas RNF06 trata de mensagens em português, relação parcial com o requisito citado."

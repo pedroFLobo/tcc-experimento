@@ -1,0 +1,7 @@
+c7e701cde8aba5e76c04ad84c9e5761a6e7b5d8a306264779be693146aa8eb8f  skills/gerador-casos-teste/SKILL.md
+b7c9525f7de39f034938e29ed79d70c9c4a3ff1b4d7d9a94b5a27b713f40d5e7  skills/gerador-casos-teste/references/metadados.md
+c0eb5d824b3a2681b189db269e731fa3897db9a9f33f494167209adc74437535  skills/gerador-casos-teste/references/modelo-spec.md
+71f32abe99ffa2fe750e158b6dd485dd154f87173a70ebe3f5f7b46de975feda  skills/gerador-casos-teste/references/piramide-e-iso.md
+34af5e22309f298730f4ac8c578f3d7e08d73212c8f4cdf71f46e902c894027e  skills/gerador-casos-teste/references/tecnicas.md
+7d754f38e5cf1a02c89967de666573e8a0a719840b89c8bc745b962a24aa0dae  clinica-plus/SPEC.md
+6cf035183a5ab8c32184870e6d2bfbea443b156582c519da77924d093d06ddaa  clinica-plus/docs/REQUISITOS.md

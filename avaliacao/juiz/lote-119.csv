@@ -1,0 +1,5 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+glm-0341;8;10;10;8;8;8.8;"Exercita RF07.1 na interface com API simulada: verifica data-inicio, aria-pressed do selecionado, argumentos de onEscolher e da chamada a medicosApi.horarios. Bom oráculo; a prop selecionado pré-definida não é explicada."
+glm-0342;8;8;8;10;6;8.0;"Cobre o caso sem horários livres com mensagem em português (RNF06); o texto exato do aviso não vem da base de teste, mas é coerente. Risco menor, oráculo restrito à presença do texto."
+glm-0343;6;8;6;6;6;6.4;"Guarda contra chamada sem médico/data é mais pertinência que tolerância a falhas (atributo discutível). O waitFor com not.toHaveBeenCalled passa de imediato e o seletor '.vazio' é um detalhe de implementação não explicado; metadado com erro de concordância."
+glm-0344;8;8;6;8;8;7.6;"Verifica que a rejeição da API vira aviso legível sem quebrar o componente (tolerância a falhas, RNF04/RNF06). Oráculo só checa o texto; não confere role='alert' nem a ausência de botões de horário."

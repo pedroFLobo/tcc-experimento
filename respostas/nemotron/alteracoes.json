@@ -1,0 +1,35 @@
+{
+  "modelo": "nemotron",
+  "data": "2026-11-18T22:07:52.622Z",
+  "copia": "C:\\tcc-rodadas\\nemotron\\clinica-plus",
+  "arquivosDeTeste": [
+    "backend/__testes__/api/admin.test.js",
+    "backend/__testes__/api/auth.test.js",
+    "backend/__testes__/api/consultas.test.js",
+    "backend/__testes__/api/especialidades.test.js",
+    "backend/__testes__/api/medicos.test.js",
+    "backend/__testes__/api/pacientes.test.js",
+    "backend/__testes__/api/saude.test.js",
+    "backend/__testes__/api/seguranca.test.js",
+    "backend/__testes__/integracao/agenda.integracao.test.js",
+    "backend/__testes__/integracao/auth.integracao.test.js",
+    "backend/__testes__/integracao/cadastro.integracao.test.js",
+    "backend/__testes__/integracao/consultas.integracao.test.js",
+    "backend/__testes__/unitario/agenda.test.js",
+    "backend/__testes__/unitario/consultas.test.js",
+    "backend/__testes__/unitario/validacoes.test.js",
+    "e2e/fluxo-medico.spec.js",
+    "e2e/fluxo-paciente.spec.js",
+    "e2e/fluxo-recepcao.spec.js",
+    "frontend/__testes__/integracao/CadastroPage.integracao.test.jsx",
+    "frontend/__testes__/integracao/LoginPage.integracao.test.jsx",
+    "frontend/__testes__/integracao/StatusBadge.integracao.test.jsx",
+    "frontend/__testes__/unitario/formatadores.test.js"
+  ],
+  "foraDasPastasDeTeste": {
+    "novos": [],
+    "alterados": [],
+    "apagados": []
+  },
+  "skillAlterada": false
+}

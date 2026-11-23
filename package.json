@@ -1,0 +1,17 @@
+{
+  "name": "experimento-clinica-plus",
+  "private": true,
+  "type": "module",
+  "description": "Ferramentas do experimento do TCC 2 (preparação da avaliação, ficha e métricas)",
+  "scripts": {
+    "preparar-avaliacao": "node ferramentas/preparar-avaliacao.mjs",
+    "ficha": "node ferramentas/ficha-avaliacao.mjs",
+    "metricas": "node ferramentas/metricas.mjs"
+  },
+  "dependencies": {
+    "exceljs": "4.4.0"
+  },
+  "engines": {
+    "node": ">=22.12"
+  }
+}

@@ -1,0 +1,7 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+glm-0300;8;4;8;8;8;7.2;"Percorre o agendamento (RF07.1, RF08.1, RF08.2) com valor R$ 150,00 correto (RN22), mas RN16 não é exercitada; falhou no texto do toast, inventado pelo teste, enquanto o caso seguinte mostra que a consulta foi gravada, logo o erro é do teste."
+glm-0301;10;8;8;8;8;8.4;"Verifica na listagem do paciente (RF10.1) data, valor R$ 150,00 (RN22) e status Agendada; a frase de contagem não está na especificação e o caso depende do estado criado pelo caso anterior."
+glm-0302;10;4;8;8;8;7.6;"Confirmação 24 h antes, dentro da janela de 48 h (RN25), mas falhou no texto do toast inventado; o caso seguinte encontra a consulta Confirmada, indicando erro do teste e não defeito do sistema."
+glm-0303;10;8;8;8;8;8.4;"Exercita proteção contra erro do usuário no diálogo de cancelamento (RF09.2): ao desistir, o diálogo fecha, o status segue Confirmada e nenhum toast aparece; textos do diálogo não constam da especificação."
+glm-0304;10;4;8;8;8;7.6;"Remarca para 11:30 com o mesmo médico (RF09.3, RN27), mas a consulta está a exatamente 24 h do início, no limite de RN27, sem que isso seja intencional; falhou no texto do toast inventado, erro atribuível ao teste."
+glm-0305;8;4;8;6;8;6.8;"Pretende validar cancelamento com mais de 24 h (RN26), mas junta agendamento e cancelamento no mesmo teste e falhou já no toast inventado do agendamento, sem chegar ao cancelamento; valor R$ 300,00 confere com RN22."

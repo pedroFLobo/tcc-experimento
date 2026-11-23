@@ -1,0 +1,6 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+deepseek-0106;8;10;8;8;10;8.8;"Mede o tempo da listagem de horários livres com 10 mil consultas (RNF05) e confere os 16 horários corretos do Dr. Carlos na terça; o subatributo 'comportamento-em-relacao-ao-tempo' não é identificador válido e as consultas inseridas são todas inativas e antigas, o que pouco estressa a regra de conflito."
+deepseek-0107;8;10;6;8;10;8.4;"Mede o tempo do agendamento com 10 mil consultas na base (RNF05) e espera 201, coerente com RN16; verifica só status e tempo, sem conferir valor gravado ou o corpo da consulta, e o subatributo declarado não é identificador válido."
+deepseek-0108;6;6;8;8;6;6.8;"Mede tempo e confere os 10 mil itens, mas a RNF05 só exige o limite de 500 ms para horários livres e agendamento; aplicar o limite à listagem geral de consultas é uma suposição não sustentada pela base de teste."
+deepseek-0109;4;6;6;6;4;5.2;"Declara 'utilizacao-de-recursos' mas mede tempo, e o relatório (RF11) não está coberto pela RNF05; o oráculo 'faturamentoCentavos > 0' é fraco quando o valor exato (2000 realizadas x 15000) era calculável."
+deepseek-0110;2;8;6;6;2;4.8;"Declara eficiência de desempenho (RNF05) sem nenhuma medição de tempo; repete a verificação dos 16 horários do caso deepseek-0106, sem checar status HTTP."

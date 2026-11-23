@@ -1,0 +1,7 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+nemotron-0057;6;8;4;4;6;5.6;"Lista pacientes pela recepção (rota de recepção, RF02.2 citado só no cabeçalho do arquivo); só confere status 200 e quantidade 3, sem verificar campos nem ausência de senha. Sem bloco de metadados (@caso, @atributo, @requisito, @objetivo)."
+nemotron-0058;6;8;6;4;8;6.4;"Verifica 403 para paciente listando pacientes (RN30), coerente com a base, mas não confere o codigo SEM_PERMISSAO. Caso sem metadados e sem atributo/requisito declarados individualmente."
+nemotron-0059;6;8;6;4;6;6.0;"Paciente acessa os próprios dados (RN30/RF10.1) com status 200 e e-mail conferido; oráculo parcial, não verifica que a senha não é exposta. Sem metadados, caminho feliz simples."
+nemotron-0060;6;8;4;4;6;5.6;"Recepção acessa dados de outro paciente (RN30), mas só verifica status 200, sem conferir o corpo (ex.: e-mail do João). Sem metadados; caminho feliz de baixo risco."
+nemotron-0061;8;10;6;4;10;7.6;"Cobre o risco central de autorização da RN30 (paciente acessando dados de outro retorna 403), conforme a base; falta asserção do codigo SEM_PERMISSAO. Título cita RN30, mas não há bloco de metadados."
+nemotron-0062;6;8;6;4;8;6.4;"Recurso inexistente retorna 404 (RN30), de acordo com a base, mas não verifica o codigo NAO_ENCONTRADO; id 999999 é número mágico sem explicação e o caso não tem metadados."

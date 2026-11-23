@@ -1,0 +1,5 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+mimo-0408;10;10;8;8;10;9.2;"Fluxo E2E completo de agendamento (RF08.1, RF07.1, RN17) com toast de sucesso e linha na lista com status AGENDADA; não verifica o valor gravado (RF08.2) nem o médico na linha da lista."
+mimo-0409;8;8;8;10;8;8.4;"Verifica que #agendar-confirmar fica desabilitado até escolher horário, coerente com proteção contra erro do usuário; a citação de RNF06 (mensagens em português) não se relaciona ao que é testado e o comportamento do botão não está na base de teste."
+mimo-0410;10;10;8;10;10;9.6;"Testa valores-limite da geração de horários (RN14): 08:00 e 17:30 presentes, 12:00 e 18:00 ausentes, conforme blocos 08–12 e 14–18 de 30 min; não confere a lista completa, então horários espúrios intermediários passariam."
+mimo-0411;8;8;8;8;6;7.6;"Verifica ausência de horários na segunda e presença de 13:00 na terça para Eduardo (RN14), mas a mensagem exata 'Nenhum horário livre...' não está na especificação, o título 'a partir das 13:00' não é comprovado (não verifica ausência de 12:45) e o subatributo pertinencia é discutível; sobrepõe-se ao caso da grade de Carlos."

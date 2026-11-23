@@ -1,0 +1,5 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+gemini-0172;6;8;4;6;4;5.6;"Relaciona-se ao RF10.3, mas só verifica a visibilidade de três filtros, sem aplicar filtro algum nem checar a tabela prometida no @resultadoEsperado; omite o filtro por paciente."
+gemini-0173;8;4;6;6;6;6.0;"Exercita o cadastro de especialidade (RF03.1), mas falhou por esperar uma mensagem inventada ('Pneumologia disponível'), defeito do teste; RN09 não é testada e o preço não é verificado na tabela."
+gemini-0174;6;2;6;6;6;5.2;"Cobre RF04.1, mas falhou por uso incorreto da API do Playwright (selectOption com label em regex), erro do próprio teste; também supõe mensagem não especificada e não exercita a duração da RN08."
+gemini-0175;6;8;4;6;6;6.0;"Acessa o relatório do RF11.1 e passou, mas só confere a visibilidade e um rótulo fixo, sem validar totais por status, taxa de faltas ou faturamento."

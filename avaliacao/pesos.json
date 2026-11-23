@@ -1,0 +1,22 @@
+{
+  "definidoEm": "2026-11-19",
+  "criterio": "Peso proporcional à quantidade de requisitos do Clínica+ (docs/REQUISITOS.md) ligados ao atributo e ao impacto de uma falha no domínio clínico. Escala 1 a 5.",
+  "pesos": {
+    "adequacao-funcional": 5,
+    "seguranca": 4,
+    "confiabilidade": 3,
+    "usabilidade": 2,
+    "manutenibilidade": 2,
+    "eficiencia-de-desempenho": 1,
+    "compatibilidade": 1
+  },
+  "justificativa": {
+    "adequacao-funcional": "Núcleo do sistema: 11 requisitos funcionais e regras RN01-RN30.",
+    "seguranca": "RNF01-RNF03 (hash, JWT, SQL parametrizado); dados de pacientes.",
+    "confiabilidade": "RNF04; erro numa consulta afeta o atendimento.",
+    "usabilidade": "RNF06; mensagens legíveis, pouco impacto em regra de negócio.",
+    "manutenibilidade": "RNF07 (testabilidade), ligado ao tema do TCC.",
+    "eficiencia-de-desempenho": "Apenas RNF05 (< 500 ms).",
+    "compatibilidade": "Apenas RNF08 (navegadores)."
+  }
+}

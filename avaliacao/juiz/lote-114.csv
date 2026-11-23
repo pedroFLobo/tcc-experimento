@@ -1,0 +1,9 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+glm-0312;8;4;6;8;6;6.4;"Exercita RF03.1 pelo caminho feliz, mas não testa as restrições de RN09 que cita (nome único, preço > 0). Falhou no texto do toast, que é uma mensagem inventada e não está na especificação, portanto o erro é do teste."
+glm-0313;8;4;8;6;6;6.4;"Cadastro de médico (RF04.1) com CRM válido; a linha conferida com CRM e especialidade é um bom oráculo. Depende do id mágico '5' criado no caso anterior e falhou no texto inventado do toast 'Médico cadastrado'."
+glm-0314;8;4;6;8;6;6.4;"O CPF 168.995.350-09 é válido (RN03) e o cadastro feito pela recepção cobre RF02.2, mas o caso não verifica a gravação só com dígitos nem cenário inválido. Falhou no texto do toast, que não está na especificação."
+glm-0315;8;4;6;6;8;6.4;"Os valores esperados conferem (Ana sem desconto, R$ 150,00 pela RN22, antecedência válida), mas o oráculo é só o texto do toast, sem verificar a consulta na listagem. Usa ids mágicos e falhou na mensagem inventada."
+glm-0316;8;4;8;6;8;6.8;"A confirmação 24h antes está dentro da janela de 48h da RN25, e o caso verifica toast e status CONFIRMADA. Depende do estado criado pelos casos anteriores e falhou no texto inventado do toast."
+glm-0317;8;4;8;6;8;6.8;"Cancelamento pela recepção com motivo (RN26) e verificação do status final CANCELADA. Os textos do diálogo e do toast são inventados e o caso falhou no toast; não testa a recusa sem motivo, que daria força à obrigatoriedade."
+glm-0318;10;8;8;6;6;7.6;"Filtro por status da RF10.3 com contagens e linhas verificadas para dois status (1 e 0). Passou, mas depende inteiramente do estado deixado pelos casos anteriores, que falharam no toast."
+glm-0319;8;8;6;6;8;7.2;"Relatório (RF11.1) com faturamento R$ 0,00 coerente, já que não houve consulta realizada. Não verifica a taxa de faltas por médico, e o seletor '.indicador.destaque strong' com o valor '1' não deixa claro a qual status ele se refere."

@@ -1,0 +1,12 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+mimo-0153;10;10;8;8;6;8.4;"Cria especialidade (RF03.1, RN09) e compara o objeto retornado com valores exatos; não confere a gravação no banco e é caminho feliz simples."
+mimo-0154;10;8;8;8;8;8.4;"Verifica unicidade do nome (RN09) com 409 e CONFLITO, conforme a seção 5; a mensagem exata não consta na especificação e não se confere que só uma linha foi gravada."
+mimo-0155;10;8;8;6;8;8.0;"Testa o limite de preço maior que zero (RN09) com 0, negativo, decimal e texto e confere que nada foi gravado; não verifica o codigo VALIDACAO e o resultadoEsperado fala em três casos quando há quatro."
+mimo-0156;6;4;6;8;4;5.6;"O mínimo de 3 caracteres para o nome não existe em RF03.1 nem em RN09; o caso valida uma regra que a base de teste não sustenta e não verifica o codigo de erro."
+mimo-0157;8;8;8;8;8;8.0;"Confere CRM e duração padrão de 30 min (RN08) e o vínculo à especialidade; a normalização para maiúsculas com espaços é suposição não prevista em RN07, e RN08 não é citado no requisito."
+mimo-0158;10;10;8;8;8;8.8;"Cobre os valores-limite válidos 15 e 60 e o intermediário 45 de RN08, com asserção sobre o valor gravado; o laço com forEach reduz um pouco a clareza."
+mimo-0159;10;8;8;8;10;8.8;"Rejeita 10, 20, 61 e 30.5 (RN08) e confere que nenhum médico foi gravado; bom oráculo de estado, mas não verifica o codigo VALIDACAO e a mensagem exata não consta na especificação."
+mimo-0160;10;8;8;8;10;8.8;"Testa CRM com 3 e 7 dígitos, UF inválida e sem barra (RN07), conferindo que nada foi gravado; falta verificar o codigo VALIDACAO e a mensagem é suposição."
+mimo-0161;10;8;8;8;8;8.4;"Verifica a unicidade do CRM (RN07) com status 409; não confere o codigo CONFLITO nem que só um médico ficou gravado, e a mensagem não consta na especificação."
+mimo-0162;6;6;6;8;6;6.4;"RF04.1 não define o tratamento de especialidade inexistente; supor 400 com essa mensagem não tem respaldo (poderia ser 404 ou 422), e o codigo de erro não é verificado."
+mimo-0163;8;8;6;6;6;6.8;"Aplica RN01 e RN02 ao cadastro de médico, mas junta dois cenários num só teste, supõe e-mail sem diferenciar maiúsculas e no e-mail repetido só verifica o status 409, sem o codigo CONFLITO."

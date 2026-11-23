@@ -1,0 +1,35 @@
+{
+  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "testRunner": "vitest",
+  "vitest": {
+    "configFile": "vitest.config.mjs",
+    "related": false
+  },
+  "mutate": [
+    "frontend/src/components/**/*.{js,jsx}"
+  ],
+  "coverageAnalysis": "perTest",
+  "concurrency": 4,
+  "timeoutMS": 5000,
+  "reporters": [
+    "json",
+    "html",
+    "progress-append-only"
+  ],
+  "jsonReporter": {
+    "fileName": "reports/mutacao/frontend-components.json"
+  },
+  "htmlReporter": {
+    "fileName": "reports/mutacao/frontend-components.html"
+  },
+  "tempDirName": ".stryker-tmp-frontend-components",
+  "ignorePatterns": [
+    "backend/__testes__",
+    "e2e",
+    ".jest.json",
+    ".vitest.json",
+    "reports"
+  ],
+  "cleanTempDir": true,
+  "disableBail": true
+}

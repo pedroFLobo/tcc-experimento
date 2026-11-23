@@ -1,0 +1,8 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+mimo-0513;4;6;8;8;4;6.0;"Verifica com toBeNull o retorno de useAuth fora do provedor, mas o RNF07 trata de regras puras no domain e relógio injetável, não de contexto React; o comportamento esperado não é sustentado pela base de teste e o risco é menor."
+mimo-0514;6;8;8;8;6;7.2;"Confere carregando=false, usuário 'nenhum' e que /auth/me não é chamado sem token; o vínculo com RF01.2 (token exigido nas rotas da API) e com confidencialidade é indireto."
+mimo-0515;8;8;8;8;8;8.0;"Restaura a sessão via /auth/me (RF01.3), verificando o estado de carregamento antes e depois, o usuário exibido e uma única chamada; não confere se o token salvo é o usado e a chave 'clinica.token' é suposição de implementação."
+mimo-0516;8;8;10;8;8;8.4;"Com /auth/me rejeitado, verifica remoção do token, usuário zerado e fim do carregamento, estado final completo coerente com RNF02 (token inválido) e recuperabilidade."
+mimo-0517;6;8;10;10;8;8.4;"Verifica credenciais repassadas ao login, token salvo e usuário definido (RF01.1), com oráculo completo; o subatributo confidencialidade é discutível para o fluxo de login."
+mimo-0518;6;8;8;8;8;7.6;"Confere que sair zera o usuário e remove o token do armazenamento; RNF02 trata de autenticidade do token e o subatributo confidencialidade é discutível, mas o encerramento de sessão é um risco relevante."
+mimo-0519;4;6;8;8;2;5.6;"Testa apenas uma constante de mapeamento perfil-rota com toEqual exato; as rotas não constam da base de teste e não há verificação de autorização real do RN30."

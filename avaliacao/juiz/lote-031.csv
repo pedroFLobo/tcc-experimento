@@ -1,0 +1,8 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+deepseek-0495;10;10;10;10;8;9.6;"Exercita diretamente o relógio injetável (RNF07) com asserção sobre o instante exato via getTime; metadados coerentes com o código."
+deepseek-0496;6;8;8;8;6;7.2;"Cópia defensiva do relógio é mais testabilidade (RNF07) que confiabilidade/maturidade; a base não exige essa propriedade e a asserção verifica só o ano."
+deepseek-0497;10;10;8;8;8;8.8;"Verifica que definirAgora(null) restaura o relógio real (RNF07), essencial para isolar testes; a tolerância de 5 s é razoável, mas o oráculo é aproximado."
+deepseek-0498;6;10;8;8;4;7.2;"Refixar o relógio é testabilidade (RNF07), não confiabilidade/maturidade; verifica só ano e mês e repete em essência o caso deepseek-0495."
+deepseek-0499;10;10;6;8;8;8.4;"Cobre a leitura de CLINICA_AGORA prevista na base (RNF07), mas confere apenas hora e dia, deixando de fora ano, mês e minutos."
+deepseek-0500;6;6;8;8;8;7.2;"Entrada inválida em CLINICA_AGORA é risco útil, mas RNF04 trata de erros JSON da API e a mensagem exigida pela regex não está na especificação."
+deepseek-0501;10;8;8;8;6;8.0;"Testa o retorno ao relógio real sem a variável (RNF07); comportamento padrão é suposto pela base e o caso se sobrepõe ao deepseek-0497."

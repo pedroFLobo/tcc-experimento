@@ -1,0 +1,4 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+glm-0373;8;8;8;10;6;8.0;"Verifica o rótulo em português do status AGENDADA (RNF06), coerente com reconhecibilidade; asserções de data-status e classe são específicas, mas o rótulo 'Agendada' e a classe CSS não estão na base de teste e o caso se sobrepõe ao CT-UNI-145."
+glm-0374;6;8;6;6;6;6.4;"Cobre os cinco estados da máquina de estados com rótulos em português, mas o atributo adequacao-funcional/completude para um selo de exibição é discutível; o @resultadoEsperado cita a classe específica que o código não verifica e há laço com lógica no teste."
+glm-0375;6;6;8;8;4;6.4;"Testa o fallback para status desconhecido, comportamento que a base de teste não define (RNF06 trata de mensagens em português, não de tolerância a falhas); oráculo claro com texto e data-status, porém risco baixo."

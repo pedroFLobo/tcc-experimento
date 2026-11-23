@@ -1,0 +1,9 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+gemini-0192;6;8;6;8;6;6.8;"Formatar moeda em centavos é exibição e não exercita a regra de preço do RN22; o oráculo usa toContain('150,00') e 'R$' em vez do valor exato formatado."
+gemini-0193;4;8;4;6;4;5.2;"Cita RN24 (retorno gratuito), mas só formata zero, sem relação com a regra; o título promete 'R$ 0,00' e o teste só verifica toContain('0,00')."
+gemini-0194;6;8;10;8;6;7.6;"Asserção exata de '2026-10-19' para '19/10/2026'; o vínculo com RNF06 (mensagens de erro em português) é tênue e o formato de exibição não está na base de teste."
+gemini-0195;6;8;10;8;6;7.6;"Verifica o valor exato '19/10/2026 08:30', complementando o caso sem hora; o RNF06 citado trata de mensagens de erro, então a aderência é parcial."
+gemini-0196;6;8;8;8;6;7.2;"Cobre entradas vazia, null e undefined com retorno exato ''; o atributo de tolerância a falhas é razoável, mas o requisito citado (RNF06) não corresponde e o retorno '' é suposição."
+gemini-0197;4;8;4;8;4;5.6;"Só valida o formato com regex, sem conferir a data real (nem relógio fixado); um defeito de data errada passaria, e o RNF06 não tem relação com o caso."
+gemini-0198;4;8;8;8;2;6.0;"Testa constantes (dias e lista de status), o que é trivial e não exercita a modularidade do RNF07; os valores conferem com a máquina de estados e o RN10."
+gemini-0199;6;10;10;8;6;8.0;"Verifica os cinco status contra a definição de consulta ativa (AGENDADA/CONFIRMADA) com asserções exatas; o RF09 citado é indireto e o risco é moderado."

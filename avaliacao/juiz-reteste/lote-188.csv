@@ -1,0 +1,4 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+nemotron-0264;6;4;8;4;8;6.0;"Fluxo E2E de agendar, confirmar e cancelar (RF08, RF09, RN25, RN26) com asserções de toast, contagem e status, mas falhou por erro do próprio teste (selectOption com regex em label não é suportado). Sem bloco de metadados e com muitos objetivos num só caso, o que prejudica clareza e rastreabilidade."
+nemotron-0265;6;8;6;6;6;6.4;"Login com senha errada exibe erro inline e permanece em /login (RF01, RNF06), coerente com a spec e passou. Oráculo verifica só visibilidade do alerta e URL, sem checar texto em português nem ausência de token; sem metadados ISO."
+nemotron-0266;6;4;4;6;8;5.6;"Cobre risco relevante de autorização por perfil (RN30) na interface, mas o redirecionamento para /login ou /paciente não é definido na base de teste e o goto logo após o clique sem aguardar o login pode gerar a falha observada. Oráculo apenas sobre URL e sem metadados."

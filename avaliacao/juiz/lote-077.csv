@@ -1,0 +1,10 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+gemini-0059;10;10;8;10;8;9.2;"Exercita o login com credenciais corretas (RF01.1) e confere e-mail, perfil e ausência de senhaHash; só verifica a existência do token, sem validá-lo nem checar a expiração de 8h."
+gemini-0060;10;10;8;10;4;8.4;"Verifica que senha e senhaHash não são retornados (RNF01), mas a ausência de senhaHash já é verificada no caso de login bem-sucedido do mesmo lote, o que o torna quase redundante."
+gemini-0061;10;8;6;8;10;8.4;"Cobre o limite da 5ª tentativa errada (RN04), mas confere só a mensagem, não o código CONTA_BLOQUEADA prometido no @resultadoEsperado, e bloqueadoAte com toBeTruthy, sem verificar os 15 minutos citados no título."
+gemini-0062;10;8;8;8;10;8.8;"Testa a recusa da senha correta durante o bloqueio (RN04) com o relógio avançado 5 min; a asserção é só sobre a mensagem, sem o código CONTA_BLOQUEADA, e usa catch vazio para forçar as falhas."
+gemini-0063;10;10;6;8;8;8.4;"Verifica o desbloqueio após o prazo (RN04), mas usa 16 min em vez do limite exato de 15 e só faz toBeTruthy no token; o catch vazio na preparação é um test smell leve."
+gemini-0064;10;10;10;8;10;9.6;"Confere no banco que tentativasFalhas vai a 2 e volta a 0 após um login correto (RN04), com uma boa verificação de estado; o catch vazio nas falhas é um smell leve."
+gemini-0065;6;6;6;8;6;6.4;"RN21 trata de agendamento por conta inativa, não de login, então a regra testada não está na base; o @resultadoEsperado cita SEM_PERMISSAO, mas o código só verifica a mensagem 'Conta inativa'."
+gemini-0066;10;10;8;10;8;9.2;"Valida um token gerado pelo próprio login e confere e-mail e perfil do usuário autenticado (RF01.2, RNF02); é um caminho feliz e não verifica id nem expiração."
+gemini-0067;6;8;6;6;6;6.4;"O token usado é uma string malformada, não um JWT real com assinatura adulterada como dizem título e @objetivo; a asserção é só sobre a mensagem, sem o código NAO_AUTENTICADO (RNF02)."

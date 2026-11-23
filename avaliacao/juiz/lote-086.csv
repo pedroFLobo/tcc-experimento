@@ -1,0 +1,5 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+gemini-0176;8;8;6;8;6;7.2;"Login E2E do paciente (RF01.1) passou; verifica só URL /paciente e toast visível, sem checar token ou dados do usuário, e o @resultadoEsperado fala em boas-vindas enquanto o código checa toast; RNF06 citado sem relação."
+gemini-0177;8;4;6;8;6;6.4;"Exercita mensagem de erro com senha errada (RF01.1, RNF06), mas falhou por erro do teste: o seletor '#login-mensagem [role=alert]' e o texto 'E-mail ou senha inválidos' são suposições que a especificação não sustenta."
+gemini-0178;8;4;4;6;8;6.0;"Cobre o bloqueio após 5 tentativas (RN04), risco importante, mas falhou por seletor e mensagem inventados; não confirma o bloqueio real (ex.: senha correta recusada/423) e usa laço com waitForTimeout."
+gemini-0179;8;2;6;8;6;6.0;"Auto-cadastro E2E (RF02.1), mas o CPF 730.825.290-77 é inválido pelos dígitos verificadores (RN03) e o login automático após cadastro não está na especificação; a falha é do teste."

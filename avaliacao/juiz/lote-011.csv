@@ -1,0 +1,11 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+deepseek-0154;6;8;10;10;6;8.0;"Verifica o endpoint público de saúde (RF01.2) com corpo exato, mas cita RNF04 (formato de erro) e usa o subatributo 'disponibilidade', que não consta da lista válida; o corpo { status: 'ok' } não está na especificação."
+deepseek-0155;6;10;6;10;4;7.2;"Checa só o content-type JSON do endpoint de saúde; RNF04 trata de erros, não da saúde, e o caso é trivial e sobreposto ao anterior."
+deepseek-0156;4;6;8;10;6;6.8;"Ausência de x-powered-by é boa prática, mas não está em RNF04 nem em outro requisito da base de teste; a asserção é precisa, porém a rastreabilidade é fraca."
+deepseek-0157;8;10;8;10;8;8.8;"Verifica CORS para a origem padrão do frontend (CORS_ORIGINS, contrato de compatibilidade da SPEC/RNF08) com valor exato; não testa a recusa de origem não autorizada."
+deepseek-0158;8;8;8;10;6;8.0;"Preflight OPTIONS com métodos permitidos é coerente com o contrato CORS (RNF08), mas o status 204 é suposição não sustentada pela especificação e o risco se sobrepõe ao caso de CORS anterior."
+deepseek-0159;10;10;8;10;8;9.2;"Rota inexistente devolve 404 com codigo NAO_ENCONTRADO, conforme RNF04 e a seção 5; não verifica a estrutura completa nem a mensagem."
+deepseek-0160;10;8;8;10;6;8.4;"Verifica com exatidão a estrutura { erro: { codigo, mensagem } } (RNF04), mas presume que caminhos fora de /api seguem o contrato da API e não confere o codigo; risco próximo ao do caso anterior."
+deepseek-0161;8;6;8;10;6;7.6;"Status e codigo bem verificados, mas tratar método não suportado como 404 em vez de 405 é suposição que a base de teste não sustenta (RNF04 só exige JSON)."
+deepseek-0162;8;10;4;8;6;7.2;"RNF04 exige erros sem stack trace, mas o teste só usa uma rota 404, que dificilmente teria stack; não provoca um erro interno (500), então um defeito real no tratador de erros passaria."
+deepseek-0163;6;6;8;10;6;7.2;"Mensagem em português atende ao espírito de RNF06, mas o subatributo 'estetica-adequada' não é válido na lista e o texto exato 'Rota não encontrada.' não está na especificação."

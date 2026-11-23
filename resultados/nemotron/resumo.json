@@ -1,0 +1,106 @@
+{
+  "modelo": "nemotron",
+  "data": "2026-11-18T22:10:53.681Z",
+  "origem": "agente",
+  "verificacao": {
+    "esperado": null,
+    "informado": null,
+    "leuEntradaCompleta": null
+  },
+  "totalCasos": 286,
+  "arquivos": 22,
+  "arquivosRejeitados": [],
+  "falhasDeCarga": [
+    {
+      "arquivo": "frontend/__testes__/integracao/CadastroPage.integracao.test.jsx",
+      "erro": "Cannot find module 'C:\\Users\\pedro\\AppData\\Local\\Temp\\clinica-experimento\\nemotron\\frontend\\src\\api\\client' imported from C:\\Users\\pedro\\AppData\\Local\\Temp\\clinica-experimento\\nemotron\\frontend\\src\\api\\index.js"
+    },
+    {
+      "arquivo": "frontend/__testes__/integracao/LoginPage.integracao.test.jsx",
+      "erro": "Cannot find module '../../src/contexts/AuthContext'\nRequire stack:\n- C:\\Users\\pedro\\AppData\\Local\\Temp\\clinica-experimento\\nemotron\\frontend\\__testes__\\integracao\\LoginPage.integracao.test.jsx"
+    },
+    {
+      "arquivo": "frontend/__testes__/unitario/formatadores.test.js",
+      "erro": "describe is not defined"
+    }
+  ],
+  "porStatus": {
+    "falhou": 87,
+    "passou": 182,
+    "erro-de-carga": 17
+  },
+  "porNivel": {
+    "(vazio)": 286
+  },
+  "porAtributo": {
+    "(vazio)": 286
+  },
+  "metadadosCompletos": 0,
+  "requisitosCobertos": [],
+  "cobertura": {
+    "backend": {
+      "lines": {
+        "total": 727,
+        "covered": 698,
+        "skipped": 0,
+        "pct": 96.01
+      },
+      "statements": {
+        "total": 856,
+        "covered": 786,
+        "skipped": 0,
+        "pct": 91.82
+      },
+      "functions": {
+        "total": 215,
+        "covered": 205,
+        "skipped": 0,
+        "pct": 95.34
+      },
+      "branches": {
+        "total": 469,
+        "covered": 373,
+        "skipped": 0,
+        "pct": 79.53
+      },
+      "branchesTrue": {
+        "total": 0,
+        "covered": 0,
+        "skipped": 0,
+        "pct": 100
+      }
+    },
+    "frontend": {
+      "lines": {
+        "total": 553,
+        "covered": 10,
+        "skipped": 0,
+        "pct": 1.8
+      },
+      "statements": {
+        "total": 661,
+        "covered": 10,
+        "skipped": 0,
+        "pct": 1.51
+      },
+      "functions": {
+        "total": 283,
+        "covered": 1,
+        "skipped": 0,
+        "pct": 0.35
+      },
+      "branches": {
+        "total": 259,
+        "covered": 1,
+        "skipped": 0,
+        "pct": 0.38
+      },
+      "branchesTrue": {
+        "total": 0,
+        "covered": 0,
+        "skipped": 0,
+        "pct": 100
+      }
+    }
+  }
+}

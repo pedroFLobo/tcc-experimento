@@ -1,0 +1,6 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+mimo-0421;8;4;8;8;6;6.8;"Exercita a listagem completa da recepção (RF10.3) com contagem, colunas e nomes dos pacientes; a falha vem do próprio teste: o beforeEach chama GET /api/medicos sem token (RF01.2 exige autenticação) e os textos/seletores de interface são suposições."
+mimo-0422;6;4;6;8;6;6.0;"Testa o filtro por status de RF10.3, mas o subatributo pertinencia é discutível e o oráculo só confere a contagem de linhas sem verificar o status exibido; falhou por erro no setup (GET /api/medicos sem token, contrariando RF01.2)."
+mimo-0423;8;4;8;8;8;7.2;"Cobre filtro por período e botão Limpar (RF10.3) com contagem, paciente e data da linha restante; o setup compartilhado falha por chamar /api/medicos sem token (RF01.2), e há dependência de estado entre casos."
+mimo-0424;10;4;8;8;8;7.6;"Confirmação pela recepção dentro da janela de 48h (RN25: consulta 2026-10-20 14:00 com agora 2026-10-19 08:00) com toast e data-status CONFIRMADA; falhou por erro do teste no beforeEach (GET /api/medicos sem token) e o texto do toast é suposto."
+mimo-0425;8;4;8;8;8;7.2;"Cancelamento pela recepção com motivo (RF09.2, RN26) verificando toast e status CANCELADA, mas não testa a obrigatoriedade do motivo; falhou pelo setup que chama /api/medicos sem token (RF01.2), defeito do teste."

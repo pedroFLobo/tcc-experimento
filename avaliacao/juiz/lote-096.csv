@@ -1,0 +1,3 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+glm-0079;10;10;8;8;8;8.8;"Mede o tempo de GET /horarios com 10 mil consultas contra o limite de 500 ms (RNF05); os 16 horários de terça (08-12 e 14-18, 30 min) conferem com RN14. Porém as 10 mil consultas são todas REALIZADA, então não pesam no filtro de consultas ativas, faz uma única medição e não explica o número 16."
+glm-0080;10;10;8;8;8;8.8;"Mede POST /api/consultas contra os 500 ms (RNF05) e confere o valor de 13500 centavos para João, de 68 anos (RN22/RN23), o que está correto. Não verifica se a consulta foi gravada, e os ids 1 e 2 dependem da ordem do seed."

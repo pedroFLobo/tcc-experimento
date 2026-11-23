@@ -1,0 +1,5 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+mimo-0483;6;8;8;8;8;7.6;"Verifica que sem sessão a rota protegida redireciona para /login e não renderiza o conteúdo; RF01.2 trata de token na API, e o subatributo autenticidade seria mais adequado que confidencialidade."
+mimo-0484;8;8;8;8;8;8.0;"Cobre o acesso de perfil errado (RN30) no frontend, verificando o redirecionamento e a ausência do conteúdo; o destino /medico é uma suposição de implementação que os requisitos não fixam."
+mimo-0485;6;8;6;8;6;6.8;"Caminho feliz do perfil correto, com vínculo fraco com RN30, que trata de negar acesso; só confirma que o conteúdo aparece, sem verificar a ausência de redirecionamento."
+mimo-0486;4;6;8;8;6;6.4;"Verifica o indicador de carregamento e a ausência de redirecionamento prematuro, mas RNF06 trata de mensagens de erro em português, não de estado de carregamento; o rótulo 'Carregando' não está na especificação."

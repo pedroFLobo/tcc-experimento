@@ -1,0 +1,11 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+deepseek-0287;6;8;6;8;4;6.4;"Verifica a existência das tabelas do schema, mas cita todos os RF01-RF11 sem exercitar nenhum deles; arrayContaining só confirma presença e o risco é de baixa relevância (smoke de infraestrutura)."
+deepseek-0288;4;8;8;8;4;6.4;"Asserção exata sobre PRAGMA foreign_keys, porém a relação com RNF03 (SQL parametrizado e validação de entrada) é indireta; cobre detalhe de configuração de pouco risco."
+deepseek-0289;4;6;6;8;4;5.6;"Declara eficiência de desempenho (RNF05) sem nenhuma medição de tempo, apenas a existência de índices cujos nomes não constam na base de teste."
+deepseek-0290;6;8;8;8;8;7.6;"Bom teste de unicidade de e-mail sem diferenciar caixa (RN01), com asserção sobre a violação UNIQUE; o atributo segurança-integridade é discutível para regra de cadastro e a insensibilidade a caixa é interpretação razoável, não explícita."
+deepseek-0291;6;4;4;6;6;5.2;"Pretende verificar CPF único (RN03), mas insere duas vezes o mesmo usuario_id 1, de modo que a violação UNIQUE pode vir de usuario_id e não do CPF; o regex /UNIQUE/ não distingue a causa."
+deepseek-0292;6;8;8;6;6;6.8;"Verifica que status fora da máquina de estados (RF09) é recusado por CHECK; atributo segurança é discutível e o preparo com SQL cru e ids fixos exige esforço para entender."
+deepseek-0293;6;10;8;8;8;8.0;"Testa o valor-limite 0 do preço base (RN09) com violação de CHECK, conforme a regra 'maior que zero'; atributo segurança-integridade é discutível e só a camada de banco é exercitada."
+deepseek-0294;4;8;10;8;4;6.8;"Verifica contagem zero em todas as tabelas após limparBanco, oráculo completo; porém RNF07 e recuperabilidade pouco se relacionam com um utilitário de teste, e o @resultadoEsperado cita só quatro das sete tabelas."
+deepseek-0295;4;6;8;8;4;6.0;"Asserção exata de id 1 após limpar, mas o reinício de sequência não está na base de teste e o caso cobre infraestrutura de teste próxima ao anterior, com relação fraca a RNF07."
+deepseek-0296;4;8;6;8;4;6.0;"Confirma que semear funciona após limpar (4 médicos e 8 usuários, coerente com os dados de exemplo), mas é infraestrutura de teste com vínculo fraco a RNF07 e oráculo apenas por contagens."

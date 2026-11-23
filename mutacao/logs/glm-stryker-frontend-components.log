@@ -1,0 +1,35 @@
+00:30:36 (4079) INFO ProjectReader Found 17 of 3462 file(s) to be mutated.
+00:30:36 (4079) INFO Instrumenter Instrumented 17 source file(s) with 482 mutant(s)
+00:30:38 (4079) INFO ConcurrencyTokenProvider Creating 4 test runner process(es).
+00:30:40 (4079) INFO DryRunExecutor Starting initial test run (vitest test runner with "perTest" coverage analysis). This may take a while.
+00:30:49 (4079) INFO DryRunExecutor Initial test run succeeded. Ran 55 tests in 9 seconds (net 1479.922835000005 ms, overhead 7698.077164999995 ms).
+00:30:49 (4079) WARN MutantTestPlanner Detected 42 static mutants (9% of total) that are estimated to take 55% of the time running the tests!
+  You might want to enable "ignoreStatic" to ignore these static mutants for your next run. 
+  For more information about static mutants visit: https://stryker-mutator.io/docs/mutation-testing-elements/static-mutants
+  (disable "warnings.slow" to ignore this warning)
+Mutation testing 6% (elapsed: <1m, remaining: ~2m) 280/482 tested (12 survived, 0 timed out)
+Mutation testing 10% (elapsed: <1m, remaining: ~2m) 288/482 tested (14 survived, 0 timed out)
+Mutation testing 12% (elapsed: <1m, remaining: ~3m) 307/482 tested (29 survived, 0 timed out)
+Mutation testing 13% (elapsed: <1m, remaining: ~4m) 330/482 tested (38 survived, 0 timed out)
+Mutation testing 16% (elapsed: <1m, remaining: ~4m) 346/482 tested (44 survived, 0 timed out)
+Mutation testing 19% (elapsed: ~1m, remaining: ~4m) 371/482 tested (59 survived, 0 timed out)
+Mutation testing 23% (elapsed: ~1m, remaining: ~3m) 392/482 tested (70 survived, 0 timed out)
+Mutation testing 28% (elapsed: ~1m, remaining: ~3m) 403/482 tested (77 survived, 0 timed out)
+Mutation testing 35% (elapsed: ~1m, remaining: ~2m) 415/482 tested (78 survived, 0 timed out)
+Mutation testing 40% (elapsed: ~1m, remaining: ~2m) 428/482 tested (83 survived, 0 timed out)
+Mutation testing 45% (elapsed: ~1m, remaining: ~2m) 440/482 tested (89 survived, 0 timed out)
+Mutation testing 50% (elapsed: ~2m, remaining: ~1m) 444/482 tested (93 survived, 0 timed out)
+Mutation testing 50% (elapsed: ~2m, remaining: ~2m) 444/482 tested (93 survived, 0 timed out)
+Mutation testing 55% (elapsed: ~2m, remaining: ~1m) 448/482 tested (95 survived, 0 timed out)
+Mutation testing 60% (elapsed: ~2m, remaining: ~1m) 452/482 tested (97 survived, 0 timed out)
+Mutation testing 66% (elapsed: ~2m, remaining: ~1m) 456/482 tested (99 survived, 0 timed out)
+Mutation testing 71% (elapsed: ~2m, remaining: ~1m) 460/482 tested (99 survived, 0 timed out)
+Mutation testing 75% (elapsed: ~3m, remaining: <1m) 463/482 tested (100 survived, 0 timed out)
+Mutation testing 80% (elapsed: ~3m, remaining: <1m) 467/482 tested (103 survived, 1 timed out)
+Mutation testing 84% (elapsed: ~3m, remaining: <1m) 470/482 tested (105 survived, 2 timed out)
+Mutation testing 86% (elapsed: ~3m, remaining: <1m) 472/482 tested (106 survived, 3 timed out)
+Mutation testing 90% (elapsed: ~3m, remaining: <1m) 475/482 tested (108 survived, 4 timed out)
+Mutation testing 96% (elapsed: ~3m, remaining: <1m) 479/482 tested (109 survived, 5 timed out)
+00:34:47 (4079) INFO JsonReporter Your report can be found at: file://{trabalho}/mut/glm/reports/mutacao/frontend-components.json
+00:34:47 (4079) INFO HtmlReporter Your report can be found at: file://{trabalho}/mut/glm/reports/mutacao/frontend-components.html
+00:34:47 (4079) INFO MutationTestExecutor Done in 4 minutes and 12 seconds.

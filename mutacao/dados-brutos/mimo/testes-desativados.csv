@@ -1,0 +1,11 @@
+﻿arquivo;caso;titulo;statusOriginal;tratamento
+backend/__testes__/api/agenda-api.test.js;CT-API-072;GET horários devolve os slots da grade;falhou;skip (falhou na execução original)
+backend/__testes__/integracao/agendamento.test.js;CT-INT-064;paciente não passa de 3 consultas ativas futuras;falhou;skip (falhou na execução original)
+backend/__testes__/integracao/grade-e-bloqueios.test.js;CT-INT-028;grade com sobreposição não é gravada;falhou;skip (falhou na execução original)
+backend/__testes__/unitario/consultas-regras.test.js;CT-UNI-068;três faltas nos últimos 90 dias geram suspensão de 30 dias;falhou;skip (falhou na execução original)
+backend/__testes__/unitario/datas-relogio.test.js;CT-UNI-118;formatarDataHora cobre os dois formatos aceitos;falhou;skip (falhou na execução original)
+frontend/__testes__/integracao/agendar-page.test.jsx;CT-INT-200;AgendarPage lista as especialidades com o preço formatado;falhou;skip (falhou na execução original)
+frontend/__testes__/integracao/layout.test.jsx;CT-INT-227;exibe nome do usuário logado e apenas os links do perfil RECEPCAO;falhou;skip (falhou na execução original)
+frontend/__testes__/integracao/layout.test.jsx;CT-INT-228;botão sair apaga o token e desloga o usuário;falhou;skip (falhou na execução original)
+frontend/__testes__/integracao/layout.test.jsx;CT-INT-229;"define o título da aba como ""Consultas · Clínica+""";falhou;skip (falhou na execução original)
+frontend/__testes__/unitario/use-carregar.test.jsx;CT-UNI-159;useCarregar refaz a chamada quando as dependências mudam;falhou;skip (falhou na execução original)

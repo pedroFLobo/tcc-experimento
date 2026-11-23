@@ -1,0 +1,6 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+nemotron-0039;6;10;8;4;6;6.8;"Exercita RF03.2 via HTTP com paciente e confere status 200, 4 especialidades e preço 15000 da Clínica Geral; não há bloco de metadados (@atributo, @subatributo, @objetivo), então a aderência não pode ser confirmada e a clareza cai."
+nemotron-0040;6;10;6;4;6;6.4;"Caminho feliz de RF03.1 com recepção, status 201 e nome conferidos; não verifica precoCentavos, id nem persistência na listagem, e faltam os metadados do caso."
+nemotron-0041;6;10;6;4;8;6.8;"Cobre autorização de RF03.1 (só recepção) com 403 para paciente, risco relevante; não verifica o codigo SEM_PERMISSAO nem que a especialidade não foi criada, e não há metadados declarando o atributo de segurança."
+nemotron-0042;6;10;6;4;8;6.8;"Testa unicidade do nome (RN09) esperando 409, coerente com CONFLITO por duplicidade; não confere o codigo de erro nem o sucesso do primeiro cadastro, e faltam metadados."
+nemotron-0043;6;8;6;4;8;6.4;"Valor-limite de RN09 (preço 0) com 400, plausível como VALIDACAO, embora a base não diga se é 400 ou 422; só verifica o status, sem codigo nem estado final, dados genéricos ('X') e sem metadados."

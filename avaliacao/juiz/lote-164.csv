@@ -1,0 +1,11 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+mimo-0501;6;6;6;8;4;6.0;"Verifica o esqueleto de carregamento, mas RNF06 trata de mensagens de erro em português e não sustenta a operabilidade declarada; a quantidade de 3 linhas não vem da especificação e o risco coberto é menor."
+mimo-0502;4;8;8;8;4;6.4;"Confere o texto de lista vazia passado por prop, mas adequação funcional/pertinência com RNF06 é uma rastreabilidade forçada; risco baixo, apenas repassa uma prop."
+mimo-0503;4;8;8;8;6;6.8;"Asserções concretas sobre linhas, data-consulta-id, cabeçalhos e data formatada, mas RF10.1 (paciente vê só as próprias consultas) não é exercitado por um componente de exibição."
+mimo-0504;6;6;6;6;6;6.0;"Exibe 'Retorno gratuito' para valor zero (RN24 só na apresentação), porém o dado de valor zero está numa consulta CANCELADA, o que é incoerente, o rótulo não está na especificação e a asserção não amarra o texto à linha certa."
+mimo-0505;6;8;8;8;6;7.2;"Verifica a formatação em reais de 15000 e 20000 centavos, coerente com RN22 e com a convenção de centavos; testa só a exibição, não o cálculo de RF08.2."
+mimo-0506;4;6;6;8;4;5.6;"Verifica o marcador '—' para célula sem observações nem motivo; a ligação com RNF06 (mensagens de erro em português) é fraca, o símbolo não está na especificação e não se confere em qual linha ele aparece."
+mimo-0507;6;8;6;8;6;6.8;"Confere que as observações da consulta realizada (RF09.4) aparecem na tabela, mas só checa a presença do texto, sem vincular à linha da consulta 9."
+mimo-0508;6;8;6;8;4;6.4;"Confere a exibição do motivo de cancelamento (RF09.2), mas só checa a presença do texto, sem vincular à linha; mesmo padrão do caso das observações."
+mimo-0509;6;8;8;8;8;7.6;"Bom oráculo por linha: ações na consulta AGENDADA e ausentes nas CANCELADA e REALIZADA, coerente com os estados finais da máquina de estados; RN26 trata de prazos de cancelamento, não do estado, então a rastreabilidade é parcial."
+mimo-0510;8;8;8;8;6;7.6;"Verifica o selo com data-status correto por linha e o rótulo 'Realizada', adequado à reconhecibilidade do status (RF09); o rótulo exato é suposição de interface e o risco é moderado."

@@ -1,0 +1,24 @@
+00:00:39 (25206) INFO ProjectReader Found 6 of 112 file(s) to be mutated.
+00:00:39 (25206) INFO Instrumenter Instrumented 6 source file(s) with 128 mutant(s)
+00:00:39 (25206) INFO ConcurrencyTokenProvider Creating 4 test runner process(es).
+00:00:40 (25206) INFO DryRunExecutor Starting initial test run (jest test runner with "perTest" coverage analysis). This may take a while.
+00:00:47 (25206) INFO DryRunExecutor Initial test run succeeded. Ran 397 tests in 7 seconds (net 5643 ms, overhead 1790 ms).
+Mutation testing 6% (elapsed: <1m, remaining: ~2m) 7/128 tested (1 survived, 1 timed out)
+Mutation testing 15% (elapsed: <1m, remaining: ~1m) 14/128 tested (3 survived, 3 timed out)
+Mutation testing 21% (elapsed: <1m, remaining: ~1m) 20/128 tested (4 survived, 6 timed out)
+Mutation testing 24% (elapsed: <1m, remaining: ~2m) 26/128 tested (5 survived, 11 timed out)
+Mutation testing 29% (elapsed: <1m, remaining: ~1m) 32/128 tested (5 survived, 14 timed out)
+Mutation testing 32% (elapsed: ~1m, remaining: ~2m) 39/128 tested (5 survived, 19 timed out)
+Mutation testing 36% (elapsed: ~1m, remaining: ~2m) 45/128 tested (5 survived, 23 timed out)
+Mutation testing 43% (elapsed: ~1m, remaining: ~1m) 52/128 tested (7 survived, 26 timed out)
+Mutation testing 48% (elapsed: ~1m, remaining: ~1m) 59/128 tested (9 survived, 29 timed out)
+Mutation testing 51% (elapsed: ~1m, remaining: ~1m) 65/128 tested (9 survived, 33 timed out)
+Mutation testing 60% (elapsed: ~1m, remaining: ~1m) 74/128 tested (10 survived, 36 timed out)
+Mutation testing 67% (elapsed: ~2m, remaining: <1m) 80/128 tested (11 survived, 38 timed out)
+Mutation testing 74% (elapsed: ~2m, remaining: <1m) 87/128 tested (12 survived, 40 timed out)
+Mutation testing 79% (elapsed: ~2m, remaining: <1m) 94/128 tested (13 survived, 43 timed out)
+Mutation testing 84% (elapsed: ~2m, remaining: <1m) 110/128 tested (17 survived, 48 timed out)
+Mutation testing 94% (elapsed: ~2m, remaining: <1m) 126/128 tested (22 survived, 48 timed out)
+00:03:30 (25206) INFO JsonReporter Your report can be found at: file://{trabalho}/mut/mimo/reports/mutacao/backend-routes.json
+00:03:30 (25206) INFO HtmlReporter Your report can be found at: file://{trabalho}/mut/mimo/reports/mutacao/backend-routes.html
+00:03:30 (25206) INFO MutationTestExecutor Done in 2 minutes and 51 seconds.

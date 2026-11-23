@@ -1,0 +1,103 @@
+{
+ "lotes": [
+  "lote-016",
+  "lote-041",
+  "lote-085",
+  "lote-089",
+  "lote-098",
+  "lote-106",
+  "lote-162",
+  "lote-163",
+  "lote-184",
+  "lote-188"
+ ],
+ "casos": 143,
+ "criterios": {
+  "aderencia": {
+   "concordancia_exata": 90.2,
+   "dentro_de_1_ponto_da_escala": 100.0,
+   "kappa_ponderado_quadratico": 0.933
+  },
+  "correcao": {
+   "concordancia_exata": 88.1,
+   "dentro_de_1_ponto_da_escala": 100.0,
+   "kappa_ponderado_quadratico": 0.956
+  },
+  "oraculo": {
+   "concordancia_exata": 67.1,
+   "dentro_de_1_ponto_da_escala": 100.0,
+   "kappa_ponderado_quadratico": 0.701
+  },
+  "clareza": {
+   "concordancia_exata": 58.7,
+   "dentro_de_1_ponto_da_escala": 100.0,
+   "kappa_ponderado_quadratico": 0.802
+  },
+  "relevancia": {
+   "concordancia_exata": 81.1,
+   "dentro_de_1_ponto_da_escala": 100.0,
+   "kappa_ponderado_quadratico": 0.885
+  }
+ },
+ "nota": {
+  "ICC_2_1": 0.916,
+  "spearman": 0.913,
+  "diferenca_media_reteste_menos_original": 0.185,
+  "diferenca_absoluta_media": 0.358,
+  "wilcoxon_p": 1.9221584454740716e-05,
+  "media_original": 7.642,
+  "media_reteste": 7.827
+ },
+ "porLote": {
+  "lote-016": {
+   "casos": 19,
+   "media_original": 8.27,
+   "media_reteste": 8.19
+  },
+  "lote-041": {
+   "casos": 26,
+   "media_original": 8.51,
+   "media_reteste": 9.0
+  },
+  "lote-085": {
+   "casos": 4,
+   "media_original": 6.2,
+   "media_reteste": 5.7
+  },
+  "lote-089": {
+   "casos": 3,
+   "media_original": 6.4,
+   "media_reteste": 6.8
+  },
+  "lote-098": {
+   "casos": 21,
+   "media_original": 7.05,
+   "media_reteste": 7.03
+  },
+  "lote-106": {
+   "casos": 13,
+   "media_original": 8.46,
+   "media_reteste": 8.55
+  },
+  "lote-162": {
+   "casos": 8,
+   "media_original": 7.1,
+   "media_reteste": 7.6
+  },
+  "lote-163": {
+   "casos": 6,
+   "media_original": 6.47,
+   "media_reteste": 6.33
+  },
+  "lote-184": {
+   "casos": 40,
+   "media_original": 7.49,
+   "media_reteste": 7.77
+  },
+  "lote-188": {
+   "casos": 3,
+   "media_original": 5.73,
+   "media_reteste": 6.0
+  }
+ }
+}

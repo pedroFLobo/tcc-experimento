@@ -1,0 +1,4 @@
+caso;aderencia;correcao;oraculo;clareza;relevancia;nota;justificativa
+gemini-0186;6;8;8;8;4;6.8;"Verifica rótulos em português e data-status de AGENDADA/CONFIRMADA (reconhecibilidade), mas RNF06 trata de mensagens de erro e RF09 não define rótulos; o objetivo cita 'classe' mas o código checa data-status. Risco de exibição baixo."
+gemini-0187;6;8;8;8;4;6.8;"Confere texto e classe status-X para REALIZADA, FALTA e CANCELADA; asserções específicas, porém a ligação com RF09/RNF06 é indireta e repete o padrão do caso anterior com risco cosmético."
+gemini-0188;4;6;6;8;4;5.6;"Declara confiabilidade/tolerância a falhas citando RNF06 (usabilidade), atributo e requisito desalinhados; o comportamento para status desconhecido não é especificado e só se verifica que o texto aparece."
